@@ -1,0 +1,16 @@
+* {  font-family: 'Raleway'; font-weight:500; margin:0px; padding:0px  }
+
+
+
+
+a:link{ text-decoration:none; color:#565656;}
+a:visited{ text-decoration:none; color:#565656;}
+a:hover{ text-decoration:none; color:#03553c}
+a:active{ text-decoration:none; color:#03553c}
+img.bigger {
+ 
+            transition:transform 2s;
+}
+img.bigger:hover{
+            transform: scale(1.2,1.2);
+}

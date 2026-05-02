@@ -1,0 +1,938 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>XUZHOU BAILIXING GLOBAL TRADE CO., LTD.</title>
+<meta name="Keywords" content="BLXING">
+<meta name="Description" content="描述">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<LINK href="css/c.css"  type=text/css rel=stylesheet>
+<LINK href="css/css.css"  type=text/css rel=stylesheet>
+
+<script src="jquery-1.4.4.min.js"></script>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<!-- nav -->
+<style type="text/css">
+*{ margin:0px; padding:0px; font-size:14px; color:#454545; }
+ul{ list-style:none}
+li{ float:left}
+
+
+
+
+@media screen and (min-width: 1000px) {
+#navpc{ width:90%; margin:0px auto; height:120px}
+#nava{ float:left; height:100%; display:flex;align-items: center; }
+#nava img{ height:70px}
+#navb{ float:right;height:100%; display:flex;align-items: center; position:relative}
+#navb img{ height:20px; cursor:pointer}
+#navc{ float:right;height:100%; display:flex;align-items: center; margin-right:20px}
+
+#navc img{ height:20px; cursor:pointer}
+#navd{ float:right;height:100%; display:flex;align-items: center; margin-right:20px; font-size:20px; color:#78797b}
+
+
+
+#divsearch{position:absolute; right:0px; top:75px; width:230px; display:none }
+
+}
+
+@media screen and (max-width: 1000px)  {
+#navpc{ width:96%; margin:0px auto; height:60px}
+#nava{ float:left; height:100%; display:flex;align-items: center; }
+#nava img{ height:50px}
+#navb{ float:right;height:100%; display:flex;align-items: center; position:relative}
+#navb img{ height:20px; cursor:pointer}
+#navc{ float:right;height:100%; display:flex;align-items: center; margin-right:10px}
+#navc img{ height:20px; cursor:pointer}
+#navd{ float:right;height:100%; display:flex;align-items: center; margin-right:10px; font-size:16px; color:#78797b}
+
+
+#divsearch{position:absolute; right:0px; top:50px; width:230px; display:none }
+}
+</style>
+
+
+<script>
+function zhanshia(a,c){
+
+var div = document.querySelector('div[name=lefta'+a+']');
+if(div.style.display=="none"){
+div.style.display ="";
+c.innerHTML="--";
+}
+else
+{
+div.style.display ="none";
+c.innerHTML="+";
+}
+
+}
+
+function xssearch(){
+$("#divsearch").fadeIn();
+}
+
+function showmenu(){
+
+$("#menua").fadeIn();
+$("#menu").fadeIn();
+$("#navicon").attr("src", "img/navdha.gif");
+}
+function hidmenu(){
+$("#menua").fadeOut();
+$("#menu").fadeOut();
+$("#navicon").attr("src", "img/navdh.gif");
+}
+
+function xianshi(a){
+if(document.getElementById(a+"nav").innerText=="+"){document.getElementById(a+"nav").innerText="-";}
+else{document.getElementById(a+"nav").innerText="+";}
+
+$("#"+a).slideToggle();
+
+
+
+}
+</script>
+<!---->
+<style type="text/css">
+#menu{ padding-top:30px;box-sizing:border-box;}
+#menu ul{ list-style:none}
+#menu ul li{ width:100%; line-height:60px}
+#menu ul li p:nth-child(1){ width:80%; float:left; line-height:60px; height:60px; padding-left:10px;box-sizing:border-box; overflow:hidden; font-weight:900;}
+#menu ul li p:nth-child(1) a{ width:100%; height:60px; display:block}
+#menu ul li p:nth-child(2){ width:20%; float:left; line-height:60px; height:60px;  text-align:right;box-sizing:border-box; cursor:pointer; font-weight:bold; display:flex; align-items:center;justify-content: center; }
+#menu ul li p:nth-child(2)  font{color:#ffffff; background-color: rgba(255, 255, 255, 0.5); width:14px; height:14px; display:block; border-radius:7px; line-height:14px; text-align:center; }
+#menu ul li:hover{ background-color:#264b6e}
+
+.menulei{ display:none}
+/*
+#menu ul li:hover .menulei { display:block}*/
+#menu ul li .menulei li{width:100%; line-height:40px}
+#menu ul li .menulei li p:nth-child(1){ width:80%; float:left; line-height:40px; height:40px; padding-left:20px;box-sizing:border-box; font-weight:500 }
+#menu ul li .menulei li p:nth-child(2){ width:20%; float:left;  line-height:40px; height:40px; color:#ffffff; text-align:right; box-sizing:border-box; cursor:pointer; font-weight:bold; display:flex; align-items:center;justify-content: center;}
+#menu ul li .menulei li p:nth-child(2) font{color:#ffffff; background-color: rgba(255, 255, 255, 0.5); width:14px; height:14px; display:block; border-radius:7px; line-height:14px; text-align:center; }
+#menu ul li .menulei li:hover{background-color:#3d5b78}
+.menuleia{ display:none}
+#menu ul li .menulei li .menuleia li{width:100%; line-height:40px}
+#menu ul li .menulei li .menuleia li p:nth-child(1){ width:80%; float:left; line-height:40px; height:40px; padding-left:30px;box-sizing:border-box; overflow:hidden }
+#menu ul li .menulei li .menuleia li p:nth-child(1) a{ color:#FFFFFF; text-align:center; text-decoration:none}
+#menu ul li .menulei li .menuleia li p:nth-child(2){ width:20%; float:left; line-height:40px; height:40px; color:#ffffff; text-align:right; padding-right:10px;box-sizing:border-box; cursor:pointer }
+#menu ul li .menulei li .menuleia li:hover{background-color:#49637b}
+
+</style>
+
+<div id="menu"  style="width:260px; height:100%; background-color:#153451;  position:fixed; right:0px; top:0px; display:none; z-index:99999  ">
+<ul>
+<li><p><a href="index.php" style=" color:#FFFFFF; text-decoration:none ">HOME</a></p><p></p></li>
+<li><p><a href="about.php" style=" color:#FFFFFF; text-decoration:none  ">ABOUT</a></p><p onClick="xianshi('aboutid')"><font id="aboutidnav" >+</font></p>
+<ul id="aboutid" class="menulei">
+<li><p><a href="about.php#aboutbg" style=" color:#FFFFFF; text-decoration:none ">Company Profile</a></p><p></p></li>
+<li><p><a href="about.php#rypc" style=" color:#FFFFFF; text-decoration:none ">Certificate of Honor</a></p><p></p></li>
+<li><p><a href="about.php#zsbg" style=" color:#FFFFFF; text-decoration:none ">Office Environment</a></p><p></p></li>
+<li><p><a href="about.php#lxicon" style=" color:#FFFFFF; text-decoration:none ">Vision</a></p><p></p></li>
+<li><p><a href="about.php#lxicon" style=" color:#FFFFFF; text-decoration:none ">Mission</a></p><p></p></li>
+</ul>
+</li>
+<li><p><a href="product.php" style=" color:#FFFFFF; text-decoration:none ">PRODUCT</a></p><p onClick="xianshi('productid')"><font id="productidnav" >+</font></p>
+
+<ul id="productid" class="menulei">
+<li><p><a href="product.php?biglei=202412311021025045" style=" color:#FFFFFF; text-decoration:none ">FILM FACED PLYWOOD</a></p>
+<p   onClick="xianshi('a202412311021025045')"><font id="a202412311021025045nav" >+</font></p>
+
+<ul id="a202412311021025045" class="menuleia">
+<li><p><a href="product.php?biglei=202412311021025045&lei=20251814404880028">FILM FACED PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311021025045&lei=20251814411538736">PP PLASTIC FACED PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311021025045&lei=20251814413290212">SLIP-RESISTANT PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311021025045&lei=20251814422129335">BIRCH PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311021025045&lei=20251814423788219">FORMPLY</a></p><p></p>
+</li>
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=202412311031916011" style=" color:#FFFFFF; text-decoration:none ">COMMERCIAL PLYWOOD</a></p>
+<p   onClick="xianshi('a202412311031916011')"><font id="a202412311031916011nav" >+</font></p>
+
+<ul id="a202412311031916011" class="menuleia">
+<li><p><a href="product.php?biglei=202412311031916011&lei=20251814491149897">ORDINARY PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311031916011&lei=20251814502338622">FANCY PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311031916011&lei=2025361053628126">NATURE VENEER PLYWOOD</a></p><p></p>
+</li>
+<li><p><a href="product.php?biglei=202412311031916011&lei=202581914112079603">CIRCLE PLYWOOD</a></p><p></p>
+</li>
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=202412311032786153" style=" color:#FFFFFF; text-decoration:none ">FINGER JOINT PANEL</a></p>
+
+
+<ul id="a202412311032786153" class="menuleia">
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=202412311033399929" style=" color:#FFFFFF; text-decoration:none ">MELAMINE BOARDS</a></p>
+
+
+<ul id="a202412311033399929" class="menuleia">
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=20251814505187102" style=" color:#FFFFFF; text-decoration:none ">CHIPBOARD</a></p>
+
+
+<ul id="a20251814505187102" class="menuleia">
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=202412311034678887" style=" color:#FFFFFF; text-decoration:none ">LVL</a></p>
+
+
+<ul id="a202412311034678887" class="menuleia">
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=202412311034071967" style=" color:#FFFFFF; text-decoration:none ">MDF</a></p>
+
+
+<ul id="a202412311034071967" class="menuleia">
+</ul>
+
+
+
+</li>
+<li><p><a href="product.php?biglei=202581917201193769" style=" color:#FFFFFF; text-decoration:none ">FORMWORK SYSTEMS</a></p>
+<p   onClick="xianshi('a202581917201193769')"><font id="a202581917201193769nav" >+</font></p>
+
+<ul id="a202581917201193769" class="menuleia">
+<li><p><a href="product.php?biglei=202581917201193769&lei=202581917203241340">H20 BEAM</a></p><p></p>
+</li>
+</ul>
+
+
+
+</li>
+
+</ul>
+
+
+
+</li>
+<li><p><a href="xjx.php" style=" color:#FFFFFF; text-decoration:none ">ADVANTAGE</a></p><p></p></li>
+<li><p><a href="fw.php" style=" color:#FFFFFF; text-decoration:none ">SERVICE</a></p><p></p></li>
+
+<li><p><a href="news.php" style=" color:#FFFFFF; text-decoration:none " >NEWS</a></p><p onClick="xianshi('newsid')"><font id="newsidnav" >+</font></p>
+<ul id="newsid" class="menulei">
+
+
+
+<li><p><a href="news.php?lei=20244822401695841" style=" color:#FFFFFF; text-decoration:none ">Industry News</a></p><p></p></li>
+
+
+<li><p><a href="news.php?lei=202432915325927828" style=" color:#FFFFFF; text-decoration:none ">Company News</a></p><p></p></li>
+
+</ul>
+
+</li>
+<li><p><a href="contactus.php" style=" color:#FFFFFF; text-decoration:none ">CONTACT</a></p><p></p></li>
+</ul>
+</div>
+
+
+<div id="menua" onClick="hidmenu()"  style="width:100%; height:100%;  position:fixed; left:0px; top:0px;  background-color: rgba(0, 0, 0, 0.5); z-index:99998; display:none " >
+
+</div>
+
+
+<script>
+function tijiao(){
+window.location.href="product.php?skey="+document.getElementById("skey").value;
+}
+
+</script>
+
+<div id="navpc">
+<div id="nava"><a href="index.php"><img src="img/logo.png" border="0"></a></div>
+ 
+<div id="navb"><img id="navicon" src="img/navdh.gif" onClick="showmenu()"></div>
+
+<div onClick="xssearch()" id="navc" style="position:relative ">
+<img src="img/s.gif">
+
+<div id="divsearch" >
+<p style="float:left ; width:155px"><input name="skey" id="skey" type="text" placeholder="Enter Product name" style="width:150px; line-height:30px; height:30px; border-radius:5px; border:1px #777777 solid "></p>
+<p style="float:left ; width:75px"><input name="ss" type="button" onClick="tijiao()" value="Submit" style="height:30px; line-height:30px; width:75px; text-align:center "></p>
+
+</div>
+
+</div>
+<div id="navd">
+BLXING
+</div>
+</div>
+
+<div style="clear:both "></div>
+<!-- nav -->
+
+
+
+
+
+<style type="text/css">
+html,body{ width:100%; height:100%}
+@media screen and (min-width: 1000px) {
+#xunpan{position:fixed; width:100%; height:100%; background-color: rgba(0, 0, 0, 0.5); z-index:999999 ; top:0px; padding-top:10% }
+#xunpannr{width:100%; max-width:600px; margin:0px auto; display:block; overflow:hidden; padding-top:30px; padding-bottom:30px; border: 10px solid hsla(0,0%,100%,.5); background: #f1f1f1; background-clip: padding-box;}
+#xunpannr ul{ list-style:none}
+#xunpannr ul li{ float:left}
+#xunpannr ul li:nth-child(1){ width:140px; text-align:center; height:50px; line-height:50px}
+#xunpannr ul li:nth-child(2){ width:460px; line-height:50px; min-height:50px}
+#xunpannr ul li:nth-child(2) input{ width:90%; height:30px; line-height:30px}
+#xunpannr ul li:nth-child(2) textarea { width:90%; height:90px; line-height:30px}
+}
+
+@media screen and (max-width: 1000px)  {
+#xunpan{position:fixed; width:100%; height:100%; background-color: rgba(0, 0, 0, 0.5); z-index:999999 ; top:0px; padding-top:10% }
+#xunpannr{width:96%; margin:0px auto; display:block; overflow:hidden; padding-top:30px; padding-bottom:30px; border: 5px solid hsla(0,0%,100%,.5); background: #f1f1f1; background-clip: padding-box;}
+#xunpannr ul{ list-style:none}
+#xunpannr ul li{ float:left}
+#xunpannr ul li:nth-child(1){ width:25%; text-align:center; height:50px; line-height:50px}
+#xunpannr ul li:nth-child(2){ width:75%; line-height:50px; min-height:50px}
+#xunpannr ul li:nth-child(2) input{ width:90%; height:30px; line-height:30px}
+#xunpannr ul li:nth-child(2) textarea { width:90%; height:90px; line-height:30px}
+}
+</style>
+<script>
+function xunpanview(a,b){
+document.getElementById('xunpanmc').innerHTML=b;
+document.getElementById("xunpan").style.display = "";
+
+document.getElementById('xunpancode').value=a;
+
+
+}
+function quxiao(){
+document.getElementById("xunpan").style.display = "none";
+}
+
+</script>
+
+
+
+<script>
+function yzmhq(){
+if ($("#email").val()=="") { 
+alert("Please enter your email address！"); 
+$("#email").focus(); 
+return false; 
+} 
+
+if ($("#content").val()=="") { 
+alert("Please enter a note！"); 
+$("#content").focus(); 
+return false; 
+} 
+
+
+if ($("#xunpancode").val()=="") { 
+alert("The product does not exist！"); 
+$("#xunpancode").focus(); 
+return false; 
+} 
+
+
+email=document.getElementById("email").value,
+content=document.getElementById("content").value,
+xunpancode=document.getElementById("xunpancode").value,
+
+
+$.post("yzmhq.php",
+{
+email:email,
+content:content,
+xunpancode:xunpancode,
+
+
+},
+function(data,status){
+
+if(data==1){
+
+document.getElementById("email").value="";
+document.getElementById("content").value="";
+document.getElementById("xunpancode").value="";
+
+alert("Success！");
+document.getElementById("xunpan").style.display = "none";
+}
+
+if(data==2){
+alert("Fail！");
+}
+if(data==3){
+alert("The product does not exist！");
+}
+
+
+});
+
+
+
+
+  
+
+
+}
+
+
+</script>
+<div id="xunpan"  style="display:none " >
+
+
+<div id="xunpannr">
+<ul><li>Product name：</li><li><label id="xunpanmc"></label></li></ul>
+<ul><li>E-mail：</li><li><input name="email" id="email"></li></ul>
+<ul><li>Notes：</li><li><textarea name="content" id="content"></textarea>
+<input name="xunpancode" id="xunpancode" type="hidden">
+</li></ul>
+<ul><li></li><li><button onClick="return yzmhq()" style="padding:10px  30px  10px  30px ; cursor:pointer ">Submit</button> <button onClick="quxiao()" style="padding:10px  30px  10px  30px ; cursor:pointer ">Cancel</button></li></ul>
+</div>
+
+
+</div>
+
+<style type="text/css">
+@media screen and (min-width: 1000px) {
+#bannerpc{width:100%;  overflow:hidden; text-align:center; display:block; }
+#bannermobile{ display:none}
+}
+@media screen and (max-width: 1000px)  {
+#bannerpc{ display:none}
+#bannermobile{width:100%;  overflow:hidden; text-align:center; display:block;}
+}
+</style>
+
+<div id="bannerpc" ><img src="upload/202561198712136.jpg" style="width:100%; margin:0px; padding:0px"></div>
+<div id="bannermobile" ><img src="upload/2025661525845691.jpg" style="width:100%; margin:0px; padding:0px"></div>
+ 
+
+
+
+
+
+
+<!-- cplist-->
+<style type="text/css">
+@media screen and (min-width: 1400px) {
+#cplist{ width:98%; height:200px; margin:0px auto; max-width:1400px; margin-top:20px; margin-bottom:30px;}
+#cplista{ float:left; width:24%; }
+#cplistatitle{ background-color:#034287;height:50px; line-height:50px; display:block}
+#cplistatitle p{ color:#FFFFFF; width:90%; margin:0px auto; font-size:18px; font-family:Arial, Helvetica, sans-serif }
+#cplistnavrq{background-color:#f3f3f3;}
+#cplistnav{width:90%; margin:0px auto;height:50px; line-height:50px; display:block}
+#cplistnav p:nth-child(1){ float:left; color:#333333; font-size:14px; font-weight:bold}
+#cplistnav p:nth-child(2){ float:right;font-weight:bold; color:#777777; }
+#list{background-color:#f9f9f9;}
+#listcontent{width:82%; margin:0px auto;height:50px; line-height:50px; display:block}
+#listcontent a{ text-decoration:none; font-size:14px; font-family:Arial, Helvetica, sans-serif}
+#cplistb{ float:right; width:74%}
+#cplistbtitle{ width:100%; line-height:50px; height:50px; font-size:18px;  font-weight:bold}
+
+
+#cprq{ margin-top:30px; padding-bottom:20px; border-bottom:1px #cccccc dotted; overflow:hidden}
+#cp{ width:100%;}
+#cpa{ float:left; width:20%}
+#cpa img{ width:80%}
+#cpb{ float:right; width:78%}
+#cpb div:nth-child(1){ color:#333333; font-size:18px; font-family:Arial, Helvetica, sans-serif}
+#cpb div:nth-child(1) a{color:#333333; font-size:18px; text-decoration:none}
+#cpb div:nth-child(1) a:hover{color:#184868; font-size:18px; text-decoration:none}
+#cpb div:nth-child(2){ color:#555555; font-size:14px;  line-height:28px; margin-top:10px}
+#cpb div:nth-child(3){ width:100%; overflow:hidden}
+#cpb div:nth-child(3) p:nth-child(1){ float:right; width:150px; line-height:30px; height:30px; text-align:center; background-color:#666666; color:#FFFFFF}
+#cpb div:nth-child(3) p:nth-child(2){ float:right; width:150px; line-height:30px; height:30px; text-align:center; background-color:#666666; color:#FFFFFF; margin-right:10px}
+}
+@media screen and (max-width: 1400px) and  (min-width: 1200px) {
+#cplist{ width:98%; height:200px; margin:0px auto; max-width:1400px; margin-top:20px; margin-bottom:30px;}
+#cplista{ float:left; width:24%; }
+#cplistatitle{ background-color:#034287;height:50px; line-height:50px; display:block}
+#cplistatitle p{ color:#FFFFFF; width:90%; margin:0px auto; font-size:18px;  }
+#cplistnavrq{background-color:#f3f3f3;}
+#cplistnav{width:90%; margin:0px auto;height:50px; line-height:50px; display:block}
+#cplistnav p:nth-child(1){ float:left; color:#333333; font-size:14px; font-weight:bold}
+#cplistnav p:nth-child(2){ float:right;font-weight:bold; color:#777777; }
+#list{background-color:#f9f9f9;}
+#listcontent{width:82%; margin:0px auto;height:50px; line-height:50px; display:block}
+#listcontent a{ text-decoration:none; font-size:14px; font-family:Arial, Helvetica, sans-serif}
+#cplistb{ float:right; width:74%}
+#cplistbtitle{ width:100%; line-height:50px; height:50px; font-size:18px; font-weight:bold}
+
+
+#cprq{ margin-top:30px; padding-bottom:20px; border-bottom:1px #cccccc dotted; overflow:hidden}
+#cp{ width:100%;}
+#cpa{ float:left; width:20%}
+#cpa img{ width:80%}
+#cpb{ float:right; width:78%}
+#cpb div:nth-child(1){ color:#333333; font-size:18px; }
+#cpb div:nth-child(1) a{color:#333333; font-size:18px; text-decoration:none}
+#cpb div:nth-child(1) a:hover{color:#184868; font-size:18px; text-decoration:none}
+#cpb div:nth-child(2){ color:#555555; font-size:14px; line-height:28px; margin-top:10px}
+#cpb div:nth-child(3){ width:100%; overflow:hidden}
+#cpb div:nth-child(3) p:nth-child(1){ float:right; width:150px; line-height:30px; height:30px; text-align:center; background-color:#666666; color:#FFFFFF}
+#cpb div:nth-child(3) p:nth-child(2){ float:right; width:150px; line-height:30px; height:30px; text-align:center; background-color:#666666; color:#FFFFFF; margin-right:10px}
+
+}
+@media screen and (max-width: 1200px) and  (min-width: 1050px)  {
+#cplist{ width:98%; height:200px; margin:0px auto; max-width:1400px; margin-top:20px; margin-bottom:30px;}
+#cplista{ float:left; width:24%; }
+#cplistatitle{ background-color:#034287;height:50px; line-height:50px; display:block}
+#cplistatitle p{ color:#FFFFFF; width:90%; margin:0px auto; font-size:18px; }
+#cplistnavrq{background-color:#f3f3f3;}
+#cplistnav{width:90%; margin:0px auto;height:50px; line-height:50px; display:block}
+#cplistnav p:nth-child(1){ float:left; color:#333333; font-size:14px; font-weight:bold}
+#cplistnav p:nth-child(2){ float:right;font-weight:bold; color:#777777; }
+#list{background-color:#f9f9f9;}
+#listcontent{width:82%; margin:0px auto;height:50px; line-height:50px; display:block}
+#listcontent a{ text-decoration:none; font-size:14px; }
+#cplistb{ float:right; width:74%}
+#cplistbtitle{ width:100%; line-height:50px; height:50px; font-size:18px;  font-weight:bold}
+
+
+#cprq{ margin-top:30px; padding-bottom:20px; border-bottom:1px #cccccc dotted; overflow:hidden}
+#cp{ width:100%;}
+#cpa{ float:left; width:20%}
+#cpa img{ width:80%}
+#cpb{ float:right; width:78%}
+#cpb div:nth-child(1){ color:#333333; font-size:18px; }
+#cpb div:nth-child(1) a{color:#333333; font-size:18px;  text-decoration:none}
+#cpb div:nth-child(1) a:hover{color:#184868; font-size:18px;  text-decoration:none}
+#cpb div:nth-child(2){ color:#555555; font-size:14px;  line-height:28px; margin-top:10px}
+#cpb div:nth-child(3){ width:100%; overflow:hidden}
+#cpb div:nth-child(3) p:nth-child(1){ float:right; width:150px; line-height:30px; height:30px; text-align:center; background-color:#666666; color:#FFFFFF}
+#cpb div:nth-child(3) p:nth-child(2){ float:right; width:150px; line-height:30px; height:30px; text-align:center; background-color:#666666; color:#FFFFFF; margin-right:10px}
+
+}
+@media screen and (max-width: 1050px)  {
+#cplist{ width:98%; margin:0px auto; max-width:1400px; margin-top:20px; margin-bottom:30px;}
+#cplista{ float:left; width:24%; display:none }
+#cplistatitle{ background-color:#034287;height:50px; line-height:50px; display:block}
+#cplistatitle p{ color:#FFFFFF; width:90%; margin:0px auto; font-size:18px; }
+#cplistnavrq{background-color:#f3f3f3;}
+#cplistnav{width:90%; margin:0px auto;height:50px; line-height:50px; display:block}
+#cplistnav p:nth-child(1){ float:left; color:#333333; font-size:14px; font-weight:bold}
+#cplistnav p:nth-child(2){ float:right;font-weight:bold; color:#777777; }
+#list{background-color:#f9f9f9;}
+#listcontent{width:82%; margin:0px auto;height:50px; line-height:50px; display:block}
+#listcontent a{ text-decoration:none; font-size:14px; }
+#cplistb{  width:100%}
+#cplistbtitle{ width:100%; line-height:50px; height:50px; font-size:22px;  font-weight:bold}
+
+
+#cprq{ margin-top:30px; padding-bottom:20px; border-bottom:1px #cccccc dotted; overflow:hidden}
+#cp{ width:100%;}
+#cpa{ float:left; width:100%}
+#cpa img{ width:100%}
+#cpb{ float:right; width:100%}
+#cpb div:nth-child(1){ color:#333333; font-size:18px; }
+#cpb div:nth-child(1) a{color:#333333; font-size:18px;  text-decoration:none}
+#cpb div:nth-child(1) a:hover{color:#184868; font-size:18px; text-decoration:none}
+#cpb div:nth-child(2){ color:#555555; font-size:14px;  line-height:28px; margin-top:10px}
+#cpb div:nth-child(3){ width:100%; overflow:hidden; margin-top:15px}
+#cpb div:nth-child(3) p:nth-child(1){ float:left; width:49%; line-height:40px; height:40px; text-align:center; background-color:#666666; color:#FFFFFF}
+#cpb div:nth-child(3) p:nth-child(2){ float:right; width:49%; line-height:40px; height:40px; text-align:center; background-color:#666666; color:#FFFFFF; }
+
+}
+
+</style>
+<div id="cplist">
+<div id="cplista">
+
+
+<script>
+function zhanshi(a,c){
+
+var div = document.querySelector('div[name=left'+a+']');
+if(div.style.display=="none"){
+div.style.display ="";
+c.innerHTML="--";
+}
+else
+{
+div.style.display ="none";
+c.innerHTML="+";
+}
+
+}
+
+</script>
+
+
+
+
+<div id="cplistatitle"><p>CATEGORIES</p></div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202412311021025045" style="text-decoration:none ">FILM FACED PLYWOOD</a></p><p style="cursor:pointer " onClick="zhanshi('202412311021025045',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left202412311021025045";  style="display:none " >
+<div id="listcontent"><a href="product.php?biglei=202412311021025045&lei=20251814404880028" style="text-decoration:none ">FILM FACED PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311021025045&lei=20251814411538736" style="text-decoration:none ">PP PLASTIC FACED PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311021025045&lei=20251814413290212" style="text-decoration:none ">SLIP-RESISTANT PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311021025045&lei=20251814422129335" style="text-decoration:none ">BIRCH PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311021025045&lei=20251814423788219" style="text-decoration:none ">FORMPLY</a></div>
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202412311031916011" style="text-decoration:none ">COMMERCIAL PLYWOOD</a></p><p style="cursor:pointer " onClick="zhanshi('202412311031916011',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left202412311031916011";  style="display:none " >
+<div id="listcontent"><a href="product.php?biglei=202412311031916011&lei=20251814491149897" style="text-decoration:none ">ORDINARY PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311031916011&lei=20251814502338622" style="text-decoration:none ">FANCY PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311031916011&lei=2025361053628126" style="text-decoration:none ">NATURE VENEER PLYWOOD</a></div>
+<div id="listcontent"><a href="product.php?biglei=202412311031916011&lei=202581914112079603" style="text-decoration:none ">CIRCLE PLYWOOD</a></div>
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202412311032786153" style="text-decoration:none ">FINGER JOINT PANEL</a></p><p style="cursor:pointer " onClick="zhanshi('202412311032786153',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left202412311032786153";  style="display:none " >
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202412311033399929" style="text-decoration:none ">MELAMINE BOARDS</a></p><p style="cursor:pointer " onClick="zhanshi('202412311033399929',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left202412311033399929";  style="display:none " >
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=20251814505187102" style="text-decoration:none ">CHIPBOARD</a></p><p style="cursor:pointer " onClick="zhanshi('20251814505187102',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left20251814505187102";  style="display:none " >
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202412311034678887" style="text-decoration:none ">LVL</a></p><p style="cursor:pointer " onClick="zhanshi('202412311034678887',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left202412311034678887";  style="display:none " >
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202412311034071967" style="text-decoration:none ">MDF</a></p><p style="cursor:pointer " onClick="zhanshi('202412311034071967',this)">
++
+
+</p></div>
+</div>
+<div id="list" name="left202412311034071967";  style="display:none " >
+
+</div>
+
+
+
+
+<div id="cplistnavrq">
+<div id="cplistnav"><p><a href="product.php?biglei=202581917201193769" style="text-decoration:none ">FORMWORK SYSTEMS</a></p><p style="cursor:pointer " onClick="zhanshi('202581917201193769',this)">
+--
+
+</p></div>
+</div>
+<div id="list" name="left202581917201193769"; >
+<div id="listcontent"><a href="product.php?biglei=202581917201193769&lei=202581917203241340" style="text-decoration:none ">H20 BEAM</a></div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<div id="cplistb">
+<div id="cplistbtitle">FORMWORK SYSTEMS - H20 BEAM</div>
+
+
+
+
+
+<div id="cprq">
+<div id="cp">
+<div id="cpa"><a href="cpdetal.php?code=202581917242315161&biglei=202581917201193769&lei=202581917203241340" style=" cursor:pointer ">
+<img src="upload/202581917225271299.jpg" class="bigger"  style=" width:100%" border="0"/></a>
+</div>
+<div id="cpb">
+<div><a href="cpdetal.php?code=202581917242315161&biglei=202581917201193769&lei=202581917203241340" style=" cursor:pointer ">H20 BEAM</a></div>
+<div><p>Build Faster, Lighter, Smarter: The Modular, Reusable Aluminum H20 BEAM – Engineered for Effortless Heavy-Duty Support.</p>..</div>
+
+<div>
+<p  onmouseover="this.style.backgroundColor='#1b4277';" onmouseout="this.style.backgroundColor='#666666';" ><a href="cpdetal.php?code=202581917242315161&biglei=202581917201193769&lei=202581917203241340" style="color:#FFFFFF; text-decoration:none; cursor:pointer ">DETAIL</a></p>
+<p onmouseover="this.style.backgroundColor='#1b4277';" onmouseout="this.style.backgroundColor='#666666';" onClick="xunpanview('202581917242315161','H20 BEAM')" style="cursor:pointer ">INQUIRY</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="clear:both "></div>
+
+
+
+
+
+
+
+<style type="text/css">
+#ymtabl{ margin:0px auto; padding:0px; width:98%}
+#ymtabl ul{ list-style:none;margin:0px; padding:0px}
+#ymtabl ul li{ float:left; width:30px; text-align:center; height:30px; border:1px #CCCCCC dotted; margin-right:10px; margin-top:20px; display:block}
+#ymtabl ul li a{ width:30px; height:30px; display:block; font-weight:bold; text-decoration:none}
+</style>
+<div id="ymtabl" style="width:98% ; max-width:1400px; margin:0px auto; height:30px; line-height:30px; text-align:right">
+   <ul>
+  <li><a href="?page=1&lei=&biglei=202581917201193769"><<</a></li>  <li>  <a   style="background-color:#1166a7; color:#FFFFFF"  href="?page=1&lei=202581917203241340&biglei=202581917201193769">1</a></li>
+
+    
+<li><a href="?page=1&lei=&biglei=202581917201193769">>></a></li>  
+  </ul>
+
+
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+<!-- cplist-->
+
+
+
+
+<div style="clear:both "></div>
+
+
+
+
+<!-- bottom-->
+<style type="text/css">
+@media screen and (min-width: 1000px) {
+#bottom{  width:98%; margin:0px auto;margin-top:30px; padding-top:30px; padding-bottom:30px; max-width:1400px; margin-bottom:30px; overflow:hidden;}
+#bottom ul{ list-style:none; margin:0px; padding:0px}
+#bottom ul li{ float:left; width:25%}
+#bottom ul li div{ line-height:40px; width:90%; overflow:hidden; display:block}
+#bottom ul li div a{ text-decoration:none}
+#bottom ul li div a:hover{ text-decoration:none; color:#034287}
+#bottom ul li:nth-child(1) div{ width:70%}
+#lm{ width:100%}
+#lm ul{ list-style:none; margin:0px; padding:0px}
+#lm ul li{  width:100%}
+}
+
+@media screen and (max-width: 1000px)  {
+#bottom{  width:98%; margin:0px auto;margin-top:30px; padding-top:30px; padding-bottom:30px; max-width:1400px; margin-bottom:30px; overflow:hidden;}
+#bottom ul{ list-style:none; margin:0px; padding:0px}
+#bottom ul li{ float:left; width:100%}
+#bottom ul li div{ line-height:40px; width:90%; overflow:hidden; display:block; text-align:center; }
+#bottom ul li div a{ text-decoration:none}
+#bottom ul li div a:hover{ text-decoration:none; color:#034287}
+#navbbbb{ margin-top:30px}
+#lm{ width:100%; font-weight:800; font-size:16px}
+#lm ul{ list-style:none; margin:0px; padding:0px}
+#lm ul li{  width:50%; float:left; text-align:left; padding-left:20px;box-sizing: border-box; }
+}
+</style>
+
+
+<div id="bottom">
+<ul>
+<li>
+<div>CALL US</div>
+<div>Room 112, Linli Center, East Jing 2 Road, Tushan Town Industry Zone, Pizhou City, Xuzhou City, Jiangsu Province, China.</div>
+<div></div>
+<div>info@blxing.com</div>
+</li>
+
+
+<li>
+<div id="navbbbb">Get Social</div>
+<div>
+
+<a href="" target="_blank"><img src="img/b1.gif" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://www.facebook.com/blxing" target="_blank"><img src="img/b2.gif"  border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="" target="_blank"><img src="img/b3.gif"  border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="" target="_blank"><img src="img/b4.gif"  border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+
+</li>
+
+<li>
+<div id="navbbbb">Information</div>
+<div id="lm"><ul>
+<li><a href="index.php">HOME</a></li>
+<li><a href="about.php">ABOUT</a></li>
+<li><a href="product.php">HOME</a></li>
+<li><a href="xjx.php">ADVANTAGE</a></li>
+<li><a href="fw.php">SERVICE</a></li>
+<li><a href="news.php">NEWS</a></li>
+<li><a href="contactus.php">CONTACT US</a></li>
+</ul></div>
+
+
+
+
+</li>
+
+
+<li>
+<div id="navbbbb">Products</div>
+
+<div id="lm"><ul>
+<li><a href="product.php?biglei=202412311021025045">FILM FACED PLYWOOD</a></li>
+<li><a href="product.php?biglei=202412311031916011">COMMERCIAL PLYWOOD</a></li>
+<li><a href="product.php?biglei=202412311032786153">FINGER JOINT PANEL</a></li>
+<li><a href="product.php?biglei=202412311033399929">MELAMINE BOARDS</a></li>
+<li><a href="product.php?biglei=20251814505187102">CHIPBOARD</a></li>
+<li><a href="product.php?biglei=202412311034678887">LVL</a></li>
+<li><a href="product.php?biglei=202412311034071967">MDF</a></li>
+<li><a href="product.php?biglei=202581917201193769">FORMWORK SYSTEMS</a></li>
+</ul></div>
+
+
+
+
+</li>
+
+</ul>
+</div>
+
+<div style="clear:both"></div>
+
+
+<script>
+function hdtop(){
+
+window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+});
+}
+</script>
+<style type="text/css">
+#ts{width:50px; height:50px; display:block; text-align:center; line-height:50px; position:fixed; background-color:#1b4277; right:20px; bottom:20px; border-radius:5px; cursor:pointer; display:block}
+#ts:hover{ background-color:#777777}
+#tsa{display:block; text-align:center; position:fixed; right:20px; bottom:90px; border-radius:5px; cursor:pointer; display:block}
+#tsa:hover img{ width:50px  }
+</style>
+<Div onClick="hdtop()" id="ts" ><img src="img/top.png" width="30"></Div>
+
+<style type="text/css">
+
+.circle2 {
+
+  /* 使得div成为圆形 */
+  animation: pulse2 2s infinite; /* 应用动画 */
+}
+ 
+/* 定义动画 */
+@keyframes pulse2 {
+  0% {
+    transform: scale(1); /* 初始状态，无放大 */
+  }
+  50% {
+    transform: scale(1.5); /* 中间状态，放大到1.5倍 */
+  }
+  100% {
+    transform: scale(1); /* 结束状态，恢复原状 */
+  }
+}
+</style>
+
+<a id="tsa" href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" ><img src="whatapp.png" width="40" border="0" class="circle2"></a>
+
+</body>
+</html>
