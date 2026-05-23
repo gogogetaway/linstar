@@ -78,10 +78,10 @@
           <img src="assets/generated/vinawood-hero-factory.jpg" alt="">
         </figure>
         <figure class="v2-hero-slide" data-hero-slide>
-          <img src="assets/generated/board-inventory-hero-v2.png" alt="">
+          <img src="assets/generated/factory-workshop-from-1-hero-v2.png" alt="">
         </figure>
         <figure class="v2-hero-slide" data-hero-slide>
-          <img src="assets/generated/export-loading-hero-v2.png" alt="">
+          <img src="assets/generated/plywood-storage-hero-v2.png" alt="">
         </figure>
       </div>
       <div class="v2-hero-shade" aria-hidden="true"></div>
@@ -101,45 +101,34 @@
             <a class="v2-button v2-button-light" href="#quote" data-i18n="sendRequirements">Send Requirements</a>
           </div>
         </div>
-
-        <aside class="v2-hero-card reveal" style="--delay:.08s" aria-label="Inquiry guide">
-          <span data-i18n="quoteChecklist">Inquiry guide</span>
-          <ul>
-            <li data-i18n="checkProduct">Product type and application</li>
-            <li data-i18n="checkSize">Size, thickness and surface</li>
-            <li data-i18n="checkQty">Quantity and destination port</li>
-            <li data-i18n="checkPacking">Packing and documentation needs</li>
-          </ul>
-        </aside>
       </div>
       <div class="v2-hero-controls" aria-label="Hero carousel controls">
         <button type="button" data-hero-prev aria-label="Previous slide">‹</button>
         <div class="v2-hero-dots" aria-label="Select slide">
           <button type="button" class="is-active" data-hero-dot aria-label="Show factory slide"></button>
           <button type="button" data-hero-dot aria-label="Show inventory slide"></button>
-          <button type="button" data-hero-dot aria-label="Show export loading slide"></button>
+          <button type="button" data-hero-dot aria-label="Show plywood storage slide"></button>
         </div>
         <button type="button" data-hero-next aria-label="Next slide">›</button>
       </div>
     </section>
 
-    <section class="v2-cert-strip">
-      <span data-i18n="certIntro">Common documentation support</span>
-      <b>FSC</b>
-      <b>CE</b>
-      <b>EPA TSCA VI</b>
-      <b>EUDR</b>
-      <b>ISPM 15</b>
-      <b>ISO 9001</b>
+    <section class="v2-certifications" aria-label="Certifications">
+      <div class="v2-cert-strip">
+        <a href="#quote" title="ISO 9001:2015"><img src="assets/certifications/iso-9001.webp" alt="ISO 9001"></a>
+        <a href="#quote" title="FSC"><img src="assets/certifications/fsc.jpg" alt="FSC"></a>
+        <a href="#quote" title="CE / EN 13986"><img src="assets/certifications/ce.webp" alt="CE"></a>
+        <a href="#quote" class="v2-cert-text" title="EPA TSCA VI">EPA TSCA VI</a>
+        <a href="#quote" title="KS"><img src="assets/certifications/ks.jpg" alt="KS"></a>
+        <a href="#quote" class="v2-cert-text" title="EUDR">EUDR</a>
+        <a href="#quote" class="v2-cert-text" title="EUTR">EUTR</a>
+        <a href="#quote" class="v2-cert-text v2-cert-compact" title="ISPM 15">ISPM 15</a>
+        <a href="#quote" class="v2-cert-text" title="EPD">EPD</a>
+        <a class="v2-cert-all" href="#quote">All Certs →</a>
+      </div>
     </section>
 
     <section class="v2-section v2-products" id="products">
-      <div class="v2-section-head reveal">
-        <p class="v2-eyebrow" data-i18n="productsEyebrow">Product architecture</p>
-        <h2 data-i18n="productsTitle">Three sourcing paths for global buyers.</h2>
-        <p data-i18n="productsText">Keep the homepage simple: buyer enters by application, then confirms specification through the product page or email inquiry.</p>
-      </div>
-
       <div class="v2-product-grid">
         <a class="v2-product-card reveal" href="products.html#formwork-plywood">
           <img src="assets/upload/202531214123263859.jpg" alt="Film faced plywood">
@@ -162,105 +151,154 @@
       </div>
     </section>
 
-    <section class="v2-manufacturing" id="manufacturing">
-      <div class="v2-factory-image reveal">
-        <img src="图片.png" alt="Organized BLXING panel inventory">
+    <section class="v2-make">
+      <div class="v2-make-head">
+        <div>
+          <h2>See how we make it</h2>
+          <p>Every panel moves through 12 controlled factory steps, from log preparation to packed shipment.</p>
+        </div>
+        <a href="#manufacturing">See our full 12-step process <span>→</span></a>
       </div>
-      <div class="v2-factory-copy reveal" style="--delay:.08s">
-        <p class="v2-eyebrow" data-i18n="factoryEyebrow">Manufacturing proof</p>
-        <h2 data-i18n="factoryTitle">Organized production and ready-to-ship panel inventory.</h2>
-        <p data-i18n="factoryText">This section should make the site feel like a real supply partner, not only a catalog. The image works best here because it shows scale, storage discipline and repeat-order capability.</p>
-        <div class="v2-factory-points">
-          <div><b data-i18n="factoryPointOneTitle">Stable supply</b><span data-i18n="factoryPointOneText">Stock planning for recurring import orders.</span></div>
-          <div><b data-i18n="factoryPointTwoTitle">Controlled storage</b><span data-i18n="factoryPointTwoText">Panels organized before packing and loading.</span></div>
-          <div><b data-i18n="factoryPointThreeTitle">Mixed containers</b><span data-i18n="factoryPointThreeText">Support for multiple panel categories in one sourcing plan.</span></div>
+      <div class="v2-make-track" aria-label="Production process">
+        <article><img src="assets/process/01-log-selection-peeling.jpg" alt="Log selection and peeling"><div><h3>Log selection &amp; peeling</h3><p>Logs are sorted, prepared and peeled into veneer sheets.</p></div></article>
+        <article><img src="assets/process/02-veneer-drying-storage.jpg" alt="Veneer drying and storage"><div><h3>Veneer drying &amp; storage</h3><p>Veneers are dried, stacked and stabilized before layup.</p></div></article>
+        <article><img src="assets/process/03-gluing-layup.jpg" alt="Gluing and layup"><div><h3>Gluing &amp; lay-up</h3><p>Core veneers are glued and assembled in cross-grain layers.</p></div></article>
+        <article><img src="assets/process/04-cold-press.jpg" alt="Cold press"><div><h3>Cold press</h3><p>Panels are consolidated before moving into hot pressing.</p></div></article>
+        <article><img src="assets/process/05-hot-press.jpg" alt="Hot press"><div><h3>Hot press</h3><p>Heat and pressure cure the glue line into a rigid panel.</p></div></article>
+        <article><img src="assets/process/06-surfacing-putty.jpg" alt="Surfacing with putty"><div><h3>Surfacing with putty</h3><p>Face defects are filled before sanding and finishing.</p></div></article>
+        <article><img src="assets/process/07-sanding.jpg" alt="Sanding"><div><h3>Sanding</h3><p>Panels are calibrated and sanded for the target surface.</p></div></article>
+        <article><img src="assets/process/08-trimming.jpg" alt="Trimming"><div><h3>Trimming</h3><p>Finished sheets are squared and cut to final dimensions.</p></div></article>
+        <article><img src="assets/process/09-surface-lamination.jpg" alt="Surface lamination"><div><h3>Surface lamination</h3><p>Film or overlay surfaces are pressed onto selected panels.</p></div></article>
+        <article><img src="assets/process/10-qc-inspection.jpg" alt="QC inspection"><div><h3>QC inspection</h3><p>Panels are checked for face, bond and dimensional quality.</p></div></article>
+        <article><img src="assets/process/11-edge-sealing.jpg" alt="Edge sealing"><div><h3>Edge sealing</h3><p>Edges are sealed for moisture resistance and traceability.</p></div></article>
+        <article><img src="assets/process/12-packaging-shipping.jpg" alt="Packaging and shipping"><div><h3>Packaging &amp; shipping</h3><p>Approved panels are packed, marked and loaded for export.</p></div></article>
+      </div>
+    </section>
+
+    <section class="v2-whyus">
+      <div class="v2-make-head">
+        <div>
+          <h2>Why buyers work with us</h2>
+          <p>Focused factory capacity, sourcing control and shipment support for repeat plywood orders.</p>
+        </div>
+        <a href="#quote">Send requirements <span>→</span></a>
+      </div>
+      <div class="v2-whyus-grid" aria-label="Why choose us">
+        <article class="reveal">
+          <span>CAP</span>
+          <h3 data-i18n="whyUsCapTitle">Factory capacity</h3>
+          <p data-i18n="whyUsCapDesc">Stable supply base with own production lines.</p>
+        </article>
+        <article class="reveal" style="--delay:.05s">
+          <span>MAT</span>
+          <h3 data-i18n="whyUsMatTitle">Material control</h3>
+          <p data-i18n="whyUsMatDesc">Veneer, core and glue matched to your specs.</p>
+        </article>
+        <article class="reveal" style="--delay:.1s">
+          <span>MIX</span>
+          <h3 data-i18n="whyUsMixTitle">Mixed loading</h3>
+          <p data-i18n="whyUsMixDesc">Multi-category panels in one single container.</p>
+        </article>
+        <article class="reveal" style="--delay:.15s">
+          <span>OEM</span>
+          <h3 data-i18n="whyUsOemTitle">Customization</h3>
+          <p data-i18n="whyUsOemDesc">Private branding and reinforced export packing.</p>
+        </article>
+        <article class="reveal" style="--delay:.2s">
+          <span>DOC</span>
+          <h3 data-i18n="whyUsDocTitle">Compliance</h3>
+          <p data-i18n="whyUsDocDesc">Full support for CE, FSC, EUDR and documents.</p>
+        </article>
+        <article class="reveal" style="--delay:.25s">
+          <span>QC</span>
+          <h3 data-i18n="whyUsQcTitle">Transparency</h3>
+          <p data-i18n="whyUsQcDesc">Visual QC reports and loading photos provided.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="v2-global" id="markets">
+      <div class="v2-global-inner">
+        <div class="v2-global-header reveal">
+          <div class="v2-global-title">
+            <p class="v2-eyebrow" data-i18n="globalEyebrow">Global Reach</p>
+            <h2 data-i18n="globalTitle">From Xuzhou to active plywood import markets.</h2>
+            <p>Container shipments are arranged around destination requirements, packing marks, loading photos and export documents.</p>
+          </div>
+          <div class="v2-global-stats">
+            <div class="stat-item"><strong>50+</strong><span>Destinations</span></div>
+            <div class="stat-item"><strong>7</strong><span>Key routes</span></div>
+            <div class="stat-item"><strong>FOB/CIF</strong><span>Shipment terms</span></div>
+          </div>
+        </div>
+
+        <div class="v2-global-content">
+          <div class="v2-global-map-wrap reveal">
+            <img src="assets/generated/global-shipping-map.png" alt="Global plywood shipping map from Xuzhou">
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="v2-section v2-process">
-      <div class="v2-section-head reveal">
-        <p class="v2-eyebrow" data-i18n="processEyebrow">Production workflow</p>
-        <h2 data-i18n="processTitle">A clear process from panel matching to container loading.</h2>
-      </div>
-      <div class="v2-process-grid">
-        <div class="reveal"><span>01</span><h3 data-i18n="stepOneTitle">Define</h3><p data-i18n="stepOneText">Confirm application, grade, size, thickness, surface and target market.</p></div>
-        <div class="reveal" style="--delay:.04s"><span>02</span><h3 data-i18n="stepTwoTitle">Match</h3><p data-i18n="stepTwoText">Recommend core, glue, overlay, packing method and documentation path.</p></div>
-        <div class="reveal" style="--delay:.08s"><span>03</span><h3 data-i18n="stepThreeTitle">Produce</h3><p data-i18n="stepThreeText">Arrange panel production, inspection, edge sealing, pallet packing and marks.</p></div>
-        <div class="reveal" style="--delay:.12s"><span>04</span><h3 data-i18n="stepFourTitle">Load</h3><p data-i18n="stepFourText">Prepare container loading, photos, documents and repeat-order specification files.</p></div>
-      </div>
-    </section>
-
-    <section class="v2-why" id="tools">
-      <div class="v2-why-head reveal">
-        <p class="v2-eyebrow" data-i18n="toolsEyebrow">Why choose Jialinda</p>
-        <h2 data-i18n="toolsTitle">Built for buyers who need stable formwork panel supply.</h2>
-      </div>
-      <div class="v2-why-grid reveal" style="--delay:.08s">
-        <a href="#products"><span>01</span><b data-i18n="toolOneTitle">Formwork-focused supply</b><em data-i18n="toolOneText">Film faced plywood, formply, LVL and H20 beam products organized around construction use.</em></a>
-        <a href="#manufacturing"><span>02</span><b data-i18n="toolTwoTitle">Production and QC control</b><em data-i18n="toolTwoText">Panel matching, edge sealing, inspection and repeat-order specification support.</em></a>
-        <a href="#quote"><span>03</span><b data-i18n="toolThreeTitle">Export packing experience</b><em data-i18n="toolThreeText">Pallet packing, marks, wrapping and container loading visibility for remote buyers.</em></a>
-        <a href="#quote"><span>04</span><b data-i18n="toolFourTitle">Responsive inquiry process</b><em data-i18n="toolFourText">Send product, size, thickness, quantity and destination port to get a practical specification response.</em></a>
-      </div>
-    </section>
-
-    <section class="v2-section v2-markets" id="markets">
-      <div class="v2-section-head reveal">
-        <p class="v2-eyebrow" data-i18n="marketsEyebrow">Export markets</p>
-        <h2 data-i18n="marketsTitle">Plan content by region, not only by product.</h2>
-      </div>
-      <div class="v2-market-grid">
-        <article class="reveal"><span>EU</span><h3 data-i18n="marketOneTitle">Europe</h3><p data-i18n="marketOneText">Focus on EUDR, CE, formaldehyde class and traceable documentation.</p></article>
-        <article class="reveal" style="--delay:.04s"><span>NA</span><h3 data-i18n="marketTwoTitle">North America</h3><p data-i18n="marketTwoText">Prepare EPA TSCA VI, CARB-related questions and product specification files.</p></article>
-        <article class="reveal" style="--delay:.08s"><span>ME</span><h3 data-i18n="marketThreeTitle">Middle East</h3><p data-i18n="marketThreeText">Highlight formwork plywood, construction supply and export packing durability.</p></article>
-        <article class="reveal" style="--delay:.12s"><span>OC</span><h3 data-i18n="marketFourTitle">Oceania</h3><p data-i18n="marketFourText">Address biosecurity, ISPM 15 packing and moisture-controlled shipment needs.</p></article>
-      </div>
-    </section>
-
-    <section class="v2-faq">
-      <div class="v2-section-head reveal">
-        <p class="v2-eyebrow" data-i18n="faqEyebrow">Buyer questions</p>
-        <h2 data-i18n="faqTitle">Answer the questions before the buyer emails.</h2>
-      </div>
-      <div class="v2-faq-list reveal">
-        <details open>
-          <summary data-i18n="faqOneQ">What should I provide for a quotation?</summary>
-          <p data-i18n="faqOneA">Please send product type, application, size, thickness, surface, quantity, destination port and required certificates.</p>
-        </details>
-        <details>
-          <summary data-i18n="faqTwoQ">Can BLXING support OEM packing?</summary>
-          <p data-i18n="faqTwoA">Yes, the quotation can include customer marks, pallet labels, wrapping requirements and shipping documentation.</p>
-        </details>
-        <details>
-          <summary data-i18n="faqThreeQ">Which products should I start with?</summary>
-          <p data-i18n="faqThreeA">Construction buyers usually start with film faced plywood or formply. Furniture buyers usually start with MDF, chipboard or melamine boards.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="v2-quote" id="quote">
-      <div class="v2-quote-card reveal">
-        <p class="v2-eyebrow" data-i18n="quoteEyebrow">Email inquiry</p>
-        <h2 data-i18n="quoteTitle">Send the requirements directly to sales.</h2>
-        <p data-i18n="quoteText">Fill the inquiry fields and submit. The website opens a prepared email to sales without storing customer data.</p>
-        <form class="v2-inquiry-form" data-inquiry-form>
-          <label><span data-i18n="formProduct">Product</span><input name="product" type="text" placeholder="Film faced plywood"></label>
-          <label><span data-i18n="formSize">Size / Thickness</span><input name="size" type="text" placeholder="1220 x 2440 mm / 18 mm"></label>
-          <label><span data-i18n="formQuantity">Quantity</span><input name="quantity" type="text" placeholder="1 x 40HQ"></label>
-          <label><span data-i18n="formPort">Destination port</span><input name="port" type="text" placeholder="Melbourne / Dubai / Los Angeles"></label>
-          <label class="v2-form-wide"><span data-i18n="formNotes">Packing, certificate or application notes</span><textarea name="notes" rows="4" placeholder="Application, film color, core, glue, packing, certificate needs"></textarea></label>
-          <div class="v2-quote-actions v2-form-wide">
-            <button class="v2-button" type="submit" data-i18n="emailSales">Email Sales</button>
-            <a class="v2-button v2-button-light" href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp</a>
-          </div>
-        </form>
-      </div>
-    </section>
   </main>
 
   <footer class="v2-footer">
-    <span>BLXING · 徐州嘉林达贸易有限公司 · Xuzhou Jialinda Trading Co., Ltd.</span>
-    <a href="products.html" data-i18n="footerProducts">Product center</a>
+    <div class="v2-footer-inner">
+      <div class="v2-footer-grid">
+        <div>
+          <h4>JIALINDA</h4>
+          <p>Xuzhou Jialinda Trading Co., Ltd. supplies plywood, film faced plywood, LVL, H20 beams and panel products for importers, contractors and distributors.</p>
+          <div class="v2-footer-social">
+            <a href="#quote">Facebook</a>
+            <a href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#quote">TikTok</a>
+          </div>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html#formwork-plywood">Film faced plywood</a></li>
+            <li><a href="products.html#furniture-panels">Furniture panels</a></li>
+            <li><a href="products.html#engineered-wood">LVL & H20 beams</a></li>
+            <li><a href="products.html">Product center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#markets">Export markets</a></li>
+            <li><a href="#quote">Contact sales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Export support</h4>
+          <ul>
+            <li><a href="#quote">FOB / CIF quotes</a></li>
+            <li><a href="#quote">Packing marks</a></li>
+            <li><a href="#quote">Container loading</a></li>
+            <li><a href="#quote">Documents</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="v2-footer-newsletter">
+        <h4>Buyer Updates</h4>
+        <p>Product notes, packing ideas and shipment reminders for plywood importers.</p>
+        <form>
+          <input type="text" required placeholder="Name">
+          <input type="text" required placeholder="Company">
+          <input type="email" required placeholder="Email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="v2-footer-bottom">
+        <p>© 2026 BLXING / Xuzhou Jialinda Trading Co., Ltd. All rights reserved.</p>
+        <p>JIALINDA is a plywood manufacturer and exporter based in Xuzhou, China.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="js/home-v2.js"></script>

@@ -116,6 +116,32 @@
       faqTwoA: "Yes, the quotation can include customer marks, pallet labels, wrapping requirements and shipping documentation.",
       faqThreeQ: "Which products should I start with?",
       faqThreeA: "Construction buyers usually start with film faced plywood or formply. Furniture buyers usually start with MDF, chipboard or melamine boards.",
+      whyUsTitle: "Why buyers work with us",
+      whyUsText: "Focused factory capacity, sourcing control and shipment support for repeat plywood orders.",
+      whyUsCapTitle: "Factory capacity",
+      whyUsCapDesc: "Own production base plus coordinated partner capacity for stable plywood and formwork panel supply.",
+      whyUsCapFoot: "Stable output",
+      whyUsMatTitle: "Material selection",
+      whyUsMatDesc: "Veneer and core selection are matched to grade, glue, surface and destination market requirements.",
+      whyUsMatFoot: "Spec matching",
+      whyUsMixTitle: "Mixed containers",
+      whyUsMixDesc: "Optimize your logistics by mixing different panel categories and specifications in a single container.",
+      whyUsMixFoot: "Cargo efficiency",
+      whyUsOemTitle: "OEM & Customizing",
+      whyUsOemDesc: "Support for custom branding, pallet marks and moisture-proof packing for long sea transport.",
+      whyUsOemFoot: "Private label",
+      whyUsDocTitle: "Market compliance",
+      whyUsDocDesc: "Professional handling of CE, FSC, EUDR and export documents to ensure smooth customs entry.",
+      whyUsDocFoot: "Global standards",
+      whyUsQcTitle: "Visual transparency",
+      whyUsQcDesc: "Detailed QC reports and container loading photos provided for every order before shipment.",
+      whyUsQcFoot: "Shipment safety",
+      globalTitle: "Supplying wood panels to 100+ countries",
+      globalText: "From high-rise projects in the Middle East to furniture factories in Europe and SE Asia, Jialinda panels are trusted by importers and contractors for stable quality and global delivery.",
+      globalEyebrow: "Global Reach",
+      statCountries: "Countries",
+      statClients: "B2B Clients",
+      statYears: "Years Export",
       quoteEyebrow: "Email inquiry",
       quoteTitle: "Send the requirements directly to sales.",
       quoteText: "Fill the inquiry fields and submit. The website opens a prepared email to sales without storing customer data.",
@@ -153,14 +179,14 @@
       searchMdf: "MDF / 刨花板",
       searchLvl: "LVL / H20 梁",
       getQuote: "获取报价",
-      heroEyebrow: "胶合板制造商与出口供应商",
-      heroTitle: "为胶合板、家具板和建筑模板系统提供工厂级供应。",
-      heroText: "徐州嘉林达帮助进口商、承包商和制造商采购稳定的木质板材规格，并支持出口包装、OEM 和集装箱交付。",
-      heroMetricYears: "木质板材经验",
-      heroMetricLines: "生产与加工线",
-      heroMetricMarkets: "服务出口市场",
-      browseProducts: "浏览产品",
-      sendRequirements: "发送需求",
+      heroEyebrow: "建筑模板板材工厂供应",
+      heroTitle: "面向全球承包商与进口商的建筑模板胶合板供应商。",
+      heroText: "聚焦覆膜板、Formply、LVL 与 H20 梁，支持稳定规格、出口包装、装柜交付和项目型询盘响应。",
+      heroMetricYears: "板材供应经验",
+      heroMetricLines: "生产与加工能力",
+      heroMetricMarkets: "出口市场服务",
+      browseProducts: "查看产品",
+      sendRequirements: "发送询盘",
       quoteChecklist: "询价指南",
       checkProduct: "产品类型和用途",
       checkSize: "尺寸、厚度和表面",
@@ -170,7 +196,7 @@
       proofMarkets: "出口市场",
       proofPacking: "包装支持",
       proofContainer: "集装箱交付",
-      certIntro: "常见文件支持",
+      certIntro: "认证与合规支持",
       productsEyebrow: "产品架构",
       productsTitle: "面向全球买家的三条采购路径。",
       productsText: "首页保持清晰：客户先按应用进入分类，再通过产品页或邮件确认具体规格。",
@@ -238,9 +264,26 @@
       formNotes: "包装、证书或应用备注",
       emailSales: "邮件联系",
       whatsapp: "WhatsApp",
-      footerProducts: "产品中心"
-    },
-    es: {
+      footerProducts: "产品中心",
+      whyUsCapTitle: "稳定供应基础",
+      whyUsCapDesc: "自有生产基地与协同产能，确保建筑模板长期稳定供应。",
+      whyUsMatTitle: "按需匹配材料",
+      whyUsMatDesc: "根据项目等级匹配芯材、胶水和表面，实现精准规格定制。",
+      whyUsMixTitle: "多品类一柜发货",
+      whyUsMixDesc: "核心优势：支持胶合板、密度板、LVL 等多种品类混合装柜。",
+      whyUsOemTitle: "品牌与加固包装",
+      whyUsOemDesc: "支持品牌定制、托盘唛头以及针对长途海运的防潮加固包装。",
+      whyUsDocTitle: "解决清关痛点",
+      whyUsDocDesc: "专业处理 CE, FSC, EUDR 等证书，确保全球市场顺畅清关。",
+      whyUsQcTitle: "过程透明报告",
+      whyUsQcDesc: "每批订单均提供详细 QC 报告与装柜照片，让海外买家放心。",
+      globalTitle: "板材供应覆盖全球 100 多个国家",
+      globalText: "从中东的高层建筑项目到欧洲、东南亚的家具工厂，嘉林达板材凭借稳定的质量和全球化的交付能力，赢得了全球进口商与承包商的长期信任。",
+      globalEyebrow: "全球足迹",
+      statCountries: "覆盖国家",
+      statClients: "企业客户",
+      statYears: "出口经验",
+      quoteEyebrow: "邮件询盘",
       brandTag: "Xuzhou Jialinda Trading Co., Ltd.",
       navProducts: "Productos",
       navTools: "Por que Jialinda",
@@ -293,7 +336,7 @@
       productThreeTitle: "Sistemas de madera tecnica",
       productThreeText: "LVL, viga H20 y componentes de encofrado para suministro industrial y proyectos.",
       factoryEyebrow: "Prueba de fabricacion",
-      factoryTitle: "Produccion organizada e inventario listo para embarque.",
+      factoryTitle: "Organized production and ready-to-ship panel inventory.",
       factoryText: "Esta seccion debe mostrar a BLXING como socio real de suministro. La imagen funciona aqui porque comunica escala, orden y capacidad de pedidos repetidos.",
       factoryPointOneTitle: "Suministro estable",
       factoryPointOneText: "Planificacion de stock para pedidos recurrentes.",
@@ -312,7 +355,7 @@
       stepFourTitle: "Cargar",
       stepFourText: "Preparar carga, fotos, documentos y archivos para pedidos repetidos.",
       toolsEyebrow: "Por que elegir Jialinda",
-      toolsTitle: "Para compradores que necesitan suministro estable de paneles de encofrado.",
+      toolsTitle: "Built for buyers who need stable formwork panel supply.",
       toolsText: "La pagina principal debe probar produccion, control de calidad y ejecucion de exportacion antes de pedir la consulta.",
       toolOneTitle: "Suministro enfocado en encofrado",
       toolOneText: "Film faced plywood, formply, LVL y viga H20 organizados para uso en construccion.",
@@ -445,6 +488,41 @@
       var isOpen = header.classList.toggle("is-open");
       document.body.classList.toggle("is-menu-open", isOpen);
     });
+  }
+
+  // Flagship v3.5: Dynamic Counter Engine
+  var countStarted = false;
+  function startCounting() {
+    if (countStarted) return;
+    var stats = document.querySelectorAll(".stat-item strong");
+    stats.forEach(function (stat) {
+      var target = parseInt(stat.textContent);
+      var count = 0;
+      var duration = 2000; // 2 seconds
+      var startTime = null;
+
+      function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        var progress = currentTime - startTime;
+        var increment = Math.min(Math.floor((progress / duration) * target), target);
+        stat.textContent = increment + "+";
+        if (progress < duration) {
+          requestAnimationFrame(animation);
+        } else {
+          stat.textContent = target + "+";
+        }
+      }
+      requestAnimationFrame(animation);
+    });
+    countStarted = true;
+  }
+
+  var globalSection = document.querySelector(".v2-global");
+  if (globalSection && "IntersectionObserver" in window) {
+    var statsObserver = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) startCounting();
+    }, { threshold: 0.5 });
+    statsObserver.observe(globalSection);
   }
 
   if (nav) {
