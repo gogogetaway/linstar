@@ -12,12 +12,14 @@
   var heroPrev = document.querySelector("[data-hero-prev]");
   var heroNext = document.querySelector("[data-hero-next]");
   var inquiryForm = document.querySelector("[data-inquiry-form]");
+  var floatingContact = document.querySelector("[data-floating-contact]");
+  var floatingContactToggle = document.querySelector("[data-floating-contact-toggle]");
   var currentSlide = 0;
   var slideTimer;
 
   var dictionary = {
     en: {
-      brandTag: "Xuzhou Jialinda Trading Co., Ltd.",
+      brandTag: "JIALINDA",
       navProducts: "Products",
       navTools: "Why Jialinda",
       navAbout: "About Us",
@@ -42,11 +44,11 @@
       searchLvl: "LVL / H20 Beam",
       getQuote: "Contact",
       heroEyebrow: "Plywood manufacturer and exporter",
-      heroTitle: "Factory supply for plywood, furniture panels and formwork systems.",
+      heroTitle: "Factory supply for plywood engineered wood panels.",
       heroText: "Xuzhou Jialinda helps importers, contractors and manufacturers source stable wood panel specifications with export packing, OEM support and container delivery.",
-      heroMetricYears: "Years wood panel experience",
-      heroMetricLines: "Production and processing lines",
-      heroMetricMarkets: "Export markets served",
+      heroMetricYears: "Years Experience",
+      heroMetricLines: "Production Lines",
+      heroMetricMarkets: "Export Markets",
       browseProducts: "Browse Products",
       sendRequirements: "Send Requirements",
       quoteChecklist: "Inquiry guide",
@@ -155,7 +157,7 @@
       footerProducts: "Product center"
     },
     zh: {
-      brandTag: "徐州嘉林达贸易有限公司",
+      brandTag: "JIALINDA",
       navProducts: "产品",
       navTools: "为什么选择",
       navAbout: "关于我们",
@@ -180,11 +182,11 @@
       searchLvl: "LVL / H20 梁",
       getQuote: "联系",
       heroEyebrow: "建筑模板板材工厂供应",
-      heroTitle: "面向全球承包商与进口商的建筑模板胶合板供应商。",
+      heroTitle: "工厂直供胶合板与工程木板材。",
       heroText: "聚焦覆膜板、Formply、LVL 与 H20 梁，支持稳定规格、出口包装、装柜交付和项目型询盘响应。",
-      heroMetricYears: "板材供应经验",
-      heroMetricLines: "生产与加工能力",
-      heroMetricMarkets: "出口市场服务",
+      heroMetricYears: "行业经验",
+      heroMetricLines: "生产线",
+      heroMetricMarkets: "出口市场",
       browseProducts: "查看产品",
       sendRequirements: "发送询盘",
       quoteChecklist: "询价指南",
@@ -284,7 +286,7 @@
       statClients: "企业客户",
       statYears: "出口经验",
       quoteEyebrow: "邮件询盘",
-      brandTag: "Xuzhou Jialinda Trading Co., Ltd.",
+      brandTag: "JIALINDA",
       navProducts: "Productos",
       navTools: "Por que Jialinda",
       navAbout: "Nosotros",
@@ -309,10 +311,10 @@
       searchLvl: "LVL / H20 Beam",
       getQuote: "Contacto",
       heroEyebrow: "Fabricante y exportador de plywood",
-      heroTitle: "Suministro de fabrica para plywood, paneles para muebles y sistemas de encofrado.",
+      heroTitle: "Suministro de fabrica para plywood y paneles de madera tecnica.",
       heroText: "Xuzhou Jialinda ayuda a importadores, contratistas y fabricantes a comprar especificaciones estables con embalaje de exportacion, soporte OEM y entrega en contenedor.",
-      heroMetricYears: "Anios de experiencia en paneles",
-      heroMetricLines: "Lineas de produccion y proceso",
+      heroMetricYears: "Anios de experiencia",
+      heroMetricLines: "Lineas de produccion",
       heroMetricMarkets: "Mercados de exportacion",
       browseProducts: "Ver productos",
       sendRequirements: "Enviar requisitos",
@@ -443,12 +445,26 @@
       "&body=" + encodeURIComponent(body);
   }
 
+  function setHeroTitle(node, text, lang) {
+    if (lang === "zh") {
+      node.textContent = text;
+      return;
+    }
+    var highlighted = text.replace("plywood", '<span class="v2-title-accent">plywood</span>');
+    node.innerHTML = highlighted.replace(" engineered", "<br>engineered");
+  }
+
   function setLanguage(lang) {
     var copy = dictionary[lang] || dictionary.en;
     document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
     translatable.forEach(function (node) {
       var key = node.getAttribute("data-i18n");
-      if (copy[key]) node.textContent = copy[key];
+      if (!copy[key]) return;
+      if (key === "heroTitle") {
+        setHeroTitle(node, copy[key], lang);
+        return;
+      }
+      node.textContent = copy[key];
     });
     placeholderItems.forEach(function (node) {
       var key = node.getAttribute("data-i18n-placeholder");
@@ -554,6 +570,27 @@
 
   if (inquiryForm) {
     inquiryForm.addEventListener("submit", buildInquiryMail);
+  }
+
+  if (floatingContact && floatingContactToggle) {
+    floatingContactToggle.addEventListener("click", function () {
+      var isOpen = floatingContact.classList.toggle("is-open");
+      floatingContactToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!floatingContact.contains(event.target)) {
+        floatingContact.classList.remove("is-open");
+        floatingContactToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        floatingContact.classList.remove("is-open");
+        floatingContactToggle.setAttribute("aria-expanded", "false");
+      }
+    });
   }
 
   langButtons.forEach(function (button) {
