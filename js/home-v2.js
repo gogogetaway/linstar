@@ -40,7 +40,7 @@
       searchFilm: "Film faced plywood",
       searchMdf: "MDF / Chipboard",
       searchLvl: "LVL / H20 Beam",
-      getQuote: "Get Quote",
+      getQuote: "Contact",
       heroEyebrow: "Plywood manufacturer and exporter",
       heroTitle: "Factory supply for plywood, furniture panels and formwork systems.",
       heroText: "Xuzhou Jialinda helps importers, contractors and manufacturers source stable wood panel specifications with export packing, OEM support and container delivery.",
@@ -178,7 +178,7 @@
       searchFilm: "覆膜板",
       searchMdf: "MDF / 刨花板",
       searchLvl: "LVL / H20 梁",
-      getQuote: "获取报价",
+      getQuote: "联系",
       heroEyebrow: "建筑模板板材工厂供应",
       heroTitle: "面向全球承包商与进口商的建筑模板胶合板供应商。",
       heroText: "聚焦覆膜板、Formply、LVL 与 H20 梁，支持稳定规格、出口包装、装柜交付和项目型询盘响应。",
@@ -307,7 +307,7 @@
       searchFilm: "Film faced plywood",
       searchMdf: "MDF / Chipboard",
       searchLvl: "LVL / H20 Beam",
-      getQuote: "Cotizar",
+      getQuote: "Contacto",
       heroEyebrow: "Fabricante y exportador de plywood",
       heroTitle: "Suministro de fabrica para plywood, paneles para muebles y sistemas de encofrado.",
       heroText: "Xuzhou Jialinda ayuda a importadores, contratistas y fabricantes a comprar especificaciones estables con embalaje de exportacion, soporte OEM y entrega en contenedor.",
@@ -567,6 +567,6 @@
   showSlide(0);
   restartSlideTimer();
 
-  var initialLang = "zh";
+  var initialLang = "en";
   setLanguage(initialLang);
 })();
