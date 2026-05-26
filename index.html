@@ -1,123 +1,329 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BLXING | Light Catalog Home</title>
-  <meta name="description" content="A light, product-led BLXING homepage concept for plywood, furniture panels and formwork systems.">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>徐州嘉林达贸易有限公司 | Wood Panels for Global Projects</title>
+  <meta name="description" content="Xuzhou Jialinda Trading Co., Ltd. supplies film faced plywood, furniture panels, LVL and formwork systems for importers, contractors and manufacturers.">
+  <link rel="stylesheet" href="css/home-v2.css">
 </head>
-<body class="style-a">
-  <div class="a-topbar">
-    <span>Factory direct wood panels since 1998</span>
-    <span>OEM packing · Container delivery · Global export</span>
-  </div>
-
-  <header class="a-header">
-    <a class="a-logo" href="index.html">
-      <img src="assets/img/logo.png" alt="BLXING">
+<body>
+  <header class="v2-header" data-header>
+    <a class="v2-brand" href="index.html" aria-label="BLXING home">
+      <img src="assets/img/logo-v2.png" alt="BLXING">
+      <span data-i18n="brandTag">JIALINDA</span>
     </a>
-    <div class="a-search">Search plywood, MDF, LVL...</div>
-    <nav>
-      <a href="products.html">Products</a>
-      <a href="#factory">Factory</a>
-      <a href="#contact">Contact</a>
+
+    <button class="v2-menu-button" type="button" data-menu-button aria-label="Open navigation">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="v2-nav" data-nav aria-label="Primary navigation">
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="#products" data-i18n="navProducts">Products</a>
+        <div class="v2-dropdown">
+          <a href="products.html#formwork-plywood" data-i18n="dropFilm">Film Faced Plywood</a>
+          <a href="products.html#commercial-panels" data-i18n="dropFurniture">Furniture Panels</a>
+          <a href="products.html#engineered-wood" data-i18n="dropEngineered">Engineered Wood Systems</a>
+        </div>
+      </div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="support-matching.html" data-i18n="navTools">Supply Support</a>
+        <div class="v2-dropdown">
+          <a href="support-matching.html" data-i18n="dropSelector">Product Matching</a>
+          <a href="support-inquiry.html" data-i18n="dropChecklist">Inquiry Checklist</a>
+          <a href="support-packing.html" data-i18n="dropPacking">Packing &amp; Loading</a>
+          <a href="support-documents.html" data-i18n="dropCompliance">Documents</a>
+        </div>
+      </div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="about.html" data-i18n="navAbout">About Us</a>
+        <div class="v2-dropdown">
+          <a href="about.html#company" data-i18n="dropCompany">Company Overview</a>
+          <a href="about.html#factory" data-i18n="dropFactory">Factory &amp; QC</a>
+          <a href="about.html#certificates" data-i18n="dropCertificates">Certificates</a>
+          <a href="about.html#markets" data-i18n="dropExport">Export Markets</a>
+        </div>
+      </div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-link" href="#quote" data-i18n="navContact">Contact</a>
+      </div>
     </nav>
-    <a class="a-icon-link" href="mailto:info@blxing.com">Quote</a>
+
+    <div class="v2-actions">
+      <form class="v2-search" action="products.html" role="search">
+        <input type="search" name="q" data-i18n-placeholder="searchPlaceholder" placeholder="Search plywood, MDF, LVL...">
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+      <div class="v2-lang v2-action-dropdown" aria-label="Language">
+        <button type="button" class="v2-lang-current v2-action-trigger" data-lang-current>EN</button>
+        <div class="v2-action-panel v2-lang-panel">
+          <button type="button" data-lang="en" class="is-active">English</button>
+          <button type="button" data-lang="zh">中文</button>
+          <button type="button" data-lang="es">Español</button>
+        </div>
+      </div>
+      <div class="v2-header-contact-links" aria-label="Contact links">
+        <a class="v2-whatsapp-link" href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">
+          <img src="assets/whatapp.png" alt="" aria-hidden="true">
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:sales@blxing.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6.5h14.4c1 0 1.8.8 1.8 1.8v7.4c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8V8.3c0-1 .8-1.8 1.8-1.8Zm0 1.5 7.2 5 7.2-5H4.8Zm14.7 1.4-7.1 4.9a.8.8 0 0 1-.9 0L4.5 9.4v6.3c0 .2.1.3.3.3h14.4c.2 0 .3-.1.3-.3V9.4Z"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
   </header>
 
-  <nav class="a-category">
-    <a href="products.html#formwork-plywood">Film Faced</a>
-    <a href="products.html#formwork-plywood">Formply</a>
-    <a href="products.html#commercial-panels">MDF</a>
-    <a href="products.html#commercial-panels">Chipboard</a>
-    <a href="products.html#engineered-wood">LVL</a>
-    <a href="products.html#engineered-wood">H20 Beam</a>
-  </nav>
-
   <main>
-    <section class="a-hero reveal">
-      <div class="a-hero-copy">
-        <h1>Panel supply made clear, calm and reliable.</h1>
-        <p>BLXING helps importers, contractors and furniture manufacturers source plywood, formwork panels and engineered wood with practical specifications and export-ready packing.</p>
-        <div class="a-expert">
-          <span></span><span></span><span></span>
-          <small>Talk with our product team</small>
+    <section class="v2-hero">
+      <div class="v2-hero-media" aria-hidden="true" data-hero-carousel>
+        <figure class="v2-hero-slide is-active" data-hero-slide>
+          <img src="assets/generated/vinawood-hero-factory.jpg" alt="">
+        </figure>
+        <figure class="v2-hero-slide" data-hero-slide>
+          <img src="assets/generated/plywood-storage-hero-v2.png" alt="">
+        </figure>
+        <figure class="v2-hero-slide" data-hero-slide>
+          <img src="assets/generated/export-loading-hero-v2-clean.png" alt="">
+        </figure>
+      </div>
+      <div class="v2-hero-shade" aria-hidden="true"></div>
+
+      <div class="v2-hero-inner">
+        <div class="v2-hero-copy reveal">
+          <p class="v2-eyebrow" data-i18n="heroEyebrow">Plywood manufacturer and exporter</p>
+          <h1 data-i18n="heroTitle">Factory supply for <span class="v2-title-accent">plywood</span><br>engineered wood panels.</h1>
+          <p class="v2-hero-text" data-i18n="heroText">Xuzhou Jialinda helps importers, contractors and manufacturers source stable wood panel specifications with export packing, OEM support and container delivery.</p>
+          <div class="v2-hero-metrics" aria-label="Factory highlights">
+            <div><strong>30+</strong><span data-i18n="heroMetricYears">Years Experience</span></div>
+            <div><strong>12</strong><span data-i18n="heroMetricLines">Production Lines</span></div>
+            <div><strong>50+</strong><span data-i18n="heroMetricMarkets">Export Markets</span></div>
+          </div>
+          <div class="v2-hero-cta">
+            <a class="v2-button" href="#products" data-i18n="browseProducts">Browse Products</a>
+            <a class="v2-button v2-button-light" href="#quote" data-i18n="sendRequirements">Send Requirements</a>
+          </div>
         </div>
-        <a class="a-button" href="products.html">Browse Products</a>
       </div>
-
-      <article class="a-feature a-tall">
-        <img src="assets/upload/20253111795716169.jpg" alt="Film faced plywood">
-        <b>Film Faced Plywood</b>
-        <a href="products.html#formwork-plywood">→</a>
-      </article>
-
-      <div class="a-feature-stack">
-        <article class="a-feature">
-          <img src="assets/upload/20254814242521166.png" alt="Formply">
-          <b>Formply</b>
-          <a href="products.html#formwork-plywood">→</a>
-        </article>
-        <article class="a-sale">
-          <strong>Container quote</strong>
-          <p>Send size, thickness, port and quantity.</p>
-          <a href="mailto:info@blxing.com?subject=BLXING%20container%20quote">Explore now</a>
-        </article>
+      <div class="v2-hero-controls" aria-label="Hero carousel controls">
+        <button type="button" data-hero-prev aria-label="Previous slide">‹</button>
+        <div class="v2-hero-dots" aria-label="Select slide">
+          <button type="button" class="is-active" data-hero-dot aria-label="Show factory slide"></button>
+          <button type="button" data-hero-dot aria-label="Show plywood storage slide"></button>
+          <button type="button" data-hero-dot aria-label="Show export loading slide"></button>
+        </div>
+        <button type="button" data-hero-next aria-label="Next slide">›</button>
       </div>
     </section>
 
-    <section class="a-section">
-      <div class="a-section-head reveal">
-        <h2>Bestsellers for export orders</h2>
-        <p>Focused product cards for fast comparison before inquiry.</p>
+    <section class="v2-certifications" aria-label="Certifications">
+      <div class="v2-cert-strip">
+        <a href="about.html#certificates" title="ISO 9001:2015"><img src="assets/certifications/iso-9001.webp" alt="ISO 9001"></a>
+        <a href="about.html#certificates" title="FSC"><img src="assets/certifications/fsc.jpg" alt="FSC"></a>
+        <a href="about.html#certificates" title="CE / EN 13986"><img src="assets/certifications/ce.webp" alt="CE"></a>
+        <a href="about.html#certificates" class="v2-cert-text" title="EPA TSCA VI">EPA TSCA VI</a>
+        <a href="about.html#certificates" title="KS"><img src="assets/certifications/ks.jpg" alt="KS"></a>
+        <a href="about.html#certificates" class="v2-cert-text" title="EUDR">EUDR</a>
+        <a href="about.html#certificates" class="v2-cert-text" title="EUTR">EUTR</a>
+        <a href="about.html#certificates" class="v2-cert-text v2-cert-compact" title="ISPM 15">ISPM 15</a>
+        <a href="about.html#certificates" class="v2-cert-text" title="EPD">EPD</a>
+        <a class="v2-cert-all" href="about.html#certificates">All Certs →</a>
       </div>
+    </section>
 
-      <div class="a-grid">
-        <article class="a-product reveal">
+    <section class="v2-section v2-products" id="products">
+      <div class="v2-product-grid">
+        <a class="v2-product-card reveal" href="products.html#formwork-plywood">
           <img src="assets/upload/202531214123263859.jpg" alt="Film faced plywood">
-          <h3>Film Faced Plywood</h3>
-          <p>Concrete Formwork</p>
-          <div><span>1220 x 2440 mm</span><a href="products.html#formwork-plywood">Details</a></div>
+          <span>01</span>
+          <h3 data-i18n="productOneTitle">Formwork & Construction</h3>
+          <p data-i18n="productOneText">Film faced plywood, PP plastic faced plywood, slip-resistant plywood and formply for concrete projects.</p>
+        </a>
+        <a class="v2-product-card reveal" style="--delay:.06s" href="products.html#commercial-panels">
+          <img src="assets/upload/20253149342495685.jpg" alt="MDF panel">
+          <span>02</span>
+          <h3 data-i18n="productTwoTitle">Furniture & Interior Panels</h3>
+          <p data-i18n="productTwoText">MDF, chipboard, commercial plywood and melamine boards for furniture and interior manufacturing.</p>
+        </a>
+        <a class="v2-product-card reveal" style="--delay:.12s" href="products.html#engineered-wood">
+          <img src="assets/upload/202581917225271299.jpg" alt="H20 beam">
+          <span>03</span>
+          <h3 data-i18n="productThreeTitle">Engineered Wood Systems</h3>
+          <p data-i18n="productThreeText">LVL, H20 beam and formwork system components for industrial and project supply.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="v2-make" id="manufacturing">
+      <div class="v2-make-head">
+        <div>
+          <h2>See how we make it</h2>
+          <p>Every panel moves through 12 controlled factory steps, from log preparation to packed shipment.</p>
+        </div>
+        <a href="#manufacturing">See our full 12-step process <span>→</span></a>
+      </div>
+      <div class="v2-make-track" aria-label="Production process">
+        <article><img src="assets/process/01-log-selection-peeling.jpg" alt="Log selection and peeling"><div><h3>Log selection &amp; peeling</h3><p>Logs are sorted, prepared and peeled into veneer sheets.</p></div></article>
+        <article><img src="assets/process/02-veneer-drying-storage.jpg" alt="Veneer drying and storage"><div><h3>Veneer drying &amp; storage</h3><p>Veneers are dried, stacked and stabilized before layup.</p></div></article>
+        <article><img src="assets/process/03-gluing-layup.jpg" alt="Gluing and layup"><div><h3>Gluing &amp; lay-up</h3><p>Core veneers are glued and assembled in cross-grain layers.</p></div></article>
+        <article><img src="assets/process/04-cold-press.jpg" alt="Cold press"><div><h3>Cold press</h3><p>Panels are consolidated before moving into hot pressing.</p></div></article>
+        <article><img src="assets/process/05-hot-press.jpg" alt="Hot press"><div><h3>Hot press</h3><p>Heat and pressure cure the glue line into a rigid panel.</p></div></article>
+        <article><img src="assets/process/06-surfacing-putty.jpg" alt="Surfacing with putty"><div><h3>Surfacing with putty</h3><p>Face defects are filled before sanding and finishing.</p></div></article>
+        <article><img src="assets/process/07-sanding.jpg" alt="Sanding"><div><h3>Sanding</h3><p>Panels are calibrated and sanded for the target surface.</p></div></article>
+        <article><img src="assets/process/08-trimming.jpg" alt="Trimming"><div><h3>Trimming</h3><p>Finished sheets are squared and cut to final dimensions.</p></div></article>
+        <article><img src="assets/process/09-surface-lamination.jpg" alt="Surface lamination"><div><h3>Surface lamination</h3><p>Film or overlay surfaces are pressed onto selected panels.</p></div></article>
+        <article><img src="assets/process/10-qc-inspection.jpg" alt="QC inspection"><div><h3>QC inspection</h3><p>Panels are checked for face, bond and dimensional quality.</p></div></article>
+        <article><img src="assets/process/11-edge-sealing.jpg" alt="Edge sealing"><div><h3>Edge sealing</h3><p>Edges are sealed for moisture resistance and traceability.</p></div></article>
+        <article><img src="assets/process/12-packaging-shipping.jpg" alt="Packaging and shipping"><div><h3>Packaging &amp; shipping</h3><p>Approved panels are packed, marked and loaded for export.</p></div></article>
+      </div>
+    </section>
+
+    <section class="v2-whyus" id="tools">
+      <div class="v2-make-head">
+        <div>
+          <h2 data-i18n="whyUsTitle">How we support plywood buyers</h2>
+          <p data-i18n="whyUsText">From product matching to export packing, the supply process is built around repeat container orders.</p>
+        </div>
+        <a href="#quote">Send requirements <span>→</span></a>
+      </div>
+      <div class="v2-whyus-grid" aria-label="Why choose us">
+        <article class="reveal">
+          <span>CAP</span>
+          <h3 data-i18n="whyUsCapTitle">Panel supply base</h3>
+          <p data-i18n="whyUsCapDesc">Film faced plywood, furniture panels, LVL and H20 beams supplied from organized production capacity.</p>
         </article>
-        <article class="a-product reveal" style="--delay:.04s">
-          <img src="assets/upload/2025314994994926.jpg" alt="Anti-slip plywood">
-          <h3>Slip-resistant Plywood</h3>
-          <p>Flooring Panels</p>
-          <div><span>Pattern surface</span><a href="products.html#formwork-plywood">Details</a></div>
+        <article class="reveal" style="--delay:.05s">
+          <span>MAT</span>
+          <h3 data-i18n="whyUsMatTitle">Specification matching</h3>
+          <p data-i18n="whyUsMatDesc">Core, glue, thickness, surface and packing are matched to your application and destination market.</p>
         </article>
-        <article class="a-product reveal" style="--delay:.08s">
-          <img src="assets/upload/20253149342495685.jpg" alt="MDF">
-          <h3>MDF</h3>
-          <p>Furniture & Interior</p>
-          <div><span>3-32 mm</span><a href="products.html#commercial-panels">Details</a></div>
+        <article class="reveal" style="--delay:.1s">
+          <span>MIX</span>
+          <h3 data-i18n="whyUsMixTitle">Mixed container plans</h3>
+          <p data-i18n="whyUsMixDesc">Construction plywood, furniture boards and engineered wood can be arranged in one sourcing plan.</p>
         </article>
-        <article class="a-product reveal" style="--delay:.12s">
-          <img src="assets/upload/2025314992766830.jpg" alt="LVL">
-          <h3>LVL</h3>
-          <p>Engineered Lumber</p>
-          <div><span>Custom length</span><a href="products.html#engineered-wood">Details</a></div>
+        <article class="reveal" style="--delay:.15s">
+          <span>OEM</span>
+          <h3 data-i18n="whyUsOemTitle">OEM packing support</h3>
+          <p data-i18n="whyUsOemDesc">Private marks, pallet labels, wrapping and moisture protection are prepared for long sea transport.</p>
+        </article>
+        <article class="reveal" style="--delay:.2s">
+          <span>DOC</span>
+          <h3 data-i18n="whyUsDocTitle">Document support</h3>
+          <p data-i18n="whyUsDocDesc">Commercial documents, packing information and market-related certificate files can be prepared with the shipment.</p>
+        </article>
+        <article class="reveal" style="--delay:.25s">
+          <span>QC</span>
+          <h3 data-i18n="whyUsQcTitle">Order visibility</h3>
+          <p data-i18n="whyUsQcDesc">Production checks, packing photos and container loading photos help overseas buyers follow the order remotely.</p>
         </article>
       </div>
     </section>
 
-    <section class="a-rooms reveal" id="factory">
-      <div>
-        <h2>Browse by application</h2>
-        <p>Choose by how your market uses the panels, then confirm specification with our team.</p>
+    <section class="v2-global" id="markets">
+      <div class="v2-global-inner">
+        <div class="v2-global-header reveal">
+          <div class="v2-global-title">
+            <p class="v2-eyebrow" data-i18n="globalEyebrow">Global Reach</p>
+            <h2 data-i18n="globalTitle">From Xuzhou to active plywood import markets.</h2>
+            <p>Container shipments are arranged around destination requirements, packing marks, loading photos and export documents.</p>
+          </div>
+          <div class="v2-global-stats">
+            <div class="stat-item"><strong>50+</strong><span>Destinations</span></div>
+            <div class="stat-item"><strong>7</strong><span>Key routes</span></div>
+            <div class="stat-item"><strong>FOB/CIF</strong><span>Shipment terms</span></div>
+          </div>
+        </div>
+
+        <div class="v2-global-content">
+          <div class="v2-global-map-wrap reveal">
+            <img src="assets/generated/global-shipping-map.png" alt="Global plywood shipping map from Xuzhou">
+          </div>
+        </div>
       </div>
-      <article>
-        <img src="assets/upload/202531917205064429.jpg" alt="BLXING factory">
-        <span>Construction formwork · Furniture panels · Industrial systems</span>
-      </article>
     </section>
+
   </main>
 
-  <footer class="a-footer" id="contact">
-    <span>BLXING · info@blxing.com</span>
-    <a href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">WhatsApp</a>
+  <div class="v2-floating-contact" data-floating-contact>
+    <div class="v2-floating-panel" id="floating-contact-panel" aria-label="Contact options">
+      <a class="v2-floating-option v2-floating-whatsapp" href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">
+        <img src="assets/whatapp.png" alt="" aria-hidden="true">
+        <span><strong>WhatsApp</strong><small>Chat with sales</small></span>
+      </a>
+      <a class="v2-floating-option v2-floating-email" href="mailto:sales@blxing.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6.5h14.4c1 0 1.8.8 1.8 1.8v7.4c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8V8.3c0-1 .8-1.8 1.8-1.8Zm0 1.5 7.2 5 7.2-5H4.8Zm14.7 1.4-7.1 4.9a.8.8 0 0 1-.9 0L4.5 9.4v6.3c0 .2.1.3.3.3h14.4c.2 0 .3-.1.3-.3V9.4Z"/></svg>
+        <span><strong>Email</strong><small>Send requirements</small></span>
+      </a>
+    </div>
+    <button class="v2-floating-toggle" type="button" aria-expanded="false" aria-controls="floating-contact-panel" data-floating-contact-toggle>
+      <span>Contact</span>
+      <span aria-hidden="true">+</span>
+    </button>
+  </div>
+
+  <footer class="v2-footer" id="quote">
+    <div class="v2-footer-inner">
+      <div class="v2-footer-grid">
+        <div>
+          <h4>JIALINDA</h4>
+          <p>Xuzhou Jialinda Trading Co., Ltd. supplies plywood, film faced plywood, LVL, H20 beams and panel products for importers, contractors and distributors.</p>
+          <div class="v2-footer-social">
+            <a href="#quote">Facebook</a>
+            <a href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#quote">TikTok</a>
+          </div>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html#formwork-plywood">Film faced plywood</a></li>
+            <li><a href="products.html#furniture-panels">Furniture panels</a></li>
+            <li><a href="products.html#engineered-wood">LVL & H20 beams</a></li>
+            <li><a href="products.html">Product center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="about.html">About Jialinda</a></li>
+            <li><a href="about.html#markets">Export markets</a></li>
+            <li><a href="#quote">Contact sales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Export support</h4>
+          <ul>
+            <li><a href="#quote">FOB / CIF quotes</a></li>
+            <li><a href="#quote">Packing marks</a></li>
+            <li><a href="#quote">Container loading</a></li>
+            <li><a href="#quote">Documents</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="v2-footer-newsletter">
+        <h4>Buyer Updates</h4>
+        <p>Product notes, packing ideas and shipment reminders for plywood importers.</p>
+        <form>
+          <input type="text" required placeholder="Name">
+          <input type="text" required placeholder="Company">
+          <input type="email" required placeholder="Email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="v2-footer-bottom">
+        <p>© 2026 BLXING / Xuzhou Jialinda Trading Co., Ltd. All rights reserved.</p>
+        <p>JIALINDA is a plywood manufacturer and exporter based in Xuzhou, China.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/home-v2.js"></script>
 </body>
 </html>
