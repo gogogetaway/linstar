@@ -475,7 +475,7 @@
     var email = document.querySelector("[data-product-email]");
     var description = document.querySelector("[data-product-meta-description]");
 
-    document.title = copy.title + " | BLXING Wood Panels";
+    document.title = copy.title + " | JLD Wood Panels";
     if (description) description.setAttribute("content", copy.summary);
     if (image) {
       image.setAttribute("src", product.image);

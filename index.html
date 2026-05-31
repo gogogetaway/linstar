@@ -9,8 +9,8 @@
 </head>
 <body>
   <header class="v2-header" data-header>
-    <a class="v2-brand" href="index.html" aria-label="BLXING home">
-      <img src="assets/img/logo-v2.png" alt="BLXING">
+    <a class="v2-brand" href="index.html" aria-label="JLD home">
+      <img src="assets/img/logo-v2.png" alt="JLD">
       <span data-i18n="brandTag">JIALINDA</span>
     </a>
 
@@ -43,7 +43,7 @@
           <a href="about.html#company" data-i18n="dropCompany">Company Overview</a>
           <a href="about.html#factory" data-i18n="dropFactory">Factory &amp; QC</a>
           <a href="about.html#certificates" data-i18n="dropCertificates">Certificates</a>
-          <a href="about.html#markets" data-i18n="dropExport">Export Markets</a>
+          <a href="markets.html" data-i18n="dropExport">Export Markets</a>
         </div>
       </div>
       <div class="v2-nav-item">
@@ -249,18 +249,32 @@
   </main>
 
   <div class="v2-floating-contact" data-floating-contact>
-    <div class="v2-floating-panel" id="floating-contact-panel" aria-label="Contact options">
-      <a class="v2-floating-option v2-floating-whatsapp" href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">
-        <img src="assets/whatapp.png" alt="" aria-hidden="true">
-        <span><strong>WhatsApp</strong><small>Chat with sales</small></span>
-      </a>
-      <a class="v2-floating-option v2-floating-email" href="mailto:sales@blxing.com">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6.5h14.4c1 0 1.8.8 1.8 1.8v7.4c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8V8.3c0-1 .8-1.8 1.8-1.8Zm0 1.5 7.2 5 7.2-5H4.8Zm14.7 1.4-7.1 4.9a.8.8 0 0 1-.9 0L4.5 9.4v6.3c0 .2.1.3.3.3h14.4c.2 0 .3-.1.3-.3V9.4Z"/></svg>
-        <span><strong>Email</strong><small>Send requirements</small></span>
-      </a>
+    <div class="v2-floating-panel v2-floating-rfq-panel" id="floating-contact-panel" aria-label="Request a quote">
+      <div class="v2-floating-rfq-head">
+        <small>REQUEST FOR QUOTATION</small>
+        <strong>Connect with JLD</strong>
+        <p>Tell us what you need. Our sales team will reply shortly.</p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5e241454-a228-47e8-8b78-c47883800404">
+        <fieldset class="v2-floating-contact-method">
+          <legend>How should we contact you?</legend>
+          <label>
+            <input type="radio" name="preferred_contact" value="WhatsApp" checked>
+            <span><strong>WhatsApp</strong></span>
+          </label>
+          <label>
+            <input type="radio" name="preferred_contact" value="Email">
+            <span><strong>Email</strong></span>
+          </label>
+        </fieldset>
+        <input type="text" name="contact_account" required placeholder="WhatsApp number or email">
+        <textarea name="message" rows="4" required placeholder="Product, size, quantity and destination port"></textarea>
+        <button type="submit">Send RFQ <span aria-hidden="true">→</span></button>
+      </form>
     </div>
     <button class="v2-floating-toggle" type="button" aria-expanded="false" aria-controls="floating-contact-panel" data-floating-contact-toggle>
-      <span>Contact</span>
+      <span>Get a Quote</span>
       <span aria-hidden="true">+</span>
     </button>
   </div>
@@ -291,7 +305,7 @@
           <ul>
             <li><a href="/">Homepage</a></li>
             <li><a href="about.html">About Jialinda</a></li>
-            <li><a href="about.html#markets">Export markets</a></li>
+            <li><a href="markets.html">Export markets</a></li>
             <li><a href="#quote">Contact sales</a></li>
           </ul>
         </div>
@@ -318,7 +332,7 @@
       </div>
 
       <div class="v2-footer-bottom">
-        <p>© 2026 BLXING / Xuzhou Jialinda Trading Co., Ltd. All rights reserved.</p>
+        <p>© 2026 JLD / Xuzhou Jialinda Trading Co., Ltd. All rights reserved.</p>
         <p>JIALINDA is a plywood manufacturer and exporter based in Xuzhou, China.</p>
       </div>
     </div>
