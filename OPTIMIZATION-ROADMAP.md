@@ -91,7 +91,7 @@
 - CE / EN 13986
 - EPA TSCA VI
 - KS
-- EUDR / EUTR 支持
+- EUDR 支持
 - ISPM 15
 - EPD
 
@@ -231,4 +231,3 @@ Film Faced Plywood
 3. 核实业务数据、证书、域名和品牌邮箱策略。
 4. 优化图片，并完善 SEO 基础设施。
 5. 增加证书下载、市场内容和访问统计。
-

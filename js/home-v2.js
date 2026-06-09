@@ -47,8 +47,8 @@
       searchMdf: "MDF / Chipboard",
       searchLvl: "LVL / H20 Beam",
       getQuote: "Contact",
-      heroEyebrow: "Plywood manufacturer and exporter",
-      heroTitle: "Factory supply for plywood engineered wood panels.",
+      heroEyebrow: "Direct from our own factory",
+      heroTitle: "Reliable plywood supply for global buyers.",
       heroText: "Xuzhou Jialinda helps importers, contractors and manufacturers source stable wood panel specifications with export packing, OEM support and container delivery.",
       heroMetricYears: "Years Experience",
       heroMetricLines: "Production Lines",
@@ -188,8 +188,8 @@
       searchMdf: "MDF / 刨花板",
       searchLvl: "LVL / H20 梁",
       getQuote: "联系",
-      heroEyebrow: "建筑模板板材工厂供应",
-      heroTitle: "工厂直供胶合板与工程木板材。",
+      heroEyebrow: "自有工厂 · 直接供货",
+      heroTitle: "为全球买家提供可靠的胶合板供应。",
       heroText: "聚焦覆膜板、Formply、LVL 与 H20 梁，支持稳定规格、出口包装、装柜交付和项目型询盘响应。",
       heroMetricYears: "行业经验",
       heroMetricLines: "生产线",
@@ -322,8 +322,8 @@
       searchMdf: "MDF / Chipboard",
       searchLvl: "LVL / H20 Beam",
       getQuote: "Contacto",
-      heroEyebrow: "Fabricante y exportador de plywood",
-      heroTitle: "Suministro de fabrica para plywood y paneles de madera tecnica.",
+      heroEyebrow: "Suministro directo de nuestra propia fabrica",
+      heroTitle: "Suministro fiable de plywood para compradores globales.",
       heroText: "Xuzhou Jialinda ayuda a importadores, contratistas y fabricantes a comprar especificaciones estables con embalaje de exportacion, soporte OEM y entrega en contenedor.",
       heroMetricYears: "Anios de experiencia",
       heroMetricLines: "Lineas de produccion",
@@ -463,7 +463,9 @@
       return;
     }
     var highlighted = text.replace("plywood", '<span class="v2-title-accent">plywood</span>');
-    node.innerHTML = highlighted.replace(" engineered", "<br>engineered");
+    node.innerHTML = highlighted
+      .replace(" for global", "<br>for global")
+      .replace(" para compradores", "<br>para compradores");
   }
 
   function setLanguage(lang) {

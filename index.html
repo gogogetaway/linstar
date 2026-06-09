@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/home-v2.css">
 </head>
 <body>
-  <header class="v2-header" data-header>
+  <header class="v2-header v2-home-header" data-header>
     <a class="v2-brand" href="index.html" aria-label="JLD home">
       <img src="assets/img/logo-v2.png" alt="JLD">
       <span data-i18n="brandTag">JIALINDA</span>
@@ -21,13 +21,39 @@
 
     <nav class="v2-nav" data-nav aria-label="Primary navigation">
       <div class="v2-nav-item">
-        <a class="v2-nav-trigger" href="#products" data-i18n="navProducts">Products</a>
-        <div class="v2-dropdown">
-          <a href="products.html#formwork-plywood" data-i18n="dropFilm">Film Faced Plywood</a>
-          <a href="products.html#commercial-panels" data-i18n="dropFurniture">Furniture Panels</a>
-          <a href="products.html#engineered-wood" data-i18n="dropEngineered">Engineered Wood Systems</a>
+        <a class="v2-nav-link" href="index.html">Home</a>
+      </div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="products.html" data-i18n="navProducts">Products</a>
+        <div class="v2-dropdown v2-products-mega">
+          <div class="v2-dropdown-group">
+            <a class="v2-dropdown-heading" href="products.html#formwork-plywood" data-i18n="dropFilm">Film Faced Plywood</a>
+            <div class="v2-dropdown-submenu">
+              <a href="product-detail.html?product=film-faced-plywood">Film Faced Plywood</a>
+              <a href="product-detail.html?product=pp-plastic-faced-plywood">PP Plastic Faced Plywood</a>
+              <a href="product-detail.html?product=slip-resistant-plywood">Slip-resistant Plywood</a>
+              <a href="product-detail.html?product=formply">Formply</a>
+            </div>
+          </div>
+          <div class="v2-dropdown-group">
+            <a class="v2-dropdown-heading" href="products.html#commercial-panels" data-i18n="dropFurniture">Furniture Panels</a>
+            <div class="v2-dropdown-submenu">
+              <a href="product-detail.html?product=commercial-plywood">Commercial Plywood</a>
+              <a href="product-detail.html?product=mdf">MDF</a>
+              <a href="product-detail.html?product=chipboard">Chipboard</a>
+              <a href="product-detail.html?product=melamine-boards">Melamine Boards</a>
+            </div>
+          </div>
+          <div class="v2-dropdown-group">
+            <a class="v2-dropdown-heading" href="products.html#engineered-wood" data-i18n="dropEngineered">Engineered Wood Systems</a>
+            <div class="v2-dropdown-submenu">
+              <a href="product-detail.html?product=lvl">LVL</a>
+              <a href="product-detail.html?product=h20-beam">H20 Beam</a>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="v2-nav-item">
         <a class="v2-nav-trigger" href="support-matching.html" data-i18n="navTools">Supply Support</a>
         <div class="v2-dropdown">
@@ -94,8 +120,8 @@
 
       <div class="v2-hero-inner">
         <div class="v2-hero-copy reveal">
-          <p class="v2-eyebrow" data-i18n="heroEyebrow">Plywood manufacturer and exporter</p>
-          <h1 data-i18n="heroTitle">Factory supply for <span class="v2-title-accent">plywood</span><br>engineered wood panels.</h1>
+          <p class="v2-eyebrow" data-i18n="heroEyebrow">Direct from our own factory</p>
+          <h1 data-i18n="heroTitle">Reliable <span class="v2-title-accent">plywood</span> supply<br>for global buyers.</h1>
           <p class="v2-hero-text" data-i18n="heroText">Xuzhou Jialinda helps importers, contractors and manufacturers source stable wood panel specifications with export packing, OEM support and container delivery.</p>
           <div class="v2-hero-metrics" aria-label="Factory highlights">
             <div><strong>30+</strong><span data-i18n="heroMetricYears">Years Experience</span></div>
@@ -127,7 +153,6 @@
         <a href="about.html#certificates" class="v2-cert-text" title="EPA TSCA VI">EPA TSCA VI</a>
         <a href="about.html#certificates" title="KS"><img src="assets/certifications/ks.jpg" alt="KS"></a>
         <a href="about.html#certificates" class="v2-cert-text" title="EUDR">EUDR</a>
-        <a href="about.html#certificates" class="v2-cert-text" title="EUTR">EUTR</a>
         <a href="about.html#certificates" class="v2-cert-text v2-cert-compact" title="ISPM 15">ISPM 15</a>
         <a href="about.html#certificates" class="v2-cert-text" title="EPD">EPD</a>
         <a class="v2-cert-all" href="about.html#certificates">All Certs →</a>
@@ -157,6 +182,42 @@
       </div>
     </section>
 
+    <section class="v2-featured-products" aria-label="Featured products">
+      <div class="v2-make-head">
+        <div>
+          <h2>Featured products for export orders</h2>
+          <p>Common plywood, furniture panel and engineered wood items requested by importers, contractors and distributors.</p>
+        </div>
+        <a href="products.html">View product center <span>→</span></a>
+      </div>
+      <div class="v2-featured-grid">
+        <a class="v2-featured-card reveal" href="product-detail.html?product=film-faced-plywood">
+          <img src="assets/upload/202531214123263859.jpg" alt="Film faced plywood">
+          <div><span>Formwork</span><h3>Film Faced Plywood</h3><p>Phenolic coated panels for concrete formwork and repeated construction use.</p></div>
+        </a>
+        <a class="v2-featured-card reveal" style="--delay:.04s" href="product-detail.html?product=commercial-plywood">
+          <img src="assets/upload/202582011163561212.jpg" alt="Commercial plywood">
+          <div><span>General panels</span><h3>Commercial Plywood</h3><p>Flexible plywood supply for furniture, interiors, packing and distribution.</p></div>
+        </a>
+        <a class="v2-featured-card reveal" style="--delay:.08s" href="product-detail.html?product=mdf">
+          <img src="assets/upload/20253149342495685.jpg" alt="MDF board">
+          <div><span>Furniture board</span><h3>MDF</h3><p>Smooth fiberboard for cabinets, doors, lamination and interior production.</p></div>
+        </a>
+        <a class="v2-featured-card reveal" style="--delay:.12s" href="product-detail.html?product=melamine-boards">
+          <img src="assets/upload/2025481424122813.png" alt="Melamine board">
+          <div><span>Decorative panel</span><h3>Melamine Boards</h3><p>Decorative faced boards for furniture factories and interior panel buyers.</p></div>
+        </a>
+        <a class="v2-featured-card reveal" style="--delay:.16s" href="product-detail.html?product=lvl">
+          <img src="assets/upload/202581917225271299.jpg" alt="LVL beam">
+          <div><span>Engineered wood</span><h3>LVL</h3><p>Structural engineered wood for beams, packaging, formwork and project supply.</p></div>
+        </a>
+        <a class="v2-featured-card reveal" style="--delay:.2s" href="product-detail.html?product=h20-beam">
+          <img src="assets/upload/202531310455680132.jpg" alt="H20 beam">
+          <div><span>Formwork system</span><h3>H20 Beam</h3><p>Formwork beam components for contractors, distributors and system suppliers.</p></div>
+        </a>
+      </div>
+    </section>
+
     <section class="v2-make" id="manufacturing">
       <div class="v2-make-head">
         <div>
@@ -178,6 +239,34 @@
         <article><img src="assets/process/10-qc-inspection.jpg" alt="QC inspection"><div><h3>QC inspection</h3><p>Panels are checked for face, bond and dimensional quality.</p></div></article>
         <article><img src="assets/process/11-edge-sealing.jpg" alt="Edge sealing"><div><h3>Edge sealing</h3><p>Edges are sealed for moisture resistance and traceability.</p></div></article>
         <article><img src="assets/process/12-packaging-shipping.jpg" alt="Packaging and shipping"><div><h3>Packaging &amp; shipping</h3><p>Approved panels are packed, marked and loaded for export.</p></div></article>
+      </div>
+    </section>
+
+    <section class="v2-factory-proof" aria-label="Factory proof">
+      <div class="v2-factory-proof-copy reveal">
+        <p class="v2-eyebrow">Factory proof</p>
+        <h2>Production, packing and marked panels made visible.</h2>
+        <p>Import buyers can confirm panel specifications, logo or packing marks, loading photos and document needs before shipment, reducing remote sourcing risk.</p>
+      </div>
+      <div class="v2-factory-proof-media reveal">
+        <figure>
+          <img src="1.png" alt="Jialinda plywood production workshop">
+          <figcaption>Factory production lines and veneer preparation.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/generated/export-loading-hero-v2-clean.png" alt="Plywood export container loading">
+          <figcaption>Export packing, loading photos and container delivery.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/upload/20253111795716169.jpg" alt="JLD marked formwork plywood panels">
+          <figcaption>JLD marked panels with OEM surface and packing support.</figcaption>
+        </figure>
+      </div>
+      <div class="v2-proof-metrics reveal" style="--delay:.08s">
+        <span><strong>12</strong> Production lines</span>
+        <span><strong>30+</strong> Years panel experience</span>
+        <span><strong>OEM</strong> Marks and pallet packing</span>
+        <span><strong>FOB/CIF</strong> Shipment support</span>
       </div>
     </section>
 
@@ -223,6 +312,26 @@
       </div>
     </section>
 
+    <section class="v2-inquiry-checklist" aria-label="Inquiry checklist">
+      <div class="v2-make-head">
+        <div>
+          <h2>Send a complete inquiry faster</h2>
+          <p>These details help us match product structure, packing and quotation terms before reply.</p>
+        </div>
+        <a href="#quote">Send requirements <span>→</span></a>
+      </div>
+      <div class="v2-checklist-grid">
+        <span>Product type</span>
+        <span>Size and thickness</span>
+        <span>Surface or film color</span>
+        <span>Core and glue</span>
+        <span>Quantity</span>
+        <span>Destination port</span>
+        <span>Packing marks</span>
+        <span>Document needs</span>
+      </div>
+    </section>
+
     <section class="v2-global" id="markets">
       <div class="v2-global-inner">
         <div class="v2-global-header reveal">
@@ -243,6 +352,22 @@
             <img src="assets/generated/global-shipping-map.png" alt="Global plywood shipping map from Xuzhou">
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="v2-faq" aria-label="Frequently asked questions">
+      <div class="v2-make-head">
+        <div>
+          <h2>Common buyer questions</h2>
+          <p>Practical answers for plywood importers before sending a first inquiry.</p>
+        </div>
+        <a href="#quote">Ask sales <span>→</span></a>
+      </div>
+      <div class="v2-faq-grid">
+        <article><h3>Can you mix products in one container?</h3><p>Yes. Film faced plywood, furniture panels, LVL and H20 beams can be arranged in one sourcing plan when dimensions and loading weight allow.</p></article>
+        <article><h3>Do you support OEM packing?</h3><p>Private marks, pallet labels, wrapping, edge color and packing photos can be prepared according to buyer requirements.</p></article>
+        <article><h3>What documents can be prepared?</h3><p>Commercial invoice, packing list, loading photos and market-related certificate files can be checked before shipment.</p></article>
+        <article><h3>What should I send for a quote?</h3><p>Send product type, size, thickness, surface, core, glue, quantity and destination port for faster specification matching.</p></article>
       </div>
     </section>
 
