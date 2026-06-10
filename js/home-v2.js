@@ -15,6 +15,7 @@
   var floatingContact = document.querySelector("[data-floating-contact]");
   var floatingContactToggle = document.querySelector("[data-floating-contact-toggle]");
   var catalogFilters = document.querySelectorAll("[data-catalog-filter]");
+  var productMegaMenus = document.querySelectorAll(".v2-products-mega");
   var currentSlide = 0;
   var slideTimer;
 
@@ -26,7 +27,8 @@
       navAbout: "About Us",
       navContact: "Contact",
       navSearch: "Search",
-      dropFilm: "Film Faced Plywood",
+      dropFilm: "Film Faced & Formwork Plywood",
+      dropCommercial: "Commercial & Specialty Plywood",
       dropFurniture: "Furniture Panels",
       dropEngineered: "Engineered Wood Systems",
       dropSelector: "Product Matching",
@@ -167,7 +169,8 @@
       navAbout: "关于我们",
       navContact: "联系",
       navSearch: "搜索",
-      dropFilm: "覆膜板",
+      dropFilm: "覆膜板与建筑模板板材",
+      dropCommercial: "商用与特种胶合板",
       dropFurniture: "家具板材",
       dropEngineered: "工程木系统",
       dropSelector: "产品规格匹配",
@@ -301,7 +304,8 @@
       navAbout: "Nosotros",
       navContact: "Contacto",
       navSearch: "Buscar",
-      dropFilm: "Film Faced Plywood",
+      dropFilm: "Plywood revestido y para encofrado",
+      dropCommercial: "Plywood comercial y especial",
       dropFurniture: "Paneles para muebles",
       dropEngineered: "Sistemas de madera tecnica",
       dropSelector: "Product Matching",
@@ -560,6 +564,33 @@
       if (event.target.tagName === "A") closeMenu();
     });
   }
+
+  productMegaMenus.forEach(function (menu) {
+    var groups = menu.querySelectorAll(".v2-dropdown-group");
+
+    function activateGroup(activeGroup) {
+      groups.forEach(function (group) {
+        group.classList.toggle("is-active", group === activeGroup);
+      });
+    }
+
+    if (groups.length && !menu.querySelector(".v2-dropdown-group.is-active")) {
+      activateGroup(groups[0]);
+    }
+
+    groups.forEach(function (group) {
+      group.addEventListener("mouseenter", function () {
+        activateGroup(group);
+      });
+      group.addEventListener("focusin", function () {
+        activateGroup(group);
+      });
+    });
+
+    menu.addEventListener("mouseleave", function () {
+      if (groups.length) activateGroup(groups[0]);
+    });
+  });
 
   if (heroPrev) {
     heroPrev.addEventListener("click", function () {

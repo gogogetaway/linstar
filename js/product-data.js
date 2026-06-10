@@ -3,24 +3,44 @@
     "film-faced-plywood": {
       image: "assets/upload/202531214123263859.jpg",
       alt: "Film faced plywood panel",
+      images: [
+        {
+          src: "assets/upload/202531214123263859.jpg",
+          alt: "Brown film faced plywood panel"
+        },
+        {
+          src: "assets/products/film-faced-plywood/red.png",
+          alt: "Red film faced plywood panel"
+        },
+        {
+          src: "assets/products/film-faced-plywood/black.png",
+          alt: "Black film faced plywood panel"
+        }
+      ],
+      technicalSpecTable: true,
       groupHash: "formwork-plywood",
       locales: {
         en: {
           title: "Film Faced Plywood",
           category: "Formwork & Construction Plywood",
-          summary: "High-performance formwork panel for concrete casting projects, widely used in floors, walls, bridges and repeated site applications.",
-          tags: ["8-25 mm", "1220 x 2440 mm", "Phenolic film", "Export packing"],
-          detailTitle: "Built for repeat concrete formwork.",
-          detailText: "Film faced plywood uses a coated surface over selected plywood core structures. It is designed to reduce water absorption, support clean concrete release and improve repeat-use performance when handled and maintained properly.",
-          note: "For accurate quotation, send thickness, size, film color, core requirement, glue type, quantity and destination port.",
+          summary: "Structural engineered wood panel for concrete formwork and heavy-duty industrial use, available in multiple sizes, cores, glues and film colors.",
+          tags: ["4-35 mm", "Custom sizes", "15-20 reuses", "WBP / MLM / MR"],
+          detailTitle: "Designed for concrete formwork and heavy-duty use.",
+          detailText: "Film Faced Plywood is a structural engineered wood panel specially designed for concrete formwork and heavy-duty industrial usage. The board avoids direct contact between wet concrete and wood core, greatly reducing board corrosion and guaranteeing mirror-smooth concrete surface without extra polishing work.",
+          note: "For quotation, confirm size, thickness, film color, core, glue, quantity, packing marks and destination port.",
+          specTitle: "Technical specifications",
           specs: [
-            ["Thickness", "8 mm to 25 mm, customizable"],
-            ["Standard size", "1220 x 2440 mm, custom sizes available"],
-            ["Surface", "Brown, black or red phenolic film"],
-            ["Core", "Birch, poplar, combi or recycled core"],
-            ["Glue", "Phenolic, melamine, MR or equivalent options"],
-            ["Moisture", "Typically controlled within 10%"],
-            ["Reuse cycles", "Up to 20-30 cycles depending on site maintenance"],
+            ["Size (mm)", "610 x 2440, 625 x 2500, 1220 x 2440, 1250 x 2500; custom sizes available"],
+            ["Brand", "JLD / KALINDA / Linstar"],
+            ["Thickness (mm)", "4, 6, 9, 12, 15, 18, 21, 35"],
+            ["Thickness tolerance", "+/- 0.5 mm"],
+            ["Film color", "Brown, black, red, yellow or blue"],
+            ["Core", "Birch, eucalyptus, poplar, pine, combi or recycled"],
+            ["Glue", "WBP / MLM / MR"],
+            ["Reuse times", "15-20"],
+            ["Density", "500-630 kg/m³"],
+            ["Moisture content", "8%-12%"],
+            ["Edge sealing", "Sealed with waterproof paint"],
             ["Packing", "Export pallets, wrapping, marks and container loading support"]
           ],
           advantagesTitle: "Why buyers use film faced plywood",
@@ -417,6 +437,18 @@
     container.appendChild(row);
   }
 
+  function appendSpecHeader(container) {
+    var row = document.createElement("div");
+    var parameter = document.createElement("span");
+    var details = document.createElement("strong");
+    row.className = "detail-spec-head";
+    parameter.textContent = "Parameter";
+    details.textContent = "Details";
+    row.appendChild(parameter);
+    row.appendChild(details);
+    container.appendChild(row);
+  }
+
   function appendAdvantage(container, item, index) {
     var card = document.createElement("article");
     var number = document.createElement("span");
@@ -463,11 +495,52 @@
       "&body=" + encodeURIComponent(body);
   }
 
+  function renderGallery(product, copy) {
+    var image = document.querySelector("[data-product-image]");
+    var thumbs = document.querySelector("[data-product-thumbnails]");
+    var galleryImages = product.images || [{
+      src: product.image,
+      alt: product.alt || copy.title
+    }];
+
+    if (!image) return;
+
+    function selectImage(index) {
+      var selected = galleryImages[index];
+      image.setAttribute("src", selected.src);
+      image.setAttribute("alt", selected.alt || product.alt || copy.title);
+      if (!thumbs) return;
+      thumbs.querySelectorAll("button").forEach(function (button, buttonIndex) {
+        var active = buttonIndex === index;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-current", active ? "true" : "false");
+      });
+    }
+
+    clear(thumbs);
+    galleryImages.forEach(function (item, index) {
+      var button = document.createElement("button");
+      var thumbnail = document.createElement("img");
+      button.type = "button";
+      button.className = "detail-gallery-thumb";
+      button.setAttribute("aria-label", "View image " + (index + 1));
+      thumbnail.src = item.src;
+      thumbnail.alt = "";
+      button.appendChild(thumbnail);
+      button.addEventListener("click", function () {
+        selectImage(index);
+      });
+      thumbs.appendChild(button);
+    });
+
+    selectImage(0);
+    if (thumbs) thumbs.hidden = galleryImages.length < 2;
+  }
+
   function render() {
     var slug = productSlug();
     var product = products[slug] || products["film-faced-plywood"];
     var copy = product.locales[currentLocale(product)] || product.locales.en;
-    var image = document.querySelector("[data-product-image]");
     var tags = document.querySelector("[data-product-tags]");
     var specs = document.querySelector("[data-product-specs]");
     var advantages = document.querySelector("[data-product-advantages]");
@@ -477,10 +550,7 @@
 
     document.title = copy.title + " | JLD Wood Panels";
     if (description) description.setAttribute("content", copy.summary);
-    if (image) {
-      image.setAttribute("src", product.image);
-      image.setAttribute("alt", product.alt || copy.title);
-    }
+    renderGallery(product, copy);
     text(document.querySelector("[data-product-breadcrumb]"), copy.title);
     text(document.querySelector("[data-product-category]"), copy.category);
     text(document.querySelector("[data-product-title]"), copy.title);
@@ -488,6 +558,7 @@
     text(document.querySelector("[data-product-detail-title]"), copy.detailTitle);
     text(document.querySelector("[data-product-detail-text]"), copy.detailText);
     text(document.querySelector("[data-product-note]"), copy.note);
+    text(document.querySelector("[data-product-spec-title]"), copy.specTitle || "Common supply options");
     text(document.querySelector("[data-product-advantages-title]"), copy.advantagesTitle);
     if (email) email.setAttribute("href", mailto(copy.title));
 
@@ -496,6 +567,8 @@
       appendTag(tags, item);
     });
     clear(specs);
+    specs.classList.toggle("is-technical", Boolean(product.technicalSpecTable));
+    if (product.technicalSpecTable) appendSpecHeader(specs);
     (copy.specs || []).forEach(function (item) {
       appendSpec(specs, item);
     });
