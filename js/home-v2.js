@@ -72,8 +72,8 @@
       productsText: "Keep the homepage simple: buyer enters by application, then confirms specification through the product page or email inquiry.",
       productOneTitle: "Formwork & Construction",
       productOneText: "Film faced plywood, PP plastic faced plywood, slip-resistant plywood and formply for concrete projects.",
-      productTwoTitle: "Furniture & Interior Panels",
-      productTwoText: "MDF, chipboard, commercial plywood and melamine boards for furniture and interior manufacturing.",
+      productTwoTitle: "Furniture Panels",
+      productTwoText: "MDF, chipboard and OSB for furniture, interior and structural panel production.",
       productThreeTitle: "Engineered Wood Systems",
       productThreeText: "LVL, H20 beam and formwork system components for industrial and project supply.",
       factoryEyebrow: "Manufacturing proof",
@@ -214,8 +214,8 @@
       productsText: "首页保持清晰：客户先按应用进入分类，再通过产品页或邮件确认具体规格。",
       productOneTitle: "建筑模板与施工",
       productOneText: "覆膜板、PP 塑面板、防滑板和 Formply，用于混凝土项目。",
-      productTwoTitle: "家具与室内板材",
-      productTwoText: "MDF、刨花板、普通胶合板和三聚氰胺板，用于家具与室内制造。",
+      productTwoTitle: "家具板材",
+      productTwoText: "MDF、刨花板和 OSB，用于家具、室内和结构板材生产。",
       productThreeTitle: "工程木与模板系统",
       productThreeText: "LVL、H20 梁和模板系统部件，用于工业和项目供应。",
       factoryEyebrow: "制造证明",
@@ -350,7 +350,7 @@
       productOneTitle: "Encofrado y construccion",
       productOneText: "Film faced plywood, PP faced plywood, tablero antideslizante y formply para proyectos de concreto.",
       productTwoTitle: "Paneles para muebles",
-      productTwoText: "MDF, chipboard, contrachapado comercial y melamina para fabricacion de muebles e interiores.",
+      productTwoText: "MDF, aglomerado y OSB para muebles, interiores y paneles estructurales.",
       productThreeTitle: "Sistemas de madera tecnica",
       productThreeText: "LVL, viga H20 y componentes de encofrado para suministro industrial y proyectos.",
       factoryEyebrow: "Prueba de fabricacion",
@@ -456,7 +456,7 @@
       "Packing / certificate / application notes:",
       formData.get("notes") || ""
     ].join("\n");
-    window.location.href = "mailto:info@blxing.com?subject=" +
+    window.location.href = "mailto:info@jldplywood.com?subject=" +
       encodeURIComponent("Jialinda wood panel inquiry") +
       "&body=" + encodeURIComponent(body);
   }

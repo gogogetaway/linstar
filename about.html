@@ -12,7 +12,7 @@
   <header class="v2-header v2-products-header is-scrolled" data-header>
     <a class="v2-brand" href="index.html" aria-label="JLD home">
       <img src="assets/img/logo-v2.png" alt="JLD">
-      <span>JIALINDA</span>
+      <span data-i18n="brandTag">JIALINDA</span>
     </a>
 
     <button class="v2-menu-button" type="button" data-menu-button aria-label="Open navigation">
@@ -27,8 +27,8 @@
       <div class="v2-nav-item">
         <a class="v2-nav-trigger" href="products.html" data-i18n="navProducts">Products</a>
         <div class="v2-dropdown v2-products-mega">
-          <div class="v2-dropdown-group">
-            <a class="v2-dropdown-heading" href="products.html#formwork-plywood" data-i18n="dropFilm">Film Faced Plywood</a>
+          <div class="v2-dropdown-group is-active">
+            <a class="v2-dropdown-heading" href="products.html#formwork-plywood" data-i18n="dropFilm">Film Faced &amp; Formwork Plywood</a>
             <div class="v2-dropdown-submenu">
               <a href="product-detail.html?product=film-faced-plywood">Film Faced Plywood</a>
               <a href="product-detail.html?product=pp-plastic-faced-plywood">PP Plastic Faced Plywood</a>
@@ -37,12 +37,22 @@
             </div>
           </div>
           <div class="v2-dropdown-group">
-            <a class="v2-dropdown-heading" href="products.html#commercial-panels" data-i18n="dropFurniture">Furniture Panels</a>
+            <a class="v2-dropdown-heading" href="products.html#commercial-panels" data-i18n="dropCommercial">Commercial &amp; Specialty Plywood</a>
             <div class="v2-dropdown-submenu">
-              <a href="product-detail.html?product=commercial-plywood">Commercial Plywood</a>
+              <a href="product-detail.html?product=okoume-plywood">Okoume Plywood</a>
+              <a href="product-detail.html?product=birch-plywood">Birch Plywood</a>
+              <a href="product-detail.html?product=bintangor-plywood">Bintangor Plywood</a>
+              <a href="product-detail.html?product=pine-plywood">Pine Plywood</a>
+              <a href="product-detail.html?product=fancy-plywood">Fancy Plywood</a>
+              <a href="product-detail.html?product=flexible-plywood">Flexible / Bending Plywood</a>
+            </div>
+          </div>
+          <div class="v2-dropdown-group">
+            <a class="v2-dropdown-heading" href="products.html#furniture-panels" data-i18n="dropFurniture">Furniture Panels</a>
+            <div class="v2-dropdown-submenu">
               <a href="product-detail.html?product=mdf">MDF</a>
               <a href="product-detail.html?product=chipboard">Chipboard</a>
-              <a href="product-detail.html?product=melamine-boards">Melamine Boards</a>
+              <a href="product-detail.html?product=osb">OSB</a>
             </div>
           </div>
           <div class="v2-dropdown-group">
@@ -50,37 +60,38 @@
             <div class="v2-dropdown-submenu">
               <a href="product-detail.html?product=lvl">LVL</a>
               <a href="product-detail.html?product=h20-beam">H20 Beam</a>
+              <a href="product-detail.html?product=blockboard">Blockboard</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="v2-nav-item">
-        <a class="v2-nav-trigger" href="support-matching.html">Supply Support</a>
+        <a class="v2-nav-trigger" href="support-matching.html" data-i18n="navTools">Supply Support</a>
         <div class="v2-dropdown">
-          <a href="support-matching.html">Product Matching</a>
-          <a href="support-inquiry.html">Inquiry Checklist</a>
-          <a href="support-packing.html">Packing &amp; Loading</a>
-          <a href="support-documents.html">Documents</a>
+          <a href="support-matching.html" data-i18n="dropSelector">Product Matching</a>
+          <a href="support-inquiry.html" data-i18n="dropChecklist">Inquiry Checklist</a>
+          <a href="support-packing.html" data-i18n="dropPacking">Packing &amp; Loading</a>
+          <a href="support-documents.html" data-i18n="dropCompliance">Documents</a>
         </div>
       </div>
       <div class="v2-nav-item">
-        <a class="v2-nav-trigger" href="about.html">About Us</a>
+        <a class="v2-nav-trigger" href="about.html" data-i18n="navAbout">About Us</a>
         <div class="v2-dropdown">
-          <a href="#company">Company Overview</a>
-          <a href="#factory">Factory &amp; QC</a>
-          <a href="#certificates">Certificates</a>
-          <a href="markets.html">Export Markets</a>
+          <a href="about.html#company" data-i18n="dropCompany">Company Overview</a>
+          <a href="about.html#factory" data-i18n="dropFactory">Factory &amp; QC</a>
+          <a href="about.html#certificates" data-i18n="dropCertificates">Certificates</a>
+          <a href="markets.html" data-i18n="dropExport">Export Markets</a>
         </div>
       </div>
       <div class="v2-nav-item">
-        <a class="v2-nav-link" href="#contact">Contact</a>
+        <a class="v2-nav-link" href="#quote" data-i18n="navContact">Contact</a>
       </div>
     </nav>
 
     <div class="v2-actions">
       <form class="v2-search" action="products.html" role="search">
-        <input type="search" name="q" placeholder="Search plywood, MDF, LVL...">
+        <input type="search" name="q" data-i18n-placeholder="searchPlaceholder" placeholder="Search plywood, MDF, LVL...">
         <button type="submit" aria-label="Search">⌕</button>
       </form>
       <div class="v2-lang v2-action-dropdown" aria-label="Language">
@@ -96,7 +107,7 @@
           <img src="assets/whatapp.png" alt="" aria-hidden="true">
           <span>WhatsApp</span>
         </a>
-        <a href="mailto:sales@blxing.com">
+        <a href="mailto:info@jldplywood.com">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6.5h14.4c1 0 1.8.8 1.8 1.8v7.4c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8V8.3c0-1 .8-1.8 1.8-1.8Zm0 1.5 7.2 5 7.2-5H4.8Zm14.7 1.4-7.1 4.9a.8.8 0 0 1-.9 0L4.5 9.4v6.3c0 .2.1.3.3.3h14.4c.2 0 .3-.1.3-.3V9.4Z"/></svg>
           <span>Email</span>
         </a>
@@ -253,7 +264,7 @@
           <h4>Products</h4>
           <ul>
             <li><a href="products.html#formwork-plywood">Film faced plywood</a></li>
-            <li><a href="products.html#commercial-panels">Furniture panels</a></li>
+            <li><a href="products.html#furniture-panels">Furniture panels</a></li>
             <li><a href="products.html#engineered-wood">LVL & H20 beams</a></li>
             <li><a href="products.html">Product center</a></li>
           </ul>
@@ -302,7 +313,7 @@
         <img src="assets/whatapp.png" alt="" aria-hidden="true">
         <span><strong>WhatsApp</strong><small>Chat with sales</small></span>
       </a>
-      <a class="v2-floating-option v2-floating-email" href="mailto:sales@blxing.com">
+      <a class="v2-floating-option v2-floating-email" href="mailto:info@jldplywood.com">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6.5h14.4c1 0 1.8.8 1.8 1.8v7.4c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8V8.3c0-1 .8-1.8 1.8-1.8Zm0 1.5 7.2 5 7.2-5H4.8Zm14.7 1.4-7.1 4.9a.8.8 0 0 1-.9 0L4.5 9.4v6.3c0 .2.1.3.3.3h14.4c.2 0 .3-.1.3-.3V9.4Z"/></svg>
         <span><strong>Email</strong><small>Send requirements</small></span>
       </a>
