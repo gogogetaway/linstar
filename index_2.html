@@ -6,6 +6,7 @@
   <title>Jialinda | Plywood Manufacturer & Export Supplier</title>
   <meta name="description" content="Factory-direct plywood, furniture panels, LVL and formwork systems with specification matching, export packing and container delivery.">
   <link rel="stylesheet" href="css/index-2.css">
+  <link rel="stylesheet" href="css/rfq-panel.css">
 </head>
 <body>
   <header class="i2-header" data-header>
@@ -55,7 +56,7 @@
         <p class="i2-hero-copy">We help importers, contractors and manufacturers match plywood specifications, control production and prepare export-ready container shipments.</p>
         <div class="i2-hero-actions">
           <a class="i2-button i2-button-primary" href="#products">Explore products <span>→</span></a>
-          <a class="i2-button i2-button-ghost" href="#inquiry">Send requirements</a>
+          <a class="i2-button i2-button-ghost" href="#inquiry" data-rfq-open>Send requirements</a>
         </div>
       </div>
       <div class="i2-hero-proof">
@@ -208,25 +209,13 @@
       </div>
     </section>
 
-    <section class="i2-inquiry" id="inquiry">
+    <section class="i2-inquiry i2-inquiry-compact" id="inquiry">
       <div class="i2-inquiry-copy">
         <p class="i2-eyebrow">Start an inquiry</p>
         <h2>Send the specification.<br>We will help complete it.</h2>
-        <p>For a practical first quote, include the product, size, thickness, quantity and destination port.</p>
-        <div>
-          <a href="mailto:info@jldplywood.com">info@jldplywood.com</a>
-          <a href="https://api.whatsapp.com/send?phone=8613775936777" target="_blank" rel="noopener">WhatsApp: +86 137 7593 6777</a>
-        </div>
+        <p>Choose WhatsApp or Email, then send the product, size, quantity and destination port. Our sales team will help complete the remaining specification.</p>
       </div>
-      <form class="i2-inquiry-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="5e241454-a228-47e8-8b78-c47883800404">
-        <label><span>Name / Company</span><input type="text" name="name" required></label>
-        <label><span>Email or WhatsApp</span><input type="text" name="contact" required></label>
-        <label><span>Product</span><input type="text" name="product" placeholder="Film faced plywood, MDF, LVL..."></label>
-        <label><span>Destination port</span><input type="text" name="port"></label>
-        <label class="i2-form-wide"><span>Requirements</span><textarea name="message" rows="4" required placeholder="Size, thickness, quantity, surface, packing or certificate needs"></textarea></label>
-        <button type="submit">Send requirements <span>→</span></button>
-      </form>
+      <button class="i2-inquiry-open" type="button" data-rfq-open><span>Send requirements</span><b>WhatsApp or Email</b><strong>→</strong></button>
     </section>
   </main>
 
@@ -234,7 +223,7 @@
     <div class="i2-footer-top">
       <a class="i2-brand" href="index_2.html"><img src="assets/img/logo-v2.png" alt="JLD"><span><strong>JIALINDA</strong><small>Wood panel supply</small></span></a>
       <p>Factory-direct plywood and engineered wood supply for importers, contractors and manufacturers.</p>
-      <a href="#inquiry">Request a quote →</a>
+      <a href="#inquiry" data-rfq-open>Request a quote →</a>
     </div>
     <div class="i2-footer-links">
       <div><strong>Products</strong><a href="products.html#formwork-plywood">Film faced plywood</a><a href="products.html#commercial-panels">Commercial plywood</a><a href="products.html#furniture-panels">Furniture panels</a><a href="products.html#engineered-wood">Engineered wood</a><a href="products.html#blockboard">Blockboard</a></div>
@@ -245,6 +234,26 @@
     <div class="i2-footer-bottom"><span>© 2026 JLD / Xuzhou Jialinda Trading Co., Ltd.</span><span>Plywood manufacturer and exporter</span></div>
   </footer>
 
+  <div class="rfq-drawer" data-rfq-drawer aria-hidden="true">
+    <button class="rfq-drawer-backdrop" type="button" aria-label="Close request form" data-rfq-close></button>
+    <aside class="rfq-drawer-panel" aria-label="Request a quotation">
+      <div class="rfq-drawer-head"><small>REQUEST FOR QUOTATION</small><strong>Send your requirements</strong><p>Choose one contact method. Product specifications can be completed together with our sales team.</p><button class="rfq-drawer-close" type="button" aria-label="Close" data-rfq-close>×</button></div>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5e241454-a228-47e8-8b78-c47883800404">
+        <fieldset class="rfq-contact-choice"><legend>Preferred contact method</legend><label><input type="radio" name="preferred_contact" value="WhatsApp" checked><span>WhatsApp</span></label><label><input type="radio" name="preferred_contact" value="Email"><span>Email</span></label></fieldset>
+        <label class="rfq-field rfq-field-wide"><span>Your contact</span><input type="text" required data-rfq-contact></label>
+        <label class="rfq-field rfq-field-wide"><span>Product</span><input type="text" name="product" placeholder="Film faced plywood, MDF, LVL..." data-rfq-product></label>
+        <label class="rfq-field"><span>Size / Thickness</span><input type="text" name="size"></label>
+        <label class="rfq-field"><span>Quantity</span><input type="text" name="quantity"></label>
+        <label class="rfq-field rfq-field-wide"><span>Destination port</span><input type="text" name="port"></label>
+        <label class="rfq-field rfq-field-wide"><span>Additional requirements</span><textarea name="message" placeholder="Surface, core, glue, packing or certificate needs"></textarea></label>
+        <button class="rfq-submit" type="submit">Send requirements <span>→</span></button>
+      </form>
+    </aside>
+  </div>
+  <button class="rfq-floating-open" type="button" data-rfq-open><span>Get a Quote</span><span>+</span></button>
+
   <script src="js/index-2.js"></script>
+  <script src="js/rfq-panel.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
   <title>徐州嘉林达贸易有限公司 | Wood Panels for Global Projects</title>
   <meta name="description" content="Xuzhou Jialinda Trading Co., Ltd. supplies film faced plywood, furniture panels, LVL and formwork systems for importers, contractors and manufacturers.">
   <link rel="stylesheet" href="css/home-v2.css">
+  <link rel="stylesheet" href="css/rfq-panel.css">
 </head>
 <body>
   <header class="v2-header v2-home-header" data-header>
@@ -89,7 +90,7 @@
         </div>
       </div>
       <div class="v2-nav-item">
-        <a class="v2-nav-link" href="#quote" data-i18n="navContact">Contact</a>
+        <a class="v2-nav-link" href="#quote" data-i18n="navContact" data-rfq-open>Contact</a>
       </div>
     </nav>
 
@@ -146,7 +147,7 @@
           </div>
           <div class="v2-hero-cta">
             <a class="v2-button" href="#products" data-i18n="browseProducts">Browse Products</a>
-            <a class="v2-button v2-button-light" href="#quote" data-i18n="sendRequirements">Send Requirements</a>
+            <a class="v2-button v2-button-light" href="#quote" data-i18n="sendRequirements" data-rfq-open>Send Requirements</a>
           </div>
         </div>
       </div>
@@ -287,7 +288,7 @@
           <h2 data-i18n="whyUsTitle">How we support plywood buyers</h2>
           <p data-i18n="whyUsText">From product matching to export packing, the supply process is built around repeat container orders.</p>
         </div>
-        <a href="#quote">Send requirements <span>→</span></a>
+        <a href="#quote" data-rfq-open>Send requirements <span>→</span></a>
       </div>
       <div class="v2-whyus-grid" aria-label="Why choose us">
         <article class="reveal">
@@ -329,7 +330,7 @@
           <h2>Send a complete inquiry faster</h2>
           <p>These details help us match product structure, packing and quotation terms before reply.</p>
         </div>
-        <a href="#quote">Send requirements <span>→</span></a>
+        <a href="#quote" data-rfq-open>Send requirements <span>→</span></a>
       </div>
       <div class="v2-checklist-grid">
         <span>Product type</span>
@@ -372,7 +373,7 @@
           <h2>Common buyer questions</h2>
           <p>Practical answers for plywood importers before sending a first inquiry.</p>
         </div>
-        <a href="#quote">Ask sales <span>→</span></a>
+        <a href="#quote" data-rfq-open>Ask sales <span>→</span></a>
       </div>
       <div class="v2-faq-grid">
         <article><h3>Can you mix products in one container?</h3><p>Yes. Film faced plywood, furniture panels, LVL and H20 beams can be arranged in one sourcing plan when dimensions and loading weight allow.</p></article>
@@ -384,36 +385,24 @@
 
   </main>
 
-  <div class="v2-floating-contact" data-floating-contact>
-    <div class="v2-floating-panel v2-floating-rfq-panel" id="floating-contact-panel" aria-label="Request a quote">
-      <div class="v2-floating-rfq-head">
-        <small>REQUEST FOR QUOTATION</small>
-        <strong>Connect with JLD</strong>
-        <p>Tell us what you need. Our sales team will reply shortly.</p>
-      </div>
+  <div class="rfq-drawer" data-rfq-drawer aria-hidden="true">
+    <button class="rfq-drawer-backdrop" type="button" aria-label="Close request form" data-rfq-close></button>
+    <aside class="rfq-drawer-panel" aria-label="Request a quotation">
+      <div class="rfq-drawer-head"><small>REQUEST FOR QUOTATION</small><strong>Send your requirements</strong><p>Choose one contact method. Product specifications can be completed together with our sales team.</p><button class="rfq-drawer-close" type="button" aria-label="Close" data-rfq-close>×</button></div>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="5e241454-a228-47e8-8b78-c47883800404">
-        <fieldset class="v2-floating-contact-method">
-          <legend>How should we contact you?</legend>
-          <label>
-            <input type="radio" name="preferred_contact" value="WhatsApp" checked>
-            <span><strong>WhatsApp</strong></span>
-          </label>
-          <label>
-            <input type="radio" name="preferred_contact" value="Email">
-            <span><strong>Email</strong></span>
-          </label>
-        </fieldset>
-        <input type="text" name="contact_account" required placeholder="WhatsApp number or email">
-        <textarea name="message" rows="4" required placeholder="Product, size, quantity and destination port"></textarea>
-        <button type="submit">Send RFQ <span aria-hidden="true">→</span></button>
+        <fieldset class="rfq-contact-choice"><legend>Preferred contact method</legend><label><input type="radio" name="preferred_contact" value="WhatsApp" checked><span>WhatsApp</span></label><label><input type="radio" name="preferred_contact" value="Email"><span>Email</span></label></fieldset>
+        <label class="rfq-field rfq-field-wide"><span>Your contact</span><input type="text" required data-rfq-contact></label>
+        <label class="rfq-field rfq-field-wide"><span>Product</span><input type="text" name="product" placeholder="Film faced plywood, MDF, LVL..." data-rfq-product></label>
+        <label class="rfq-field"><span>Size / Thickness</span><input type="text" name="size"></label>
+        <label class="rfq-field"><span>Quantity</span><input type="text" name="quantity"></label>
+        <label class="rfq-field rfq-field-wide"><span>Destination port</span><input type="text" name="port"></label>
+        <label class="rfq-field rfq-field-wide"><span>Additional requirements</span><textarea name="message" placeholder="Surface, core, glue, packing or certificate needs"></textarea></label>
+        <button class="rfq-submit" type="submit">Send requirements <span>→</span></button>
       </form>
-    </div>
-    <button class="v2-floating-toggle" type="button" aria-expanded="false" aria-controls="floating-contact-panel" data-floating-contact-toggle>
-      <span>Get a Quote</span>
-      <span aria-hidden="true">+</span>
-    </button>
+    </aside>
   </div>
+  <button class="rfq-floating-open" type="button" data-rfq-open><span>Get a Quote</span><span>+</span></button>
 
   <footer class="v2-footer" id="quote">
     <div class="v2-footer-inner">
@@ -442,16 +431,16 @@
             <li><a href="/">Homepage</a></li>
             <li><a href="about.html">About Jialinda</a></li>
             <li><a href="markets.html">Export markets</a></li>
-            <li><a href="#quote">Contact sales</a></li>
+            <li><a href="#quote" data-rfq-open>Contact sales</a></li>
           </ul>
         </div>
         <div>
           <h4>Export support</h4>
           <ul>
-            <li><a href="#quote">FOB / CIF quotes</a></li>
-            <li><a href="#quote">Packing marks</a></li>
-            <li><a href="#quote">Container loading</a></li>
-            <li><a href="#quote">Documents</a></li>
+            <li><a href="#quote" data-rfq-open>FOB / CIF quotes</a></li>
+            <li><a href="#quote" data-rfq-open>Packing marks</a></li>
+            <li><a href="#quote" data-rfq-open>Container loading</a></li>
+            <li><a href="#quote" data-rfq-open>Documents</a></li>
           </ul>
         </div>
       </div>
@@ -475,5 +464,6 @@
   </footer>
 
   <script src="js/home-v2.js"></script>
+  <script src="js/rfq-panel.js"></script>
 </body>
 </html>

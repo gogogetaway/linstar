@@ -182,6 +182,7 @@ button { cursor: pointer; }
 .i2-market-stats strong { color: var(--white); font-size: 17px; }
 
 .i2-inquiry { padding: 104px max(20px, calc((100% - var(--max)) / 2)); display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; background: var(--warm); }
+.i2-inquiry-compact { grid-template-columns: 1fr auto; align-items: end; }
 .i2-inquiry-copy > p:not(.i2-eyebrow) { margin: 24px 0; }
 .i2-inquiry-copy > div { display: grid; gap: 8px; color: var(--blue); font-size: 12px; font-weight: 800; }
 .i2-inquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -191,6 +192,10 @@ button { cursor: pointer; }
 .i2-inquiry-form input:focus, .i2-inquiry-form textarea:focus { border-color: var(--blue); }
 .i2-form-wide { grid-column: 1 / -1; }
 .i2-inquiry-form button { grid-column: 1 / -1; min-height: 50px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border: 0; color: var(--white); background: var(--blue); font-size: 11px; font-weight: 800; }
+.i2-inquiry-open { min-width: 310px; min-height: 76px; padding: 0 22px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 5px 20px; border: 0; color: var(--white); background: var(--blue); text-align: left; }
+.i2-inquiry-open span { font-size: 15px; font-weight: 900; }
+.i2-inquiry-open b { grid-column: 1; color: rgba(255,255,255,.62); font-size: 9px; font-weight: 700; text-transform: uppercase; }
+.i2-inquiry-open strong { grid-column: 2; grid-row: 1 / 3; color: #e1af59; font-size: 22px; }
 
 .i2-footer { padding: 58px max(20px, calc((100% - var(--max)) / 2)) 20px; color: rgba(255,255,255,.7); background: #101b21; }
 .i2-footer-top { padding-bottom: 34px; display: grid; grid-template-columns: auto 1fr auto; gap: 60px; align-items: center; border-bottom: 1px solid rgba(255,255,255,.12); }
@@ -218,6 +223,7 @@ button { cursor: pointer; }
   .i2-process-grid { grid-template-columns: 1fr 1fr; }
   .i2-factory { gap: 38px; }
   .i2-inquiry { gap: 48px; }
+  .i2-inquiry-compact { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -264,6 +270,7 @@ button { cursor: pointer; }
   .i2-market-stats { flex-wrap: wrap; }
   .i2-inquiry-form { grid-template-columns: 1fr; }
   .i2-inquiry-form label, .i2-form-wide, .i2-inquiry-form button { grid-column: 1; }
+  .i2-inquiry-open { width: 100%; min-width: 0; }
   .i2-footer { padding: 44px 16px 18px; }
   .i2-footer-top { grid-template-columns: 1fr; gap: 20px; }
   .i2-footer-links { grid-template-columns: 1fr 1fr; gap: 28px 18px; }
