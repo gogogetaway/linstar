@@ -163,7 +163,7 @@ a {
 
 .v2-products-mega {
   min-width: 760px !important;
-  min-height: 224px;
+  min-height: 266px;
   grid-template-columns: 270px minmax(360px, 1fr) !important;
   align-items: stretch;
   gap: 12px !important;
@@ -215,6 +215,10 @@ a {
 
 .v2-products-mega .v2-dropdown-group:nth-child(4) {
   grid-row: 4;
+}
+
+.v2-products-mega .v2-dropdown-group:nth-child(5) {
+  grid-row: 5;
 }
 
 .v2-dropdown-heading {
@@ -891,7 +895,7 @@ a {
 
 .v2-product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   width: min(1440px, 100%);
   margin: 0 auto;
   gap: 18px;

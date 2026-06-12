@@ -70,8 +70,8 @@
       groupHash: "formwork-plywood",
       locales: {
         en: {
-          title: "Film Faced Plywood",
-          category: "Formwork & Construction Plywood",
+          title: "Brown/Red/Black Film Faced Plywood",
+          category: "Film faced plywood",
           summary: "Structural engineered wood panel for concrete formwork and heavy-duty industrial use, available in multiple sizes, cores, glues and film colors.",
           tags: ["4-35 mm", "Custom sizes", "15-20 reuses", "WBP / MLM / MR"],
           detailTitle: "Designed for concrete formwork and heavy-duty use.",
@@ -130,7 +130,7 @@
       locales: {
         en: {
           title: "PP Plastic Faced Plywood",
-          category: "Formwork & Construction Plywood",
+          category: "Film faced plywood",
           summary: "PP plastic faced formwork plywood with a durable waterproof surface, designed for repeated use in high-rise, bridge and humid construction projects.",
           tags: ["12-21 mm", "25-30 reuses", "PP surface", "Melamine / Phenolic"],
           detailTitle: "Durable PP surface for repeated formwork use.",
@@ -246,7 +246,7 @@
       locales: {
         en: {
           title: "Formply",
-          category: "Formwork & Construction Plywood",
+          category: "Film faced plywood",
           summary: "Structural phenolic film-faced plywood manufactured for concrete pouring and Australian formwork supply.",
           tags: ["F14 / F17 / F22", "AS/NZS 2269", "A-bond glue", "Black HDO film"],
           detailTitle: "Structural Formply for concrete pouring construction.",
@@ -650,12 +650,12 @@
         }
       ],
       alt: "Blockboard engineered wood panel",
-      groupHash: "engineered-wood",
+      groupHash: "blockboard",
       technicalSpecTable: true,
       locales: {
         en: {
           title: "Blockboard",
-          category: "Engineered Wood Systems",
+          category: "Blockboard",
           summary: "Solid strip-core engineered panel for furniture, doors, shelving and interior components.",
           tags: ["Solid strip core", "Furniture panel", "Custom surface", "Export packing"],
           detailTitle: "Solid strip-core panel for furniture and interior production.",
