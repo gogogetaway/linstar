@@ -924,6 +924,10 @@ a {
   padding: 40px 0;
 }
 
+.detail-hero .products-breadcrumb {
+  margin-bottom: 24px;
+}
+
 .detail-hero-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
