@@ -26,6 +26,7 @@
       navTools: "Supply Support",
       navAbout: "About Us",
       navContact: "Contact",
+      navApplications: "Applications",
       navSearch: "Search",
       dropFilm: "Film faced plywood",
       dropCommercial: "Commercial & Specialty Plywood",
@@ -40,6 +41,11 @@
       dropCertificates: "Certificates",
       dropInventory: "Production & QC",
       dropExport: "Export Markets",
+      dropConstruction: "Construction",
+      dropFurnitureApp: "Furniture",
+      dropPackaging: "Packaging",
+      dropVehicles: "Vehicles",
+      dropDecoration: "Decoration",
       dropEmail: "Email Inquiry",
       dropWhatsapp: "WhatsApp",
       dropRequirement: "Requirement Template",
@@ -144,7 +150,7 @@
       whyUsQcTitle: "Order visibility",
       whyUsQcDesc: "Production checks, packing photos and container loading photos help overseas buyers follow the order remotely.",
       whyUsQcFoot: "Shipment safety",
-      globalTitle: "Supplying wood panels to 100+ countries",
+      globalTitle: "Supplying wood panels to 50+ export markets",
       globalText: "From high-rise projects in the Middle East to furniture factories in Europe and SE Asia, Jialinda panels are trusted by importers and contractors for stable quality and global delivery.",
       globalEyebrow: "Global Reach",
       statCountries: "Countries",
@@ -162,257 +168,6 @@
       whatsapp: "WhatsApp",
       footerProducts: "Product center"
     },
-    zh: {
-      brandTag: "JIALINDA",
-      navProducts: "产品",
-      navTools: "供应支持",
-      navAbout: "关于我们",
-      navContact: "联系",
-      navSearch: "搜索",
-      dropFilm: "覆膜板与建筑模板板材",
-      dropCommercial: "商用与特种胶合板",
-      dropFurniture: "家具板材",
-      dropEngineered: "工程木系统",
-      dropSelector: "产品规格匹配",
-      dropChecklist: "询盘清单",
-      dropPacking: "包装与装柜",
-      dropCompliance: "出口文件",
-      dropCompany: "公司介绍",
-      dropFactory: "工厂与质检",
-      dropCertificates: "证书文件",
-      dropInventory: "生产与质检",
-      dropExport: "出口市场",
-      dropEmail: "邮件询盘",
-      dropWhatsapp: "WhatsApp",
-      dropRequirement: "需求模板",
-      searchPlaceholder: "搜索胶合板、MDF、LVL...",
-      searchGo: "搜索",
-      searchFilm: "覆膜板",
-      searchMdf: "MDF / 刨花板",
-      searchLvl: "LVL / H20 梁",
-      getQuote: "联系",
-      heroEyebrow: "自有工厂 · 直接供货",
-      heroTitle: "为全球买家提供可靠的胶合板供应。",
-      heroText: "聚焦覆膜板、Formply、LVL 与 H20 梁，支持稳定规格、出口包装、装柜交付和项目型询盘响应。",
-      heroMetricYears: "行业经验",
-      heroMetricLines: "生产线",
-      heroMetricMarkets: "出口市场",
-      browseProducts: "查看产品",
-      sendRequirements: "发送询盘",
-      quoteChecklist: "询价指南",
-      checkProduct: "产品类型和用途",
-      checkSize: "尺寸、厚度和表面",
-      checkQty: "数量和目的港",
-      checkPacking: "包装和文件需求",
-      proofFactory: "生产基地",
-      proofMarkets: "出口市场",
-      proofPacking: "包装支持",
-      proofContainer: "集装箱交付",
-      certIntro: "认证与合规支持",
-      productsEyebrow: "产品架构",
-      productsTitle: "面向全球买家的三条采购路径。",
-      productsText: "首页保持清晰：客户先按应用进入分类，再通过产品页或邮件确认具体规格。",
-      productOneTitle: "建筑模板与施工",
-      productOneText: "覆膜板、PP 塑面板、防滑板和 Formply，用于混凝土项目。",
-      productTwoTitle: "家具板材",
-      productTwoText: "MDF、刨花板和 OSB，用于家具、室内和结构板材生产。",
-      productThreeTitle: "工程木与模板系统",
-      productThreeText: "LVL、H20 梁和模板系统部件，用于工业和项目供应。",
-      factoryEyebrow: "制造证明",
-      factoryTitle: "有组织的生产与可发货板材库存。",
-      factoryText: "这个模块要让网站更像真实供应伙伴，而不只是产品目录。这张图适合放在这里，因为它能体现规模、仓储秩序和复购供货能力。",
-      factoryPointOneTitle: "稳定供应",
-      factoryPointOneText: "面向长期进口订单的库存规划。",
-      factoryPointTwoTitle: "受控仓储",
-      factoryPointTwoText: "板材在包装和装柜前有序存放。",
-      factoryPointThreeTitle: "混合装柜",
-      factoryPointThreeText: "支持多种板材品类组合采购。",
-      processEyebrow: "生产流程",
-      processTitle: "从规格匹配到集装箱装柜的清晰流程。",
-      stepOneTitle: "定义需求",
-      stepOneText: "确认用途、等级、尺寸、厚度、表面和目标市场。",
-      stepTwoTitle: "匹配方案",
-      stepTwoText: "推荐芯材、胶水、表面、包装方式和文件路径。",
-      stepThreeTitle: "生产检验",
-      stepThreeText: "安排生产、检验、封边、托盘包装和唛头。",
-      stepFourTitle: "装柜交付",
-      stepFourText: "准备装柜、照片、文件和复购规格档案。",
-      toolsEyebrow: "供应支持",
-      toolsTitle: "面向需要稳定木板材供应的买家。",
-      toolsText: "首页先把产品分类、生产证明和出口支持串起来，再引导买家发送具体需求。",
-      toolOneTitle: "聚焦建筑模板供应",
-      toolOneText: "覆膜板、Formply、LVL 和 H20 梁围绕建筑施工应用组织产品线。",
-      toolTwoTitle: "出口包装经验",
-      toolTwoText: "支持托盘包装、唛头、缠绕包装和装柜过程可视化，方便远程采购。",
-      toolThreeTitle: "出口包装经验",
-      toolThreeText: "支持托盘包装、唛头、缠绕包装和装柜过程可视化，方便远程采购。",
-      toolFourTitle: "快速响应询盘",
-      toolFourText: "发送产品、尺寸、厚度、数量和目的港，即可获得实用规格建议。",
-      marketsEyebrow: "出口市场",
-      marketsTitle: "按地区规划内容，而不只按产品规划。",
-      marketOneTitle: "欧洲",
-      marketOneText: "关注 EUDR、CE、甲醛等级和可追溯文件。",
-      marketTwoTitle: "北美",
-      marketTwoText: "准备 EPA TSCA VI、CARB 相关问题和产品规格文件。",
-      marketThreeTitle: "中东",
-      marketThreeText: "突出覆膜板、建筑供应和出口包装耐用性。",
-      marketFourTitle: "大洋洲",
-      marketFourText: "回应生物安全、ISPM 15 包装和防潮运输需求。",
-      faqEyebrow: "买家问题",
-      faqTitle: "在客户发邮件前先回答关键问题。",
-      faqOneQ: "报价需要提供什么？",
-      faqOneA: "请提供产品类型、用途、尺寸、厚度、表面、数量、目的港和所需证书。",
-      faqTwoQ: "JLD 可以做 OEM 包装吗？",
-      faqTwoA: "可以，报价可包含客户唛头、托盘标签、包装要求和运输文件。",
-      faqThreeQ: "我应该从哪些产品开始？",
-      faqThreeA: "建筑客户通常从覆膜板或 Formply 开始。家具客户通常从 MDF、刨花板或三聚氰胺板开始。",
-      quoteEyebrow: "邮件询盘",
-      quoteTitle: "把需求直接发送给销售。",
-      quoteText: "填写询盘信息并提交，网站会打开发给销售的邮件模板，不保存客户数据。",
-      formProduct: "产品",
-      formSize: "尺寸 / 厚度",
-      formQuantity: "数量",
-      formPort: "目的港",
-      formNotes: "包装、证书或应用备注",
-      emailSales: "邮件联系",
-      whatsapp: "WhatsApp",
-      footerProducts: "产品中心",
-      whyUsTitle: "我们如何支持板材买家",
-      whyUsText: "从产品规格匹配到出口包装，流程围绕长期复购和整柜发货来组织。",
-      whyUsCapTitle: "板材供应基础",
-      whyUsCapDesc: "覆膜板、家具板、LVL 和 H20 梁围绕稳定产能组织供应。",
-      whyUsMatTitle: "规格匹配",
-      whyUsMatDesc: "根据用途和目标市场匹配芯材、胶水、厚度、表面和包装。",
-      whyUsMixTitle: "混合装柜方案",
-      whyUsMixDesc: "建筑胶合板、家具板和工程木产品可以放在同一采购方案里安排。",
-      whyUsOemTitle: "OEM 包装支持",
-      whyUsOemDesc: "支持私有唛头、托盘标签、缠绕包装和长途海运防潮保护。",
-      whyUsDocTitle: "出口文件支持",
-      whyUsDocDesc: "随货准备商业文件、包装资料和目标市场相关证书文件。",
-      whyUsQcTitle: "订单过程可视化",
-      whyUsQcDesc: "生产检查、包装照片和装柜照片，方便海外买家远程跟进订单。",
-      globalTitle: "板材供应覆盖全球 100 多个国家",
-      globalText: "从中东的高层建筑项目到欧洲、东南亚的家具工厂，嘉林达板材凭借稳定的质量和全球化的交付能力，赢得了全球进口商与承包商的长期信任。",
-      globalEyebrow: "全球足迹",
-      statCountries: "覆盖国家",
-      statClients: "企业客户",
-      statYears: "出口经验",
-      quoteEyebrow: "邮件询盘",
-      brandTag: "JIALINDA",
-      navProducts: "Productos",
-      navTools: "Soporte de suministro",
-      navAbout: "Nosotros",
-      navContact: "Contacto",
-      navSearch: "Buscar",
-      dropFilm: "Plywood revestido y para encofrado",
-      dropCommercial: "Plywood comercial y especial",
-      dropFurniture: "Paneles para muebles",
-      dropEngineered: "Sistemas de madera tecnica",
-      dropSelector: "Product Matching",
-      dropChecklist: "Inquiry Checklist",
-      dropPacking: "Packing & Loading",
-      dropCompliance: "Documents",
-      dropCompany: "Company Overview",
-      dropFactory: "Factory & QC",
-      dropCertificates: "Certificates",
-      dropInventory: "Production & QC",
-      dropExport: "Mercados de exportacion",
-      dropEmail: "Consulta por correo",
-      dropWhatsapp: "WhatsApp",
-      dropRequirement: "Plantilla de requisitos",
-      searchPlaceholder: "Buscar plywood, MDF, LVL...",
-      searchGo: "Ir",
-      searchFilm: "Film faced plywood",
-      searchMdf: "MDF / Chipboard",
-      searchLvl: "LVL / H20 Beam",
-      getQuote: "Contacto",
-      heroEyebrow: "Suministro directo de nuestra propia fabrica",
-      heroTitle: "Suministro fiable de plywood para compradores globales.",
-      heroText: "Xuzhou Jialinda ayuda a importadores, contratistas y fabricantes a comprar especificaciones estables con embalaje de exportacion, soporte OEM y entrega en contenedor.",
-      heroMetricYears: "Anios de experiencia",
-      heroMetricLines: "Lineas de produccion",
-      heroMetricMarkets: "Mercados de exportacion",
-      browseProducts: "Ver productos",
-      sendRequirements: "Enviar requisitos",
-      quoteChecklist: "Guia de consulta",
-      checkProduct: "Producto y aplicacion",
-      checkSize: "Medida, espesor y superficie",
-      checkQty: "Cantidad y puerto destino",
-      checkPacking: "Embalaje y documentos",
-      proofFactory: "Base de produccion",
-      proofMarkets: "Mercados de exportacion",
-      proofPacking: "Soporte de embalaje",
-      proofContainer: "Entrega en contenedor",
-      certIntro: "Documentacion comun",
-      productsEyebrow: "Arquitectura de producto",
-      productsTitle: "Tres rutas de compra para compradores globales.",
-      productsText: "La pagina principal guia por aplicacion y luego confirma especificaciones por catalogo o correo.",
-      productOneTitle: "Encofrado y construccion",
-      productOneText: "Film faced plywood, PP faced plywood, tablero antideslizante y formply para proyectos de concreto.",
-      productTwoTitle: "Paneles para muebles",
-      productTwoText: "MDF, aglomerado y OSB para muebles, interiores y paneles estructurales.",
-      productThreeTitle: "Sistemas de madera tecnica",
-      productThreeText: "LVL, viga H20 y componentes de encofrado para suministro industrial y proyectos.",
-      factoryEyebrow: "Prueba de fabricacion",
-      factoryTitle: "Organized production and ready-to-ship panel inventory.",
-      factoryText: "Esta seccion debe mostrar a JLD como socio real de suministro. La imagen funciona aqui porque comunica escala, orden y capacidad de pedidos repetidos.",
-      factoryPointOneTitle: "Suministro estable",
-      factoryPointOneText: "Planificacion de stock para pedidos recurrentes.",
-      factoryPointTwoTitle: "Almacen controlado",
-      factoryPointTwoText: "Paneles organizados antes del embalaje y carga.",
-      factoryPointThreeTitle: "Contenedores mixtos",
-      factoryPointThreeText: "Soporte para varias categorias en un plan de compra.",
-      processEyebrow: "Flujo de produccion",
-      processTitle: "Un proceso claro desde la especificacion hasta la carga.",
-      stepOneTitle: "Definir",
-      stepOneText: "Confirmar aplicacion, grado, medida, espesor, superficie y mercado.",
-      stepTwoTitle: "Recomendar",
-      stepTwoText: "Recomendar nucleo, cola, superficie, embalaje y documentos.",
-      stepThreeTitle: "Producir",
-      stepThreeText: "Organizar produccion, inspeccion, sellado, pallets y marcas.",
-      stepFourTitle: "Cargar",
-      stepFourText: "Preparar carga, fotos, documentos y archivos para pedidos repetidos.",
-      toolsEyebrow: "Soporte de suministro",
-      toolsTitle: "Para compradores que necesitan suministro estable de paneles.",
-      toolsText: "La pagina conecta categorias de producto, prueba de produccion y soporte de exportacion antes de pedir requisitos.",
-      toolOneTitle: "Suministro enfocado en encofrado",
-      toolOneText: "Film faced plywood, formply, LVL y viga H20 organizados para uso en construccion.",
-      toolTwoTitle: "Experiencia en embalaje de exportacion",
-      toolTwoText: "Pallets, marcas, wrapping y visibilidad de carga para compradores remotos.",
-      toolThreeTitle: "Experiencia en embalaje de exportacion",
-      toolThreeText: "Pallets, marcas, wrapping y visibilidad de carga para compradores remotos.",
-      toolFourTitle: "Respuesta agil a consultas",
-      toolFourText: "Enviar producto, medida, espesor, cantidad y puerto destino para recibir una recomendacion practica.",
-      marketsEyebrow: "Mercados",
-      marketsTitle: "Planificar por region, no solo por producto.",
-      marketOneTitle: "Europa",
-      marketOneText: "Enfoque en EUDR, CE, formaldehido y trazabilidad.",
-      marketTwoTitle: "Norteamerica",
-      marketTwoText: "Preparar EPA TSCA VI, CARB y archivos de especificacion.",
-      marketThreeTitle: "Medio Oriente",
-      marketThreeText: "Destacar plywood para encofrado, construccion y embalaje robusto.",
-      marketFourTitle: "Oceania",
-      marketFourText: "Atender bioseguridad, embalaje ISPM 15 y control de humedad.",
-      faqEyebrow: "Preguntas",
-      faqTitle: "Responder antes de que el comprador escriba.",
-      faqOneQ: "Que debo enviar para cotizar?",
-      faqOneA: "Enviar producto, aplicacion, medida, espesor, superficie, cantidad, puerto destino y certificados requeridos.",
-      faqTwoQ: "JLD ofrece embalaje OEM?",
-      faqTwoA: "Si, la cotizacion puede incluir marcas, etiquetas, embalaje y documentos de envio.",
-      faqThreeQ: "Con que productos empezar?",
-      faqThreeA: "Construccion suele empezar con film faced plywood o formply. Muebles suele empezar con MDF, chipboard o melamina.",
-      quoteEyebrow: "Consulta por correo",
-      quoteTitle: "Enviar requisitos directamente a ventas.",
-      quoteText: "Completa los campos y envia. El sitio abre un correo preparado para ventas sin guardar datos.",
-      formProduct: "Producto",
-      formSize: "Medida / Espesor",
-      formQuantity: "Cantidad",
-      formPort: "Puerto destino",
-      formNotes: "Embalaje, certificado o notas de aplicacion",
-      emailSales: "Enviar correo",
-      whatsapp: "WhatsApp",
-      footerProducts: "Centro de productos"
-    }
   };
 
   function updateHeader() {
@@ -462,19 +217,14 @@
   }
 
   function setHeroTitle(node, text, lang) {
-    if (lang === "zh") {
-      node.textContent = text;
-      return;
-    }
     var highlighted = text.replace("plywood", '<span class="v2-title-accent">plywood</span>');
     node.innerHTML = highlighted
-      .replace(" for global", "<br>for global")
-      .replace(" para compradores", "<br>para compradores");
+      .replace(" for global", "<br>for global");
   }
 
   function setLanguage(lang) {
     var copy = dictionary[lang] || dictionary.en;
-    document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+    document.documentElement.lang = lang;
     translatable.forEach(function (node) {
       var key = node.getAttribute("data-i18n");
       if (!copy[key]) return;
@@ -492,7 +242,7 @@
       button.classList.toggle("is-active", button.getAttribute("data-lang") === lang);
     });
     if (langCurrent) {
-      langCurrent.textContent = lang === "zh" ? "中文" : lang.toUpperCase();
+      langCurrent.textContent = lang.toUpperCase();
     }
     try {
       localStorage.setItem("blxing-home-lang", lang);
@@ -506,7 +256,7 @@
         entry.target.classList.add("is-visible");
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.16 });
+    }, { threshold: 0.05 });
 
     revealItems.forEach(function (item) {
       observer.observe(item);
@@ -531,6 +281,7 @@
     var stats = document.querySelectorAll(".stat-item strong");
     stats.forEach(function (stat) {
       var target = parseInt(stat.textContent);
+      if (!Number.isFinite(target)) return;
       var count = 0;
       var duration = 2000; // 2 seconds
       var startTime = null;
@@ -657,9 +408,8 @@
   showSlide(0);
   restartSlideTimer();
 
-  var initialLang = "en";
   try {
-    initialLang = localStorage.getItem("blxing-home-lang") || "en";
+    localStorage.removeItem("blxing-home-lang");
   } catch (error) {}
-  setLanguage(initialLang);
+  setLanguage("en");
 })();

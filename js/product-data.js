@@ -514,45 +514,6 @@
         }
       }
     },
-    "melamine-boards": {
-      image: "assets/upload/202531310455680132.jpg",
-      alt: "Melamine boards",
-      groupHash: "commercial-panels",
-      locales: {
-        en: {
-          title: "Melamine Boards",
-          category: "Decorative Furniture Panel",
-          summary: "Decorative melamine faced panels for cabinets, wardrobes, shelves and interior furniture projects.",
-          tags: ["Decorative face", "MDF or chipboard", "Cabinet use", "Color matching"],
-          detailTitle: "Decorative panel for finished furniture parts.",
-          detailText: "Melamine boards combine a decorative paper surface with MDF, chipboard or plywood substrate. They are supplied for buyers who need ready-to-cut furniture panels with consistent color and surface.",
-          note: "Confirm substrate, thickness, color code, texture, two-side or one-side finish, quantity and packing marks.",
-          specs: [
-            ["Thickness", "9 mm, 12 mm, 15 mm, 16 mm, 18 mm, 25 mm or custom"],
-            ["Standard size", "1220 x 2440 mm or market-specific sizes"],
-            ["Substrate", "MDF, chipboard or plywood"],
-            ["Surface", "Solid color, wood grain, matte, texture or custom paper"],
-            ["Finish", "One side or two sides melamine faced"],
-            ["Grade", "Emission class by market requirement"],
-            ["Use", "Cabinets, wardrobes, shelves and interiors"],
-            ["Packing", "Surface-protected export pallet packing"]
-          ],
-          advantagesTitle: "Why buyers use melamine boards",
-          advantages: [
-            ["Ready surface", "Decorative face reduces finishing work in furniture production."],
-            ["Design choice", "Color, texture and substrate can be matched to local demand."],
-            ["Factory efficiency", "Panels are ready for cutting, edging and assembly."],
-            ["Export matching", "Packing and marks support distributor and OEM orders."]
-          ],
-          applications: [
-            "Kitchen cabinets and wardrobes",
-            "Shelving, office furniture and retail fixtures",
-            "Interior wall and decorative panels",
-            "OEM furniture panel programs"
-          ]
-        }
-      }
-    },
     lvl: {
       image: "assets/products/lvl/lvl-sections.png",
       images: [
@@ -857,7 +818,11 @@
 
   function render() {
     var slug = productSlug();
-    var product = products[slug] || products["film-faced-plywood"];
+    var product = products[slug];
+    if (!product) {
+      window.location.replace("product-detail.html?product=film-faced-plywood");
+      return;
+    }
     var copy = product.locales[currentLocale(product)] || product.locales.en;
     var tags = document.querySelector("[data-product-tags]");
     var specs = document.querySelector("[data-product-specs]");

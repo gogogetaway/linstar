@@ -38,7 +38,7 @@
         if (entry.target.querySelector("[data-count]")) animateCounters();
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.18 });
+    }, { threshold: 0.05 });
 
     revealItems.forEach(function (item) {
       observer.observe(item);
