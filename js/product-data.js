@@ -64,6 +64,14 @@
         {
           src: "assets/products/film-faced-plywood/black.png",
           alt: "Black film faced plywood panel"
+        },
+        {
+          src: "assets/products/film-faced-plywood/2.jpg",
+          alt: "Red film faced plywood smooth surface"
+        },
+        {
+          src: "assets/products/film-faced-plywood/3.jpg",
+          alt: "Brown film faced plywood stacked panels"
         }
       ],
       technicalSpecTable: true,
@@ -109,20 +117,24 @@
       }
     },
     "pp-plastic-faced-plywood": {
-      image: "assets/products/pp-plastic-faced-plywood/pp-colors.jpeg",
-      alt: "PP plastic faced plywood panel",
+      image: "assets/products/pp-plastic-faced-plywood/1.png",
+      alt: "Green PP plastic faced plywood panel showing layered core",
       images: [
         {
-          src: "assets/products/pp-plastic-faced-plywood/pp-colors.jpeg",
-          alt: "PP plastic faced plywood colors and core layers"
-        },
-        {
-          src: "assets/products/pp-plastic-faced-plywood/pp-factory.jpeg",
-          alt: "Green PP plastic faced plywood in production"
+          src: "assets/products/pp-plastic-faced-plywood/1.png",
+          alt: "Green PP plastic faced plywood panel showing layered core"
         },
         {
           src: "assets/products/pp-plastic-faced-plywood/pp-surface.jpeg",
-          alt: "Green PP plastic faced plywood surface and edge"
+          alt: "JLD branded green PP plastic faced plywood surface and edge"
+        },
+        {
+          src: "assets/products/pp-plastic-faced-plywood/pp-colors3.jpeg",
+          alt: "PP plastic faced plywood color and core samples"
+        },
+        {
+          src: "assets/products/pp-plastic-faced-plywood/2.png",
+          alt: "Green PP plastic faced plywood factory stock"
         }
       ],
       technicalSpecTable: true,
@@ -168,8 +180,20 @@
       }
     },
     "slip-resistant-plywood": {
-      image: "assets/products/slip-resistant-plywood/slip-resistant-surface.jpeg",
+      image: "assets/products/slip-resistant-plywood/1.png",
       images: [
+        {
+          src: "assets/products/slip-resistant-plywood/1.png",
+          alt: "JLD slip-resistant plywood panels showing anti-slip surfaces and layered cores"
+        },
+        {
+          src: "assets/products/slip-resistant-plywood/2.png",
+          alt: "Full-size hexagonal slip-resistant plywood panel in production"
+        },
+        {
+          src: "assets/products/slip-resistant-plywood/3.png",
+          alt: "Stacked slip-resistant plywood panels showing surface and core layers"
+        },
         {
           src: "assets/products/slip-resistant-plywood/slip-resistant-surface.jpeg",
           alt: "Slip-resistant plywood with hexagonal anti-slip surface"
@@ -225,12 +249,20 @@
       }
     },
     formply: {
-      image: "assets/upload/20254814242521166.png",
-      alt: "Formply panel",
+      image: "assets/products/formply/1.png",
+      alt: "F17 structural Formply panel showing black surface and core",
       images: [
         {
-          src: "assets/upload/20254814242521166.png",
-          alt: "JLD F17 Formply export package"
+          src: "assets/products/formply/1.png",
+          alt: "F17 structural Formply panel showing black surface and core"
+        },
+        {
+          src: "assets/products/formply/2.png",
+          alt: "F17 structural Formply black surface and printed standard markings"
+        },
+        {
+          src: "assets/products/formply/3.png",
+          alt: "Formply export bundles packed at the factory"
         },
         {
           src: "assets/products/formply/formply-panels.png",

@@ -153,6 +153,74 @@
   background: #174a76;
   font-size: 11px;
   font-weight: 900;
+  cursor: pointer;
+  transition: background .18s ease, transform .14s ease, box-shadow .18s ease;
+}
+
+.rfq-submit:hover {
+  background: #103a5d;
+  box-shadow: 0 8px 20px rgba(23,74,118,.18);
+  transform: translateY(-1px);
+}
+
+.rfq-submit:active,
+.rfq-floating-open:active {
+  transform: translateY(1px);
+}
+
+.rfq-submit:focus-visible,
+.rfq-floating-open:focus-visible,
+[data-rfq-open]:focus-visible {
+  outline: 3px solid rgba(234,73,0,.25);
+  outline-offset: 3px;
+}
+
+.rfq-submit:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
+.rfq-submit-loader {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: rfq-spin .7s linear infinite;
+}
+
+.rfq-toast {
+  position: fixed;
+  z-index: 120;
+  right: 22px;
+  bottom: 78px;
+  max-width: min(320px, calc(100vw - 28px));
+  padding: 10px 13px;
+  border: 1px solid #d7e3df;
+  color: #285746;
+  background: rgba(248,252,250,.97);
+  box-shadow: 0 10px 28px rgba(24,33,38,.12);
+  font-size: 11px;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.rfq-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rfq-toast.is-error {
+  border-color: #ecd8d2;
+  color: #8d3d29;
+  background: rgba(255,249,247,.97);
+}
+
+@keyframes rfq-spin {
+  to { transform: rotate(360deg); }
 }
 
 .rfq-floating-open {
@@ -167,13 +235,25 @@
   gap: 16px;
   border: 0;
   color: #fff;
-  background: #174a76;
-  box-shadow: 0 14px 34px rgba(16,45,67,.24);
+  background: #ea4900;
+  box-shadow: 0 14px 34px rgba(24,33,38,.22);
   font-size: 11px;
   font-weight: 900;
+  cursor: pointer;
+  transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
 }
 
-.rfq-floating-open span:last-child { color: #d5a451; font-size: 17px; }
+[data-rfq-open] {
+  cursor: pointer;
+}
+
+.rfq-floating-open:hover {
+  background: #c83f00;
+  box-shadow: 0 16px 38px rgba(24,33,38,.28);
+  transform: translateY(-2px);
+}
+
+.rfq-floating-open span:last-child { color: #fff; font-size: 17px; }
 body.is-rfq-open { overflow: hidden; }
 
 @media (max-width: 560px) {
@@ -182,4 +262,5 @@ body.is-rfq-open { overflow: hidden; }
   .rfq-drawer form { padding: 20px 18px 28px; grid-template-columns: 1fr; }
   .rfq-contact-choice, .rfq-field-wide, .rfq-submit { grid-column: 1; }
   .rfq-floating-open { right: 14px; bottom: 14px; }
+  .rfq-toast { right: 14px; bottom: 70px; }
 }
