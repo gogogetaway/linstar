@@ -31,7 +31,7 @@
     '        <h4 data-i18n="footerSupport">Our Advantages</h4>',
     '        <ul>',
     '          <li><a href="advantages-production.html" data-i18n="dropSelector">Production &amp; Inventory</a></li>',
-    '          <li><a href="advantages-execution.html" data-i18n="dropChecklist">Order Execution</a></li>',
+    '          <li><a href="advantages-qc.html" data-i18n="dropChecklist">QC &amp; Order Control</a></li>',
     '          <li><a href="advantages-packing.html" data-i18n="dropPacking">Packing &amp; Loading</a></li>',
     '          <li><a href="advantages-documents.html" data-i18n="dropCompliance">Documents &amp; Compliance</a></li>',
     '        </ul>',
