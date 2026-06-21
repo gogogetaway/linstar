@@ -3,17 +3,20 @@
     construction: {
       title: "Construction",
       count: 5,
+      layout: "curated",
       description: "High-performance plywood solutions for concrete formwork, scaffolding, and structural building projects. Our panels provide the durability needed for repeated use in demanding construction environments."
     },
     furniture: {
       title: "Furniture",
       count: 5,
-      sequence: ["05", "02", "03", "04", "01"],
+      layout: "curated",
+      sequence: ["01", "04", "05", "03", "02"],
       description: "Premium wood panels for high-end furniture production, cabinetry, and shelving. Available in various veneers and core compositions to match aesthetic and structural requirements."
     },
     packaging: {
       title: "Packaging",
-      count: 5,
+      count: 4,
+      layout: "curated",
       description: "Robust wood panels for export crates, heavy-duty pallets, and specialized industrial packaging. Designed to protect cargo during international transit while meeting biosecurity standards."
     },
     vehicles: {
@@ -24,7 +27,8 @@
     decoration: {
       title: "Decoration",
       count: 5,
-      sequence: ["05", "03", "02", "04", "01"],
+      layout: "curated",
+      sequence: ["03", "01", "02", "04", "05"],
       description: "Aesthetic panels for interior wall cladding, ceiling treatments, and architectural features. Combine natural wood beauty with the stability and ease of installation of engineered panels."
     }
   };
@@ -39,6 +43,38 @@
 
   if (!gallery || !title || !count) return;
 
+  var titleKeys = {
+    construction: "dropConstruction",
+    furniture: "dropFurnitureApp",
+    decoration: "dropDecoration",
+    vehicles: "dropVehicles",
+    packaging: "dropPackaging"
+  };
+
+  var descKeys = {
+    construction: "appConstructionDesc",
+    furniture: "appFurnitureDesc",
+    decoration: "appDecorationDesc",
+    vehicles: "appVehiclesDesc",
+    packaging: "appPackagingDesc"
+  };
+
+  function getCurrentLang() {
+    var params = new URLSearchParams(window.location.search);
+    var urlLang = params.get("lang");
+    var supported = ["en", "ar", "fr", "ru"];
+    if (urlLang && supported.indexOf(urlLang) !== -1) {
+      return urlLang;
+    }
+    try {
+      var stored = localStorage.getItem("blxing-home-lang");
+      if (stored && supported.indexOf(stored) !== -1) {
+        return stored;
+      }
+    } catch (e) {}
+    return "en";
+  }
+
   function currentApplication() {
     var requested = new URLSearchParams(window.location.search).get("application");
     return applicationData[requested] ? requested : "construction";
@@ -46,10 +82,26 @@
 
   function render(application) {
     var data = applicationData[application];
-    title.textContent = data.title;
-    count.textContent = data.count + " application photos";
-    if (description) description.textContent = data.description;
+    var lang = getCurrentLang();
+    var t = (window.siteTranslations && window.siteTranslations[lang]) ? window.siteTranslations[lang] : {};
+
+    var displayTitle = t[titleKeys[application]] || data.title;
+    var displayDesc = t[descKeys[application]] || data.description;
+
+    // Format photo count text dynamically
+    var displayCount = data.count + " application photos";
+    if (t.appPhotosCount) {
+      displayCount = t.appPhotosCount.replace("5", data.count);
+    }
+
+    title.textContent = displayTitle;
+    count.textContent = displayCount;
+    if (description) description.textContent = displayDesc;
+
     gallery.innerHTML = "";
+    gallery.className = "applications-gallery applications-gallery--" + application;
+    gallery.classList.toggle("applications-gallery--curated", data.layout === "curated");
+    gallery.classList.toggle("applications-gallery--legacy", data.layout !== "curated");
 
     for (var index = 0; index < data.count; index += 1) {
       var number = data.sequence ? data.sequence[index] : String(index + 1).padStart(2, "0");
@@ -57,9 +109,14 @@
       var image = document.createElement("img");
       button.type = "button";
       button.className = "applications-photo";
-      button.setAttribute("aria-label", "Open " + data.title + " application photo " + (index + 1));
+      if (data.layout === "curated") {
+        if (index === 0) button.classList.add("is-featured");
+        if (index === 1) button.classList.add("is-side");
+        if (data.count === 4 && index > 1) button.classList.add("is-half");
+      }
+      button.setAttribute("aria-label", "Open " + displayTitle + " application photo " + (index + 1));
       image.src = "assets/applications/" + application + "/" + number + ".jpg?v=20260614v4";
-      image.alt = data.title + " application";
+      image.alt = displayTitle + " application";
       image.loading = index > 1 ? "lazy" : "eager";
       button.appendChild(image);
       gallery.appendChild(button);
@@ -77,7 +134,8 @@
   tabs.forEach(function (tab) {
     tab.addEventListener("click", function () {
       var application = tab.dataset.applicationTab;
-      history.replaceState(null, "", "applications.html?application=" + application);
+      var lang = getCurrentLang();
+      history.replaceState(null, "", "applications.html?application=" + application + "&lang=" + lang);
       render(application);
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
@@ -110,6 +168,10 @@
       lightbox.classList.remove("is-open");
       lightbox.setAttribute("aria-hidden", "true");
     }
+  });
+
+  window.addEventListener("siteLanguageChanged", function () {
+    render(currentApplication());
   });
 
   render(currentApplication());

@@ -25,8 +25,14 @@
 
   function updateContactField() {
     var method = selectedMethod();
-    contactInput.placeholder = method === "Email" ? "Email address" : "WhatsApp number with country code";
-    contactInput.setAttribute("aria-label", method === "Email" ? "Email address" : "WhatsApp number");
+    var lang = (typeof window.getCurrentLanguage === "function") ? window.getCurrentLanguage() : "en";
+    var t = (window.siteTranslations && window.siteTranslations[lang]) ? window.siteTranslations[lang] : (window.siteTranslations ? window.siteTranslations.en : {});
+
+    var emailPlaceholder = t.rfqEmailPlaceholder || "Email address";
+    var whatsappPlaceholder = t.rfqWhatsappPlaceholder || "WhatsApp number with country code";
+
+    contactInput.placeholder = method === "Email" ? emailPlaceholder : whatsappPlaceholder;
+    contactInput.setAttribute("aria-label", method === "Email" ? emailPlaceholder : (t.whatsapp || "WhatsApp"));
     contactInput.setAttribute("inputmode", method === "Email" ? "email" : "tel");
   }
 
@@ -64,7 +70,12 @@
     submitButton.disabled = submitting;
     submitButton.classList.toggle("is-sending", submitting);
     submitButton.setAttribute("aria-busy", String(submitting));
-    submitButton.innerHTML = submitting ? "<span>Sending...</span><span class=\"rfq-submit-loader\"></span>" : submitLabel;
+
+    var lang = (typeof window.getCurrentLanguage === "function") ? window.getCurrentLanguage() : "en";
+    var t = (window.siteTranslations && window.siteTranslations[lang]) ? window.siteTranslations[lang] : (window.siteTranslations ? window.siteTranslations.en : {});
+    var sendingText = t.rfqSendingState || "Sending...";
+
+    submitButton.innerHTML = submitting ? "<span>" + sendingText + "</span><span class=\"rfq-submit-loader\"></span>" : submitLabel;
   }
 
   openButtons.forEach(function (button) {
@@ -106,12 +117,21 @@
         return response.json().catch(function () { return {}; });
       }).then(function (result) {
         if (result.success === false) throw new Error("Submission failed");
-        showToast("Requirements sent. We will reply shortly.", "success");
+
+        var lang = (typeof window.getCurrentLanguage === "function") ? window.getCurrentLanguage() : "en";
+        var t = (window.siteTranslations && window.siteTranslations[lang]) ? window.siteTranslations[lang] : (window.siteTranslations ? window.siteTranslations.en : {});
+        var successText = t.rfqSuccessToast || "Requirements sent. We will reply shortly.";
+
+        showToast(successText, "success");
         form.reset();
         updateContactField();
         window.setTimeout(closeDrawer, 500);
       }).catch(function () {
-        showToast("Unable to send. Please try again.", "error");
+        var lang = (typeof window.getCurrentLanguage === "function") ? window.getCurrentLanguage() : "en";
+        var t = (window.siteTranslations && window.siteTranslations[lang]) ? window.siteTranslations[lang] : (window.siteTranslations ? window.siteTranslations.en : {});
+        var errorText = t.rfqErrorToast || "Unable to send. Please try again.";
+
+        showToast(errorText, "error");
       }).finally(function () {
         setSubmitting(false);
       });

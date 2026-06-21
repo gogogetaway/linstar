@@ -514,6 +514,53 @@
         }
       }
     },
+    "melamine-board": {
+      image: "assets/products/melamine-boards/melamine-panels.jpg",
+      images: [
+        { src: "assets/products/melamine-boards/melamine-panels.jpg", alt: "Melamine board panels" },
+        { src: "assets/products/melamine-boards/melamine-colors.jpg", alt: "Melamine board colors and finishes" },
+        { src: "assets/products/melamine-boards/melamine-surface.jpg", alt: "Melamine board surface texture" }
+      ],
+      alt: "Melamine board decorative wood panel",
+      groupHash: "melamine-board",
+      technicalSpecTable: true,
+      locales: {
+        en: {
+          title: "Melamine Board",
+          category: "Melamine Board",
+          summary: "Pre-finished decorative wood panel with melamine paper laminated onto plywood, MDF, particle board or block board substrates.",
+          tags: ["Pre-finished surface", "Wood grain / solid color", "Moisture resistant", "Low formaldehyde"],
+          detailTitle: "Ready-to-use decorative board for furniture and commercial interiors.",
+          detailText: "Melamine Board, also known as melamine faced board, is a popular pre-finished decorative wood panel. It is produced by laminating durable melamine-impregnated decorative paper onto high-quality core substrates, including plywood, MDF, particle board and block board, under high temperature and high pressure. Our melamine boards feature a hard, seamless and wear-resistant surface with various wood grain, solid color and texture finishes. No painting or further surface treatment is required, which greatly saves processing time and production costs for furniture manufacturers. With stable structure, excellent moisture resistance and low formaldehyde emission, it is a top choice for modern indoor furniture and commercial interior decoration worldwide.",
+          note: "Confirm substrate, surface color or texture, thickness, size, emission grade, quantity and destination port before quotation.",
+          specTitle: "Technical specifications",
+          specs: [
+            ["Product name", "Melamine Board / Melamine Faced Board"],
+            ["Surface", "Melamine-impregnated decorative paper"],
+            ["Finish", "Wood grain, solid color or texture finishes"],
+            ["Core substrate", "Plywood, MDF, particle board or block board"],
+            ["Process", "High-temperature and high-pressure lamination"],
+            ["Surface performance", "Hard, seamless and wear-resistant"],
+            ["Emission grade", "Low formaldehyde options available"],
+            ["Application", "Indoor furniture and commercial interior decoration"],
+            ["Packing", "Protected export pallets with shipping marks"]
+          ],
+          advantagesTitle: "Why buyers use melamine board",
+          advantages: [
+            ["Ready surface", "No painting or additional surface treatment is required."],
+            ["Finish options", "Wood grain, solid color and textured finishes support different markets."],
+            ["Production saving", "Pre-finished panels help reduce furniture processing time and cost."],
+            ["Stable supply", "Substrate, thickness, surface and packing can be matched to order needs."]
+          ],
+          applications: [
+            "Furniture manufacturing and cabinet components",
+            "Commercial interior decoration",
+            "Shelving, wardrobes and office furniture",
+            "Distributor supply for decorative panels"
+          ]
+        }
+      }
+    },
     lvl: {
       image: "assets/products/lvl/lvl-sections.png",
       images: [
@@ -626,57 +673,59 @@
         }
       }
     },
-    blockboard: {
+    "finger-joint-panel": {
       image: "assets/products/blockboard/blockboard-panels.png",
       images: [
         {
           src: "assets/products/blockboard/blockboard-panels.png",
-          alt: "Blockboard panels"
+          alt: "Finger joint panel"
         },
         {
           src: "assets/products/blockboard/blockboard-surface.png",
-          alt: "Blockboard panel surface"
+          alt: "Finger joint panel surface"
         },
         {
           src: "assets/products/blockboard/blockboard-core.png",
-          alt: "Blockboard solid strip core"
+          alt: "Finger-jointed solid wood core"
         }
       ],
-      alt: "Blockboard engineered wood panel",
-      groupHash: "blockboard",
+      alt: "Finger joint panel engineered wood board",
+      groupHash: "finger-joint-panel",
       technicalSpecTable: true,
       locales: {
         en: {
-          title: "Blockboard",
-          category: "Blockboard",
-          summary: "Solid strip-core engineered panel for furniture, doors, shelving and interior components.",
-          tags: ["Solid strip core", "Furniture panel", "Custom surface", "Export packing"],
-          detailTitle: "Solid strip-core panel for furniture and interior production.",
-          detailText: "Blockboard is an engineered wood panel built with a core of solid wood strips placed edge to edge between veneer layers. This structure provides a practical balance of panel stiffness, manageable weight and screw-holding performance for furniture, doors, shelving and interior components.",
+          title: "Finger Joint Panel",
+          category: "Finger Joint Panel",
+          summary: "Premium finger-jointed block board with a kiln-dried solid wood core for furniture, doors, cabinetry, interiors and construction projects.",
+          tags: ["Finger-jointed core", "Kiln-dried wood", "Strong screw holding", "Furniture & interiors"],
+          detailTitle: "Finger-jointed block board for stable furniture and interior production.",
+          detailText: "Finger-Jointed Block Board, also named blockboard or joinery board, is a premium engineered wood panel with a core of precision finger-jointed solid softwood strips, hot-pressed and bonded between two layers of natural veneer faces under high temperature and pressure. Our board adopts kiln-dried pine, fir or poplar as the core material, with tight finger joint splicing technology, balanced structure and stable moisture content. It is lighter than plywood, with excellent anti-sagging performance, strong screw and nail holding power, and easy cutting, painting and veneering for custom furniture, door panels, cabinetry, interior decoration and construction projects worldwide.",
           note: "Confirm core material, face and back, glue, size, thickness, quantity and destination port before quotation.",
           specTitle: "Technical specifications",
           specs: [
-            ["Core", "Edge-glued solid wood strips"],
-            ["Face / back", "Raw veneer, decorative face or buyer-specified surface"],
+            ["Product name", "Finger-Jointed Block Board / Joinery Board"],
+            ["Core", "Precision finger-jointed solid softwood strips"],
+            ["Core material", "Kiln-dried pine, fir, poplar or buyer-specified wood"],
+            ["Face / back", "Natural veneer faces or buyer-specified decorative surface"],
+            ["Structure", "Balanced veneer faces bonded over a finger-jointed solid wood core"],
             ["Thickness", "Common furniture thicknesses or custom production"],
             ["Standard size", "1220 x 2440 mm or custom sizes"],
-            ["Core material", "Poplar, pine or selected solid wood strips"],
             ["Glue", "MR, melamine or exterior-grade options"],
-            ["Application", "Furniture, doors, shelves and interiors"],
+            ["Application", "Furniture, door panels, cabinetry, interiors and construction projects"],
             ["Packing", "Protected export pallets with shipping marks"]
           ],
-          advantagesTitle: "Why buyers use blockboard",
+          advantagesTitle: "Why buyers use finger joint panel",
           advantages: [
-            ["Solid strip core", "The internal wood-strip structure provides useful panel stiffness."],
-            ["Furniture friendly", "Suitable for cutting, fixing and common interior component production."],
-            ["Surface choice", "Faces and finishes can be matched to the buyer's application."],
-            ["Export matching", "Sizes, packing and shipping marks can be arranged by order."]
+            ["Stable structure", "Finger-jointed core strips and controlled moisture help reduce deformation."],
+            ["Lighter than plywood", "The solid softwood core gives practical strength with manageable panel weight."],
+            ["Strong fixing", "Good screw and nail holding power supports furniture and door production."],
+            ["Easy finishing", "Suitable for cutting, painting, veneering and decorative surface processing."]
           ],
           applications: [
-            "Furniture and cabinet components",
-            "Doors, shelves and partitions",
-            "Interior fit-out and decorative panels",
-            "Wholesale panel distribution"
+            "Custom furniture and cabinet components",
+            "Door panels, shelves and partitions",
+            "Interior decoration and fit-out panels",
+            "Construction and project panel supply"
           ]
         }
       }
@@ -709,16 +758,20 @@
   }
 
   function appendSpecHeader(container) {
+    var lang = (typeof window.getCurrentLanguage === "function") ? window.getCurrentLanguage() : "en";
+    var commonCopy = (window.siteTranslations && window.siteTranslations[lang]) ? window.siteTranslations[lang] : {};
+    var parameterLabel = commonCopy.specParameter || "Parameter";
+    var detailsLabel = commonCopy.specDetails || "Details";
     var row = document.createElement("div");
     var parameter = document.createElement("span");
     var details = document.createElement("strong");
     var parameterTwo = document.createElement("span");
     var detailsTwo = document.createElement("strong");
     row.className = "detail-spec-head";
-    parameter.textContent = "Parameter";
-    details.textContent = "Details";
-    parameterTwo.textContent = "Parameter";
-    detailsTwo.textContent = "Details";
+    parameter.textContent = parameterLabel;
+    details.textContent = detailsLabel;
+    parameterTwo.textContent = parameterLabel;
+    detailsTwo.textContent = detailsLabel;
     row.appendChild(parameter);
     row.appendChild(details);
     row.appendChild(parameterTwo);
@@ -751,11 +804,21 @@
     return params.get("product") || "film-faced-plywood";
   }
 
-  function currentLocale(product) {
+  function currentLocale(slug, product) {
     var stored = "en";
-    try {
-      stored = localStorage.getItem("blxing-home-lang") || "en";
-    } catch (error) {}
+    var params = new URLSearchParams(window.location.search);
+    var urlLang = params.get("lang");
+    var supported = ["en", "ar", "fr", "ru"];
+    if (urlLang && supported.indexOf(urlLang) !== -1) {
+      stored = urlLang;
+    } else {
+      try {
+        stored = localStorage.getItem("blxing-home-lang") || "en";
+      } catch (error) {}
+    }
+    if (window.productTranslations && window.productTranslations[slug]) {
+      return window.productTranslations[slug][stored] ? stored : "en";
+    }
     return product.locales[stored] ? stored : "en";
   }
 
@@ -776,10 +839,10 @@
     var image = document.querySelector("[data-product-image]");
     var thumbs = document.querySelector("[data-product-thumbnails]");
     var gallery = image ? image.closest(".detail-gallery") : null;
-    var galleryImages = product.images || [{
+    var galleryImages = (product.images || [{
       src: product.image,
       alt: product.alt || copy.title
-    }];
+    }]).slice(0, 5);
 
     if (!image) return;
 
@@ -796,6 +859,7 @@
     }
 
     clear(thumbs);
+    thumbs.style.setProperty("--thumbnail-count", Math.min(galleryImages.length, 5));
     galleryImages.forEach(function (item, index) {
       var button = document.createElement("button");
       var thumbnail = document.createElement("img");
@@ -823,7 +887,13 @@
       window.location.replace("product-detail.html?product=film-faced-plywood");
       return;
     }
-    var copy = product.locales[currentLocale(product)] || product.locales.en;
+    var lang = currentLocale(slug, product);
+    var copy;
+    if (window.productTranslations && window.productTranslations[slug] && window.productTranslations[slug][lang]) {
+      copy = window.productTranslations[slug][lang];
+    } else {
+      copy = product.locales[lang] || product.locales.en;
+    }
     var tags = document.querySelector("[data-product-tags]");
     var specs = document.querySelector("[data-product-specs]");
     var advantages = document.querySelector("[data-product-advantages]");
@@ -871,6 +941,10 @@
     button.addEventListener("click", function () {
       window.setTimeout(render, 0);
     });
+  });
+
+  window.addEventListener("siteLanguageChanged", function () {
+    render();
   });
 
   window.blxingProducts = products;

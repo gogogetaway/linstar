@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About JIALINDA | Integrated Plywood Manufacturer & Exporter</title>
+  <meta name="description" content="JIALINDA is an integrated manufacturer and exporter of plywood and wood panel products, supported by two production bases in Xuzhou, China.">
+  <link rel="stylesheet" href="css/home-v2.css?v=20260616-rtlheader1">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    :root {
+      --about-blue: #173f64;
+      --about-gold: #b28434;
+      --about-soft: #f7f9fa;
+      --about-line: #dbe3e5;
+      --about-text: #55616b;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .about-v2-main {
+      color: var(--ink, #182126);
+      background: #fff;
+    }
+
+    .about-v2-wrap {
+      width: min(1040px, calc(100% - 56px));
+      margin: 0 auto;
+    }
+
+    .about-v2-hero {
+      padding: 112px 0 52px;
+      background: #fff;
+      border-bottom: 1px solid var(--about-line);
+    }
+
+    .about-v2-breadcrumb {
+      margin: 0 0 24px;
+      color: var(--about-text);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .about-v2-breadcrumb a {
+      color: var(--about-blue);
+      text-decoration: none;
+    }
+
+    .about-v2-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 11px;
+      border-radius: 999px;
+      color: var(--about-blue);
+      background: #eef4f7;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .about-v2-hero h1 {
+      max-width: 820px;
+      margin: 18px 0 0;
+      color: var(--ink, #182126);
+      font-size: clamp(34px, 4.2vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -.04em;
+    }
+
+    .about-v2-lead {
+      max-width: 760px;
+      margin: 20px 0 0;
+      color: var(--about-text);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .about-v2-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 34px;
+      border: 1px solid var(--about-line);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .about-v2-stat {
+      padding: 18px 20px;
+      border-right: 1px solid var(--about-line);
+    }
+
+    .about-v2-stat:last-child {
+      border-right: 0;
+    }
+
+    .about-v2-stat b {
+      display: block;
+      color: var(--about-blue);
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .about-v2-stat small {
+      display: block;
+      margin-top: 7px;
+      color: var(--about-text);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .about-v2-section {
+      padding: 50px 0;
+      border-bottom: 1px solid var(--about-line);
+    }
+
+    .about-v2-section.is-soft {
+      background: var(--about-soft);
+    }
+
+    .about-v2-head {
+      display: grid;
+      grid-template-columns: .72fr 1fr;
+      gap: 36px;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+
+    .about-v2-eyebrow {
+      margin: 0 0 10px;
+      color: var(--about-gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .about-v2-head h2,
+    .about-v2-note h2 {
+      margin: 0;
+      color: var(--ink, #182126);
+      font-size: clamp(24px, 2.6vw, 36px);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+    }
+
+    .about-v2-head p,
+    .about-v2-note p,
+    .about-v2-company p,
+    .about-v2-factory p,
+    .about-v2-list li {
+      margin: 0;
+      color: var(--about-text);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .about-v2-structure {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .about-v2-company,
+    .about-v2-factory,
+    .about-v2-note {
+      border: 1px solid var(--about-line);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .about-v2-company {
+      display: grid;
+      gap: 12px;
+      padding: 24px;
+      color: #fff;
+      background: var(--about-blue);
+    }
+
+    .about-v2-company p {
+      color: rgba(255, 255, 255, .8);
+    }
+
+    .about-v2-company h3,
+    .about-v2-factory h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.16;
+    }
+
+    .about-v2-company h3 {
+      color: #fff;
+    }
+
+    .about-v2-factories {
+      display: grid;
+      gap: 12px;
+    }
+
+    .about-v2-factory {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 0;
+      overflow: hidden;
+    }
+
+    .about-v2-factory img {
+      width: 100%;
+      height: 100%;
+      min-height: 170px;
+      object-fit: cover;
+      background: #eef2f5;
+    }
+
+    .about-v2-factory div {
+      display: grid;
+      gap: 8px;
+      padding: 18px;
+    }
+
+    .about-v2-factory small,
+    .about-v2-company small {
+      color: var(--about-gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .about-v2-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .about-v2-list li {
+      padding: 16px;
+      border: 1px solid var(--about-line);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .about-v2-list strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--ink, #182126);
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .about-v2-note {
+      display: grid;
+      grid-template-columns: .7fr 1fr;
+      gap: 24px;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .about-v2-cert-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .about-v2-cert-row span {
+      padding: 9px 12px;
+      border: 1px solid var(--about-line);
+      border-radius: 999px;
+      color: var(--about-blue);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .about-v2-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .about-v2-button {
+      display: inline-flex;
+      min-height: 40px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border: 1px solid var(--about-blue);
+      border-radius: 999px;
+      color: #fff;
+      background: var(--about-blue);
+      font-size: 13px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .about-v2-button.is-ghost {
+      color: var(--about-blue);
+      background: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .about-v2-head,
+      .about-v2-structure,
+      .about-v2-note {
+        grid-template-columns: 1fr;
+      }
+
+      .about-v2-stats,
+      .about-v2-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .about-v2-wrap {
+        width: min(100% - 32px, 1040px);
+      }
+
+      .about-v2-hero {
+        padding: 92px 0 40px;
+      }
+
+      .about-v2-stats,
+      .about-v2-list,
+      .about-v2-factory {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="v2-header v2-products-header is-scrolled" data-header>
+    <a class="v2-brand" href="index.html" aria-label="JLD home">
+      <img src="assets/img/logo-v2.png" alt="JLD">
+      <span>JIALINDA</span>
+    </a>
+    <button class="v2-menu-button" type="button" data-menu-button aria-label="Open navigation">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="v2-nav" data-nav aria-label="Primary navigation">
+      <div class="v2-nav-item"><a class="v2-nav-link" href="index.html">Home</a></div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="products.html">Products</a>
+        <div class="v2-dropdown">
+          <a href="products.html#formwork-plywood">Film faced plywood</a>
+          <a href="products.html#commercial-panels">Commercial plywood</a>
+          <a href="products.html#furniture-panels">Furniture panels</a>
+          <a href="products.html#engineered-wood">LVL & H20 beams</a>
+        </div>
+      </div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="advantages-production.html">Our Advantages</a>
+        <div class="v2-dropdown">
+          <a href="advantages-production.html">Production & Inventory</a>
+          <a href="advantages-execution.html">Order Execution</a>
+          <a href="advantages-packing.html">Packing & Loading</a>
+          <a href="advantages-documents.html">Documents & Compliance</a>
+        </div>
+      </div>
+      <div class="v2-nav-item">
+        <a class="v2-nav-trigger" href="about.html">About Us</a>
+        <div class="v2-dropdown">
+          <a href="about.html#company">Current About</a>
+          <a href="#factory">Production Bases</a>
+          <a href="#service">Export Service</a>
+          <a href="#certificates">Certificates</a>
+        </div>
+      </div>
+      <div class="v2-nav-item"><a class="v2-nav-link" href="contact.html">Contact</a></div>
+    </nav>
+    <div class="v2-actions">
+      <div class="v2-header-contact-links" aria-label="Contact links">
+        <a class="v2-whatsapp-link" href="https://api.whatsapp.com/send?phone=8613145209266" target="_blank" rel="noopener">
+          <img src="assets/whatapp.png" alt="" aria-hidden="true">
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:info@jldplywood.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 6.5h14.4c1 0 1.8.8 1.8 1.8v7.4c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8V8.3c0-1 .8-1.8 1.8-1.8Zm0 1.5 7.2 5 7.2-5H4.8Zm14.7 1.4-7.1 4.9a.8.8 0 0 1-.9 0L4.5 9.4v6.3c0 .2.1.3.3.3h14.4c.2 0 .3-.1.3-.3V9.4Z"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="about-v2-main">
+    <section class="about-v2-hero" id="company">
+      <div class="about-v2-wrap">
+        <p class="about-v2-breadcrumb"><a href="index.html">Home</a> / About Us</p>
+        <span class="about-v2-kicker">Integrated manufacturer & exporter</span>
+        <h1>JIALINDA connects factory production with export service.</h1>
+        <p class="about-v2-lead">Xuzhou Jialinda International Trade Co., Ltd. is the export-facing team of our wood panel manufacturing group in Xuzhou, China. We help global buyers manage plywood orders with clearer communication, factory support and reliable shipment follow-up.</p>
+        <div class="about-v2-stats" aria-label="Company facts">
+          <div class="about-v2-stat"><b>26+</b><small>Years industry background</small></div>
+          <div class="about-v2-stat"><b>2</b><small>Production bases</small></div>
+          <div class="about-v2-stat"><b>100+</b><small>Countries & regions</small></div>
+          <div class="about-v2-stat"><b>OEM</b><small>Brand plywood support</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-v2-section" id="structure">
+      <div class="about-v2-wrap">
+        <div class="about-v2-head">
+          <div>
+            <p class="about-v2-eyebrow">Company Structure</p>
+            <h2>One export window, two production bases.</h2>
+          </div>
+          <p>About pages should be simple. For buyers, the important point is who handles the order and where the production support comes from.</p>
+        </div>
+        <div class="about-v2-structure">
+          <article class="about-v2-company">
+            <small>Export-facing company</small>
+            <h3>JIALINDA</h3>
+            <p>Responsible for international sales, quotation, product matching, OEM coordination, export documents, loading follow-up and after-sales communication.</p>
+          </article>
+          <div class="about-v2-factories">
+            <article class="about-v2-factory">
+              <img src="assets/generated/factory-workshop-hero-v2.png" alt="Pizhou Huaxin Wood Industry production base">
+              <div>
+                <small>Production base · Since 2000</small>
+                <h3>Pizhou Huaxin Wood Industry</h3>
+                <p>Film faced plywood, commercial plywood, fancy plywood and melamine paper plywood.</p>
+              </div>
+            </article>
+            <article class="about-v2-factory">
+              <img src="assets/generated/plywood-storage-hero-v2.png" alt="Xuzhou Yongxiang Wood Industry production base">
+              <div>
+                <small>Production base · Since 2011</small>
+                <h3>Xuzhou Yongxiang Wood Industry</h3>
+                <p>PP plastic faced plywood, LVL and furniture panels, with laboratory testing capability.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-v2-section is-soft" id="service">
+      <div class="about-v2-wrap">
+        <div class="about-v2-head">
+          <div>
+            <p class="about-v2-eyebrow">How We Support Buyers</p>
+            <h2>Practical support after the inquiry is sent.</h2>
+          </div>
+          <p>We keep this page focused on trust. Product details can stay in the product pages; About should explain why the supplier is reliable.</p>
+        </div>
+        <ul class="about-v2-list">
+          <li><strong>Specification</strong>Confirm size, thickness, surface, core, glue, application and destination market.</li>
+          <li><strong>Production follow-up</strong>Coordinate order details with the production base and monitor key requirements.</li>
+          <li><strong>Export documents</strong>Support invoice, packing list, certificates and market-related documentation.</li>
+          <li><strong>Loading support</strong>Arrange packing, shipping marks, loading photos and shipment communication.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-v2-section" id="certificates">
+      <div class="about-v2-wrap">
+        <div class="about-v2-note">
+          <div>
+            <p class="about-v2-eyebrow">Certificates & Markets</p>
+            <h2>Prepared for different market requirements.</h2>
+          </div>
+          <div>
+            <p>JIALINDA products can meet different market requirements, including CE, FSC, CARB, ISO and Australian-related certification needs. Our products have been supplied to customers in more than 100 countries and regions.</p>
+            <div class="about-v2-cert-row" aria-label="Certificate support">
+              <span>ISO 9001</span>
+              <span>FSC</span>
+              <span>CE / EN 13986</span>
+              <span>CARB</span>
+              <span>Australian market</span>
+              <span>Export documents</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-v2-section is-soft">
+      <div class="about-v2-wrap about-v2-note">
+        <div>
+          <p class="about-v2-eyebrow">Our Commitment</p>
+          <h2>Stable supply starts with clear communication.</h2>
+        </div>
+        <div>
+          <p>We focus on practical cooperation: clear requirements, stable production, proper packing, timely documents and reliable shipment follow-up.</p>
+          <div class="about-v2-actions">
+            <a class="about-v2-button" href="contact.html">Send Requirements</a>
+            <a class="about-v2-button is-ghost" href="products.html">View Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="v2-footer" id="contact">
+    <div class="v2-footer-inner">
+      <div class="v2-footer-grid">
+        <div>
+          <h4>JIALINDA</h4>
+          <p>Xuzhou Jialinda supplies plywood, film faced plywood, LVL, H20 beams and panel products for importers, contractors and distributors.</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html#formwork-plywood">Film faced plywood</a></li>
+            <li><a href="products.html#furniture-panels">Furniture panels</a></li>
+            <li><a href="products.html#engineered-wood">LVL & H20 beams</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">Current About</a></li>
+            <li><a href="#factory">Production bases</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@jldplywood.com">info@jldplywood.com</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=8613145209266" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="v2-footer-bottom">
+        <p>© 2026 JLD / Xuzhou Jialinda Trading Co., Ltd. All rights reserved.</p>
+        <p>Preview page: about_v2.html. Existing about.html was not changed.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/home-v2.js?v=20260616-rtlheader1"></script>
+</body>
+</html>

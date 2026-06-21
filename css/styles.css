@@ -959,14 +959,15 @@ a {
 
 .detail-gallery-thumbs {
   display: grid;
-  grid-template-columns: repeat(var(--thumbnail-count, 5), minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(74px, 92px));
+  justify-content: start;
   gap: 8px;
   margin-top: 10px;
   padding: 2px;
 }
 
 .detail-gallery-thumb {
-  width: auto;
+  width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -1778,13 +1779,22 @@ a {
   border-top: 1px solid var(--line);
 }
 
-.support-grid-3 {
+.support-grid-3,
+.support-grid-4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 
+.support-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.support-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .support-grid-3 article,
+.support-grid-4 article,
 .support-next,
 .support-check-list span {
   border: 1px solid var(--line);
@@ -1792,7 +1802,8 @@ a {
   background: #fbfcfc;
 }
 
-.support-grid-3 article {
+.support-grid-3 article,
+.support-grid-4 article {
   display: grid;
   gap: 8px;
   padding: 16px;
@@ -2116,6 +2127,10 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .support-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .support-check-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2290,12 +2305,14 @@ a {
     position: static;
     grid-column: auto;
     grid-row: auto;
+    grid-template-columns: repeat(auto-fill, minmax(66px, 84px));
+    justify-content: start;
     gap: 8px;
     margin-top: 10px;
   }
 
   .detail-gallery-thumb {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 
@@ -2458,6 +2475,7 @@ a {
   }
 
   .support-grid-3,
+  .support-grid-4,
   .support-check-list {
     grid-template-columns: 1fr;
   }
@@ -4241,4 +4259,25 @@ a {
     gap: 12px;
     padding: 0 22px 32px;
   }
+}
+
+/* Helper class for LTR direction override in RTL layout */
+.direction-ltr {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+/* RTL Specific UI Layout Overrides for details, about, and catalog pages */
+html[dir="rtl"] .detail-summary,
+html[dir="rtl"] .detail-description,
+html[dir="rtl"] .detail-section-title,
+html[dir="rtl"] .detail-applications li,
+html[dir="rtl"] .about-copy,
+html[dir="rtl"] .about-quality-panel,
+html[dir="rtl"] .about-market-panel,
+html[dir="rtl"] .support-hero-copy,
+html[dir="rtl"] .support-match-detail,
+html[dir="rtl"] .market-copy,
+html[dir="rtl"] .market-region-detail {
+  text-align: right;
 }

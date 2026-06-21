@@ -15,7 +15,8 @@
     ["osb", "OSB", "Furniture Panels", "assets/products/osb/osb-edge.png", "oriented strand board structural"],
     ["lvl", "LVL", "Engineered Wood Systems", "assets/products/lvl/lvl-sections.png", "laminated veneer lumber structural beam"],
     ["h20-beam", "H20 Beam", "Engineered Wood Systems", "assets/products/h20-beam/h20-finished-beams.png", "h 20 timber beam formwork"],
-    ["blockboard", "Blockboard", "Blockboard", "assets/products/blockboard/blockboard-panels.png", "block board solid core furniture"]
+    ["finger-joint-panel", "Finger Joint Panel", "Finger Joint Panel", "assets/products/blockboard/blockboard-panels.png", "finger joint panel finger-jointed block board joinery board solid core furniture"],
+    ["melamine-board", "Melamine Board", "Melamine Board", "assets/products/melamine-boards/melamine-panels.jpg", "melamine faced board decorative furniture mfc laminated panel"]
   ].map(function (item) {
     return { slug: item[0], title: item[1], category: item[2], image: item[3], keywords: item[4] };
   });
@@ -112,36 +113,132 @@
       });
     }
 
+    var searchUiTranslations = {
+      en: {
+        matching: "Matching products",
+        popular: "Popular products",
+        shown: "shown",
+        noResults: "No matching products",
+        browseAll: "Browse all products"
+      },
+      ar: {
+        matching: "المنتجات المطابقة",
+        popular: "المنتجات الشائعة",
+        shown: "معروضة",
+        noResults: "لا توجد منتجات مطابقة",
+        browseAll: "تصفح جميع المنتجات"
+      },
+      fr: {
+        matching: "Produits correspondants",
+        popular: "Produits populaires",
+        shown: "affichés",
+        noResults: "Aucun produit correspondant",
+        browseAll: "Parcourir tous les produits"
+      },
+      ru: {
+        matching: "Найденные продукты",
+        popular: "Популярные продукты",
+        shown: "показано",
+        noResults: "Нет подходящих продуктов",
+        browseAll: "Все продукты"
+      }
+    };
+
+    var titleKeys = {
+      "film-faced-plywood": "productFilmFaced",
+      "pp-plastic-faced-plywood": "productPP",
+      "slip-resistant-plywood": "productSlipResistant",
+      "formply": "productFormply",
+      "okoume-plywood": "productOkoume",
+      "birch-plywood": "productBirch",
+      "bintangor-plywood": "productBintangor",
+      "pine-plywood": "productPine",
+      "fancy-plywood": "productFancy",
+      "flexible-plywood": "productFlexible",
+      "mdf": "productMDF",
+      "chipboard": "productChipboard",
+      "osb": "productOSB",
+      "lvl": "productLVL",
+      "h20-beam": "productH20",
+      "finger-joint-panel": "blockboard",
+      "melamine-board": "productMelamine"
+    };
+
+    var categoryKeys = {
+      "Film faced plywood": "dropFilm",
+      "Commercial & Specialty Plywood": "dropCommercial",
+      "Furniture Panels": "dropFurniture",
+      "Engineered Wood Systems": "dropEngineered",
+      "Finger Joint Panel": "blockboard",
+      "Melamine Board": "productMelamine"
+    };
+
+    function getCurrentLang() {
+      var params = new URLSearchParams(window.location.search);
+      var urlLang = params.get("lang");
+      var supported = ["en", "ar", "fr", "ru"];
+      if (urlLang && supported.indexOf(urlLang) !== -1) {
+        return urlLang;
+      }
+      try {
+        var stored = localStorage.getItem("blxing-home-lang");
+        if (stored && supported.indexOf(stored) !== -1) {
+          return stored;
+        }
+      } catch (e) {}
+      return "en";
+    }
+
     function render() {
+      var lang = getCurrentLang();
+      var ui = searchUiTranslations[lang] || searchUiTranslations.en;
+      var translations = window.siteTranslations && window.siteTranslations[lang] ? window.siteTranslations[lang] : null;
+
       currentResults = resultsFor(input.value);
       selectedIndex = -1;
       panel.textContent = "";
 
       var label = document.createElement("div");
       label.className = "v2-search-result-label";
-      label.innerHTML = "<span>" + (normalize(input.value) ? "Matching products" : "Popular products") + "</span><span>" + currentResults.length + " shown</span>";
+      var labelText = normalize(input.value) ? ui.matching : ui.popular;
+      label.innerHTML = "<span>" + labelText + "</span><span>" + currentResults.length + " " + ui.shown + "</span>";
       panel.appendChild(label);
 
       if (!currentResults.length) {
         var empty = document.createElement("div");
         empty.className = "v2-search-empty";
-        empty.textContent = "No matching products";
+        empty.textContent = ui.noResults;
         panel.appendChild(empty);
       }
 
       currentResults.forEach(function (product) {
         var link = document.createElement("a");
         link.className = "v2-search-result";
-        link.href = "product-detail.html?product=" + product.slug;
+        link.href = "product-detail.html?product=" + product.slug + "&lang=" + lang;
         link.setAttribute("role", "option");
-        link.innerHTML = "<img src=\"" + product.image + "\" alt=\"\"><span><strong>" + product.title + "</strong><small>" + product.category + "</small></span>";
+
+        var displayTitle = product.title;
+        var displayCategory = product.category;
+
+        if (translations) {
+          var titleKey = titleKeys[product.slug];
+          if (titleKey && translations[titleKey]) {
+            displayTitle = translations[titleKey];
+          }
+          var catKey = categoryKeys[product.category];
+          if (catKey && translations[catKey]) {
+            displayCategory = translations[catKey];
+          }
+        }
+
+        link.innerHTML = "<img src=\"" + product.image + "\" alt=\"\"><span><strong>" + displayTitle + "</strong><small>" + displayCategory + "</small></span>";
         panel.appendChild(link);
       });
 
       var browse = document.createElement("a");
       browse.className = "v2-search-browse";
-      browse.href = "products.html";
-      browse.innerHTML = "<span>Browse all products</span><span aria-hidden=\"true\">→</span>";
+      browse.href = "products.html?lang=" + lang;
+      browse.innerHTML = "<span>" + ui.browseAll + "</span><span aria-hidden=\"true\">→</span>";
       panel.appendChild(browse);
       open();
     }
@@ -160,14 +257,16 @@
         close();
       } else if (event.key === "Enter" && selectedIndex >= 0 && currentResults[selectedIndex]) {
         event.preventDefault();
-        window.location.href = "product-detail.html?product=" + currentResults[selectedIndex].slug;
+        var lang = getCurrentLang();
+        window.location.href = "product-detail.html?product=" + currentResults[selectedIndex].slug + "&lang=" + lang;
       }
     });
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var target = currentResults[selectedIndex >= 0 ? selectedIndex : 0] || resultsFor(input.value)[0];
-      window.location.href = target ? "product-detail.html?product=" + target.slug : "products.html";
+      var lang = getCurrentLang();
+      window.location.href = target ? "product-detail.html?product=" + target.slug + "&lang=" + lang : "products.html?lang=" + lang;
     });
 
     document.addEventListener("click", function (event) {
