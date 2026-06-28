@@ -2,7 +2,7 @@
   function productImages(folder, prefix, alt) {
     return [1, 2, 3].map(function (number) {
       return {
-        src: "assets/products/" + folder + "/" + prefix + "-" + number + ".jpg",
+        src: "assets/products/" + folder + "/" + prefix + "-" + number + ".webp",
         alt: alt + " image " + number
       };
     });
@@ -10,7 +10,7 @@
 
   function commercialPlywoodProduct(title, folder, prefix, summary, face) {
     return {
-      image: "assets/products/" + folder + "/" + prefix + "-1.jpg",
+      image: "assets/products/" + folder + "/" + prefix + "-1.webp",
       images: productImages(folder, prefix, title),
       alt: title,
       groupHash: "commercial-panels",
@@ -50,27 +50,27 @@
 
   var products = {
     "film-faced-plywood": {
-      image: "assets/upload/202531214123263859.jpg",
+      image: "assets/upload/202531214123263859.webp",
       alt: "Film faced plywood panel",
       images: [
         {
-          src: "assets/upload/202531214123263859.jpg",
+          src: "assets/upload/202531214123263859.webp",
           alt: "Brown film faced plywood panel"
         },
         {
-          src: "assets/products/film-faced-plywood/red.png",
+          src: "assets/products/film-faced-plywood/red.webp",
           alt: "Red film faced plywood panel"
         },
         {
-          src: "assets/products/film-faced-plywood/black.png",
+          src: "assets/products/film-faced-plywood/black.webp",
           alt: "Black film faced plywood panel"
         },
         {
-          src: "assets/products/film-faced-plywood/2.jpg",
+          src: "assets/products/film-faced-plywood/2.webp",
           alt: "Red film faced plywood smooth surface"
         },
         {
-          src: "assets/products/film-faced-plywood/3.jpg",
+          src: "assets/products/film-faced-plywood/3.webp",
           alt: "Brown film faced plywood stacked panels"
         }
       ],
@@ -117,23 +117,23 @@
       }
     },
     "pp-plastic-faced-plywood": {
-      image: "assets/products/pp-plastic-faced-plywood/1.png",
+      image: "assets/products/pp-plastic-faced-plywood/1.webp",
       alt: "Green PP plastic faced plywood panel showing layered core",
       images: [
         {
-          src: "assets/products/pp-plastic-faced-plywood/1.png",
+          src: "assets/products/pp-plastic-faced-plywood/1.webp",
           alt: "Green PP plastic faced plywood panel showing layered core"
         },
         {
-          src: "assets/products/pp-plastic-faced-plywood/pp-surface.jpeg",
+          src: "assets/products/pp-plastic-faced-plywood/pp-surface.webp",
           alt: "JLD branded green PP plastic faced plywood surface and edge"
         },
         {
-          src: "assets/products/pp-plastic-faced-plywood/pp-colors3.jpeg",
+          src: "assets/products/pp-plastic-faced-plywood/pp-colors3.webp",
           alt: "PP plastic faced plywood color and core samples"
         },
         {
-          src: "assets/products/pp-plastic-faced-plywood/2.png",
+          src: "assets/products/pp-plastic-faced-plywood/2.webp",
           alt: "Green PP plastic faced plywood factory stock"
         }
       ],
@@ -180,30 +180,30 @@
       }
     },
     "slip-resistant-plywood": {
-      image: "assets/products/slip-resistant-plywood/1.png",
+      image: "assets/products/slip-resistant-plywood/1.webp",
       images: [
         {
-          src: "assets/products/slip-resistant-plywood/1.png",
+          src: "assets/products/slip-resistant-plywood/1.webp",
           alt: "JLD slip-resistant plywood panels showing anti-slip surfaces and layered cores"
         },
         {
-          src: "assets/products/slip-resistant-plywood/2.png",
+          src: "assets/products/slip-resistant-plywood/2.webp",
           alt: "Full-size hexagonal slip-resistant plywood panel in production"
         },
         {
-          src: "assets/products/slip-resistant-plywood/3.png",
+          src: "assets/products/slip-resistant-plywood/3.webp",
           alt: "Stacked slip-resistant plywood panels showing surface and core layers"
         },
         {
-          src: "assets/products/slip-resistant-plywood/slip-resistant-surface.jpeg",
+          src: "assets/products/slip-resistant-plywood/slip-resistant-surface.webp",
           alt: "Slip-resistant plywood with hexagonal anti-slip surface"
         },
         {
-          src: "assets/products/slip-resistant-plywood/slip-resistant-panels.jpeg",
+          src: "assets/products/slip-resistant-plywood/slip-resistant-panels.webp",
           alt: "Slip-resistant plywood panels showing surface and edge"
         },
         {
-          src: "assets/products/slip-resistant-plywood/slip-resistant-core.jpeg",
+          src: "assets/products/slip-resistant-plywood/slip-resistant-core.webp",
           alt: "Slip-resistant plywood core layers"
         }
       ],
@@ -249,27 +249,27 @@
       }
     },
     formply: {
-      image: "assets/products/formply/1.png",
+      image: "assets/products/formply/1.webp",
       alt: "F17 structural Formply panel showing black surface and core",
       images: [
         {
-          src: "assets/products/formply/1.png",
+          src: "assets/products/formply/1.webp",
           alt: "F17 structural Formply panel showing black surface and core"
         },
         {
-          src: "assets/products/formply/2.png",
+          src: "assets/products/formply/2.webp",
           alt: "F17 structural Formply black surface and printed standard markings"
         },
         {
-          src: "assets/products/formply/3.png",
+          src: "assets/products/formply/3.webp",
           alt: "Formply export bundles packed at the factory"
         },
         {
-          src: "assets/products/formply/formply-panels.png",
+          src: "assets/products/formply/formply-panels.webp",
           alt: "Black phenolic Formply panels and core layers"
         },
         {
-          src: "assets/products/formply/formply-factory-stack.png",
+          src: "assets/products/formply/formply-factory-stack.webp",
           alt: "Full-size Formply panels stacked at the factory"
         }
       ],
@@ -318,7 +318,7 @@
     "bintangor-plywood": commercialPlywoodProduct("Bintangor Plywood", "bintangor-plywood", "bintangor", "Red-toned bintangor-faced plywood for furniture, decoration and general woodworking.", "Bintangor"),
     "pine-plywood": commercialPlywoodProduct("Pine Plywood", "pine-plywood", "pine", "Natural pine-faced plywood for furniture, packing, decoration and interior applications.", "Pine"),
     "fancy-plywood": {
-      image: "assets/products/fancy-plywood/fancy-1.jpg",
+      image: "assets/products/fancy-plywood/fancy-1.webp",
       images: productImages("fancy-plywood", "fancy", "Fancy plywood"),
       alt: "Fancy plywood",
       groupHash: "commercial-panels",
@@ -350,7 +350,7 @@
       }
     },
     "flexible-plywood": {
-      image: "assets/products/flexible-plywood/flexible-1.jpg",
+      image: "assets/products/flexible-plywood/flexible-1.webp",
       images: productImages("flexible-plywood", "flexible", "Flexible bending plywood"),
       alt: "Flexible bending plywood",
       groupHash: "commercial-panels",
@@ -382,11 +382,11 @@
       }
     },
     mdf: {
-      image: "assets/products/mdf/mdf-raw-panels.png",
+      image: "assets/products/mdf/mdf-raw-panels.webp",
       images: [
-        { src: "assets/products/mdf/mdf-raw-panels.png", alt: "Plain raw MDF panels" },
-        { src: "assets/products/mdf/mdf-stacked-panels.png", alt: "Stacked MDF panels" },
-        { src: "assets/products/mdf/mdf-core-detail.png", alt: "MDF surface and core detail" }
+        { src: "assets/products/mdf/mdf-raw-panels.webp", alt: "Plain raw MDF panels" },
+        { src: "assets/products/mdf/mdf-stacked-panels.webp", alt: "Stacked MDF panels" },
+        { src: "assets/products/mdf/mdf-core-detail.webp", alt: "MDF surface and core detail" }
       ],
       alt: "MDF panel",
       groupHash: "furniture-panels",
@@ -428,11 +428,11 @@
       }
     },
     chipboard: {
-      image: "assets/products/chipboard/chipboard-melamine-stack.png",
+      image: "assets/products/chipboard/chipboard-melamine-stack.webp",
       images: [
-        { src: "assets/products/chipboard/chipboard-melamine-stack.png", alt: "Melamine laminated chipboard panels" },
-        { src: "assets/products/chipboard/chipboard-finishes.png", alt: "Chipboard finish options" },
-        { src: "assets/products/chipboard/chipboard-factory-stack.png", alt: "Chipboard factory stack" }
+        { src: "assets/products/chipboard/chipboard-melamine-stack.webp", alt: "Melamine laminated chipboard panels" },
+        { src: "assets/products/chipboard/chipboard-finishes.webp", alt: "Chipboard finish options" },
+        { src: "assets/products/chipboard/chipboard-factory-stack.webp", alt: "Chipboard factory stack" }
       ],
       alt: "Chipboard panel",
       groupHash: "furniture-panels",
@@ -474,11 +474,11 @@
       }
     },
     osb: {
-      image: "assets/products/osb/osb-edge.png",
+      image: "assets/products/osb/osb-edge.webp",
       images: [
-        { src: "assets/products/osb/osb-edge.png", alt: "OSB oriented strand structure and edge" },
-        { src: "assets/products/osb/osb-stack.png", alt: "Stacked OSB panels" },
-        { src: "assets/products/osb/osb-surface.png", alt: "OSB oriented strand surface detail" }
+        { src: "assets/products/osb/osb-edge.webp", alt: "OSB oriented strand structure and edge" },
+        { src: "assets/products/osb/osb-stack.webp", alt: "Stacked OSB panels" },
+        { src: "assets/products/osb/osb-surface.webp", alt: "OSB oriented strand surface detail" }
       ],
       alt: "OSB oriented strand board",
       groupHash: "furniture-panels",
@@ -515,11 +515,11 @@
       }
     },
     "melamine-board": {
-      image: "assets/products/melamine-boards/melamine-panels.jpg",
+      image: "assets/products/melamine-boards/melamine-panels.webp",
       images: [
-        { src: "assets/products/melamine-boards/melamine-panels.jpg", alt: "Melamine board panels" },
-        { src: "assets/products/melamine-boards/melamine-colors.jpg", alt: "Melamine board colors and finishes" },
-        { src: "assets/products/melamine-boards/melamine-surface.jpg", alt: "Melamine board surface texture" }
+        { src: "assets/products/melamine-boards/melamine-panels.webp", alt: "Melamine board panels" },
+        { src: "assets/products/melamine-boards/melamine-colors.webp", alt: "Melamine board colors and finishes" },
+        { src: "assets/products/melamine-boards/melamine-surface.webp", alt: "Melamine board surface texture" }
       ],
       alt: "Melamine board decorative wood panel",
       groupHash: "melamine-board",
@@ -562,18 +562,18 @@
       }
     },
     lvl: {
-      image: "assets/products/lvl/lvl-sections.png",
+      image: "assets/products/lvl/lvl-sections.webp",
       images: [
         {
-          src: "assets/products/lvl/lvl-sections.png",
+          src: "assets/products/lvl/lvl-sections.webp",
           alt: "LVL laminated veneer lumber sections"
         },
         {
-          src: "assets/products/lvl/lvl-factory-stock.png",
+          src: "assets/products/lvl/lvl-factory-stock.webp",
           alt: "LVL factory stock"
         },
         {
-          src: "assets/products/lvl/lvl-planks.png",
+          src: "assets/products/lvl/lvl-planks.webp",
           alt: "LVL planks"
         }
       ],
@@ -617,18 +617,18 @@
       }
     },
     "h20-beam": {
-      image: "assets/products/h20-beam/h20-finished-beams.png",
+      image: "assets/products/h20-beam/h20-finished-beams.webp",
       images: [
         {
-          src: "assets/products/h20-beam/h20-finished-beams.png",
+          src: "assets/products/h20-beam/h20-finished-beams.webp",
           alt: "Finished H20 formwork beams"
         },
         {
-          src: "assets/products/h20-beam/h20-stacked-beams.png",
+          src: "assets/products/h20-beam/h20-stacked-beams.webp",
           alt: "Stacked H20 formwork beams"
         },
         {
-          src: "assets/products/h20-beam/h20-blue-caps.png",
+          src: "assets/products/h20-beam/h20-blue-caps.webp",
           alt: "H20 beams with blue end caps"
         }
       ],
@@ -674,18 +674,18 @@
       }
     },
     "finger-joint-panel": {
-      image: "assets/products/blockboard/blockboard-panels.png",
+      image: "assets/products/blockboard/blockboard-panels.webp",
       images: [
         {
-          src: "assets/products/blockboard/blockboard-panels.png",
+          src: "assets/products/blockboard/blockboard-panels.webp",
           alt: "Finger joint panel"
         },
         {
-          src: "assets/products/blockboard/blockboard-surface.png",
+          src: "assets/products/blockboard/blockboard-surface.webp",
           alt: "Finger joint panel surface"
         },
         {
-          src: "assets/products/blockboard/blockboard-core.png",
+          src: "assets/products/blockboard/blockboard-core.webp",
           alt: "Finger-jointed solid wood core"
         }
       ],
@@ -805,17 +805,9 @@
   }
 
   function currentLocale(slug, product) {
-    var stored = "en";
-    var params = new URLSearchParams(window.location.search);
-    var urlLang = params.get("lang");
-    var supported = ["en", "ar", "fr", "ru"];
-    if (urlLang && supported.indexOf(urlLang) !== -1) {
-      stored = urlLang;
-    } else {
-      try {
-        stored = localStorage.getItem("blxing-home-lang") || "en";
-      } catch (error) {}
-    }
+    // Language is determined by the URL directory (/ar/, /fr/, /ru/); root is English.
+    var pathMatch = window.location.pathname.match(/^\/(ar|fr|ru)(\/|$)/);
+    var stored = pathMatch ? pathMatch[1] : "en";
     if (window.productTranslations && window.productTranslations[slug]) {
       return window.productTranslations[slug][stored] ? stored : "en";
     }

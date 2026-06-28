@@ -29,6 +29,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -591,7 +592,7 @@ a {
   color: var(--white);
   background:
     linear-gradient(110deg, rgba(10, 48, 72, .96), rgba(10, 48, 72, .82)),
-    url("../assets/upload/202621113571570063.jpg") center/cover;
+    url("../assets/generated/factory-workshop-hero-v2.webp") center/cover;
 }
 
 .cta-card h2 {
@@ -912,6 +913,57 @@ a {
   font-size: 13px;
   font-weight: 800;
   text-decoration: none;
+}
+
+.catalog-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+  align-self: end;
+}
+
+.catalog-card-actions a {
+  margin: 0;
+  justify-self: stretch;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 10px;
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  color: var(--blue);
+  font-size: 12.5px;
+  font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
+  transition: background .15s, color .15s;
+}
+
+.catalog-card-actions a:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.catalog-quote {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8742c;
+  color: #fff;
+  border: 1px solid #e8742c;
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.catalog-quote:hover {
+  filter: brightness(.95);
 }
 
 .detail-hero,

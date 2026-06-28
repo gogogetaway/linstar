@@ -1,6 +1,9 @@
 (function () {
   // 1. Helper function to update internal page links so they carry over the lang parameter
   function updatePageLinks(lang) {
+    // Directory-based i18n: each language lives under its own path (/ar/, /fr/, /ru/),
+    // so internal links already point to the correct language. Kept as a no-op.
+    return;
     var links = document.querySelectorAll("a[href]");
     links.forEach(function (a) {
       var href = a.getAttribute("href");
@@ -123,37 +126,10 @@
 
   // 4. Determine initial language
   function getInitialLanguage() {
-    // Priority 1: URL query string
-    var params = new URLSearchParams(window.location.search);
-    var urlLang = params.get("lang");
-    var supported = ["en", "ar", "fr", "ru"];
-
-    if (urlLang && supported.indexOf(urlLang) !== -1) {
-      try {
-        localStorage.setItem("blxing-home-lang", urlLang);
-      } catch (e) {}
-      return urlLang;
-    }
-
-    // Priority 2: localStorage
-    try {
-      var stored = localStorage.getItem("blxing-home-lang");
-      if (stored && supported.indexOf(stored) !== -1) {
-        return stored;
-      }
-    } catch (e) {}
-
-    // Priority 3: Browser setting (navigator.languages)
-    var userLangs = navigator.languages || [navigator.language || navigator.userLanguage];
-    for (var i = 0; i < userLangs.length; i++) {
-      var prefix = userLangs[i].split("-")[0].toLowerCase();
-      if (supported.indexOf(prefix) !== -1) {
-        return prefix;
-      }
-    }
-
-    // Priority 4: Default fallback
-    return "en";
+    // Language is determined by the URL directory: /ar/, /fr/, /ru/ -> that language.
+    // The site root ("/") is English. This keeps each language on its own indexable URL.
+    var m = window.location.pathname.match(/^\/(ar|fr|ru)(\/|$)/);
+    return m ? m[1] : "en";
   }
 
   // Initialize Language System
@@ -163,21 +139,18 @@
     // We run the translation
     translatePage(initialLang);
 
-    // Watch for click events on language switcher buttons
+    // Watch for clicks on language switcher buttons -> navigate to the matching
+    // language directory. Each language is its own URL (/, /ar/, /fr/, /ru/).
     document.addEventListener("click", function (e) {
       var langBtn = e.target.closest("[data-lang]");
       if (langBtn) {
+        e.preventDefault();
         var newLang = langBtn.getAttribute("data-lang");
-        try {
-          localStorage.setItem("blxing-home-lang", newLang);
-        } catch (err) {}
-        
-        // Update URL query parameter without reloading page
-        var url = new URL(window.location.href);
-        url.searchParams.set("lang", newLang);
-        window.history.pushState({}, "", url.toString());
-
-        translatePage(newLang);
+        // Strip any existing language prefix to get the root-relative path.
+        var basePath = window.location.pathname.replace(/^\/(ar|fr|ru)(\/|$)/, "/");
+        if (basePath.charAt(0) !== "/") basePath = "/" + basePath;
+        var target = (newLang === "en" ? "" : "/" + newLang) + basePath;
+        window.location.href = target + window.location.search + window.location.hash;
       }
     });
   }

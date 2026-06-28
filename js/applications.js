@@ -60,19 +60,9 @@
   };
 
   function getCurrentLang() {
-    var params = new URLSearchParams(window.location.search);
-    var urlLang = params.get("lang");
-    var supported = ["en", "ar", "fr", "ru"];
-    if (urlLang && supported.indexOf(urlLang) !== -1) {
-      return urlLang;
-    }
-    try {
-      var stored = localStorage.getItem("blxing-home-lang");
-      if (stored && supported.indexOf(stored) !== -1) {
-        return stored;
-      }
-    } catch (e) {}
-    return "en";
+    // Language is determined by the URL directory (/ar/, /fr/, /ru/); root is English.
+    var m = window.location.pathname.match(/^\/(ar|fr|ru)(\/|$)/);
+    return m ? m[1] : "en";
   }
 
   function currentApplication() {
@@ -115,7 +105,7 @@
         if (data.count === 4 && index > 1) button.classList.add("is-half");
       }
       button.setAttribute("aria-label", "Open " + displayTitle + " application photo " + (index + 1));
-      image.src = "assets/applications/" + application + "/" + number + ".jpg?v=20260614v4";
+      image.src = "assets/applications/" + application + "/" + number + ".webp?v=20260614v4";
       image.alt = displayTitle + " application";
       image.loading = index > 1 ? "lazy" : "eager";
       button.appendChild(image);

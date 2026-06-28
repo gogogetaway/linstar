@@ -1,22 +1,22 @@
 (function () {
   var products = [
-    ["film-faced-plywood", "Brown/Red/Black Film Faced Plywood", "Film faced plywood", "assets/upload/202531214123263859.jpg", "film faced formwork brown red black concrete shuttering"],
-    ["pp-plastic-faced-plywood", "PP Plastic Faced Plywood", "Film faced plywood", "assets/products/pp-plastic-faced-plywood/1.png", "pp plastic green waterproof formwork reusable"],
-    ["slip-resistant-plywood", "Slip-resistant Plywood", "Film faced plywood", "assets/products/slip-resistant-plywood/1.png", "anti slip nonslip slip resistent hexagon flooring"],
-    ["formply", "Formply", "Film faced plywood", "assets/products/formply/1.png", "f17 f14 f22 australia structural formwork"],
-    ["okoume-plywood", "Okoume Plywood", "Commercial & Specialty Plywood", "assets/products/okoume-plywood/okoume-1.jpg", "commercial furniture cabinet"],
-    ["birch-plywood", "Birch Plywood", "Commercial & Specialty Plywood", "assets/products/birch-plywood/birch-1.jpg", "commercial furniture cabinet"],
-    ["bintangor-plywood", "Bintangor Plywood", "Commercial & Specialty Plywood", "assets/products/bintangor-plywood/bintangor-1.jpg", "commercial red face furniture"],
-    ["pine-plywood", "Pine Plywood", "Commercial & Specialty Plywood", "assets/products/pine-plywood/pine-1.jpg", "commercial packing furniture"],
-    ["fancy-plywood", "Fancy Plywood", "Commercial & Specialty Plywood", "assets/products/fancy-plywood/fancy-1.jpg", "decorative veneer furniture"],
-    ["flexible-plywood", "Flexible / Bending Plywood", "Commercial & Specialty Plywood", "assets/products/flexible-plywood/flexible-1.jpg", "bendable curved flexible bending"],
-    ["mdf", "MDF", "Furniture Panels", "assets/products/mdf/mdf-raw-panels.png", "medium density fibreboard fiberboard furniture"],
-    ["chipboard", "Chipboard", "Furniture Panels", "assets/products/chipboard/chipboard-melamine-stack.png", "particle board particleboard furniture"],
-    ["osb", "OSB", "Furniture Panels", "assets/products/osb/osb-edge.png", "oriented strand board structural"],
-    ["lvl", "LVL", "Engineered Wood Systems", "assets/products/lvl/lvl-sections.png", "laminated veneer lumber structural beam"],
-    ["h20-beam", "H20 Beam", "Engineered Wood Systems", "assets/products/h20-beam/h20-finished-beams.png", "h 20 timber beam formwork"],
-    ["finger-joint-panel", "Finger Joint Panel", "Finger Joint Panel", "assets/products/blockboard/blockboard-panels.png", "finger joint panel finger-jointed block board joinery board solid core furniture"],
-    ["melamine-board", "Melamine Board", "Melamine Board", "assets/products/melamine-boards/melamine-panels.jpg", "melamine faced board decorative furniture mfc laminated panel"]
+    ["film-faced-plywood", "Brown/Red/Black Film Faced Plywood", "Film faced plywood", "assets/upload/202531214123263859.webp", "film faced formwork brown red black concrete shuttering"],
+    ["pp-plastic-faced-plywood", "PP Plastic Faced Plywood", "Film faced plywood", "assets/products/pp-plastic-faced-plywood/1.webp", "pp plastic green waterproof formwork reusable"],
+    ["slip-resistant-plywood", "Slip-resistant Plywood", "Film faced plywood", "assets/products/slip-resistant-plywood/1.webp", "anti slip nonslip slip resistent hexagon flooring"],
+    ["formply", "Formply", "Film faced plywood", "assets/products/formply/1.webp", "f17 f14 f22 australia structural formwork"],
+    ["okoume-plywood", "Okoume Plywood", "Commercial & Specialty Plywood", "assets/products/okoume-plywood/okoume-1.webp", "commercial furniture cabinet"],
+    ["birch-plywood", "Birch Plywood", "Commercial & Specialty Plywood", "assets/products/birch-plywood/birch-1.webp", "commercial furniture cabinet"],
+    ["bintangor-plywood", "Bintangor Plywood", "Commercial & Specialty Plywood", "assets/products/bintangor-plywood/bintangor-1.webp", "commercial red face furniture"],
+    ["pine-plywood", "Pine Plywood", "Commercial & Specialty Plywood", "assets/products/pine-plywood/pine-1.webp", "commercial packing furniture"],
+    ["fancy-plywood", "Fancy Plywood", "Commercial & Specialty Plywood", "assets/products/fancy-plywood/fancy-1.webp", "decorative veneer furniture"],
+    ["flexible-plywood", "Flexible / Bending Plywood", "Commercial & Specialty Plywood", "assets/products/flexible-plywood/flexible-1.webp", "bendable curved flexible bending"],
+    ["mdf", "MDF", "Furniture Panels", "assets/products/mdf/mdf-raw-panels.webp", "medium density fibreboard fiberboard furniture"],
+    ["chipboard", "Chipboard", "Furniture Panels", "assets/products/chipboard/chipboard-melamine-stack.webp", "particle board particleboard furniture"],
+    ["osb", "OSB", "Furniture Panels", "assets/products/osb/osb-edge.webp", "oriented strand board structural"],
+    ["lvl", "LVL", "Engineered Wood Systems", "assets/products/lvl/lvl-sections.webp", "laminated veneer lumber structural beam"],
+    ["h20-beam", "H20 Beam", "Engineered Wood Systems", "assets/products/h20-beam/h20-finished-beams.webp", "h 20 timber beam formwork"],
+    ["finger-joint-panel", "Finger Joint Panel", "Finger Joint Panel", "assets/products/blockboard/blockboard-panels.webp", "finger joint panel finger-jointed block board joinery board solid core furniture"],
+    ["melamine-board", "Melamine Board", "Melamine Board", "assets/products/melamine-boards/melamine-panels.webp", "melamine faced board decorative furniture mfc laminated panel"]
   ].map(function (item) {
     return { slug: item[0], title: item[1], category: item[2], image: item[3], keywords: item[4] };
   });
@@ -174,19 +174,9 @@
     };
 
     function getCurrentLang() {
-      var params = new URLSearchParams(window.location.search);
-      var urlLang = params.get("lang");
-      var supported = ["en", "ar", "fr", "ru"];
-      if (urlLang && supported.indexOf(urlLang) !== -1) {
-        return urlLang;
-      }
-      try {
-        var stored = localStorage.getItem("blxing-home-lang");
-        if (stored && supported.indexOf(stored) !== -1) {
-          return stored;
-        }
-      } catch (e) {}
-      return "en";
+      // Language is determined by the URL directory (/ar/, /fr/, /ru/); root is English.
+      var m = window.location.pathname.match(/^\/(ar|fr|ru)(\/|$)/);
+      return m ? m[1] : "en";
     }
 
     function render() {

@@ -1,7 +1,10 @@
 (function () {
   var origin = "https://www.jldplywood.com";
+  // Preserve the language directory (/ar/, /fr/, /ru/) in the canonical URL.
+  var langMatch = location.pathname.match(/^\/(ar|fr|ru)(\/|$)/);
+  var langPrefix = langMatch ? "/" + langMatch[1] : "";
   var path = location.pathname.split("/").pop() || "index.html";
-  var canonicalPath = path === "index.html" ? "/" : "/" + path;
+  var canonicalPath = path === "index.html" ? langPrefix + "/" : langPrefix + "/" + path;
   var params = new URLSearchParams(location.search);
   if (path === "product-detail.html" && params.get("product")) {
     canonicalPath += "?product=" + encodeURIComponent(params.get("product"));
@@ -13,7 +16,7 @@
   var title = document.title;
   var descriptionNode = document.querySelector('meta[name="description"]');
   var description = descriptionNode ? descriptionNode.content : "";
-  var image = origin + "/assets/img/logo-v2.png";
+  var image = origin + "/assets/generated/jld-hero-factory.webp";
 
   function meta(property, content) {
     var selector = property.indexOf("og:") === 0 ?
@@ -50,7 +53,7 @@
   var schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Xuzhou Jialinda Trading Co., Ltd.",
+    "name": "Xuzhou Jialinda International Trade Co., Ltd.",
     "url": origin,
     "logo": image,
     "email": "info@jldplywood.com",
@@ -80,7 +83,7 @@
       "brand": { "@type": "Brand", "name": "JIALINDA" },
       "manufacturer": {
         "@type": "Organization",
-        "name": "Xuzhou Jialinda Trading Co., Ltd.",
+        "name": "Xuzhou Jialinda International Trade Co., Ltd.",
         "url": origin
       },
       "url": canonical
