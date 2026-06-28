@@ -1527,7 +1527,8 @@ a {
   transform: translateY(-4px);
 }
 
-.v2-whyus-grid span {
+.v2-whyus-grid article > span:first-child,
+.v2-whyus-grid a > span:first-child {
   display: inline-flex;
   width: 38px;
   height: 38px;
@@ -1539,6 +1540,18 @@ a {
   background: var(--brand-blue);
   font-size: 11px;
   font-weight: 900;
+}
+
+.v2-whyus-grid .v2-card-link {
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  border-radius: 0;
+  color: var(--brand-blue);
+  background: transparent;
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .v2-whyus-grid h3 {
