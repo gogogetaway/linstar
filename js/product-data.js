@@ -88,7 +88,7 @@
           specTitle: "Technical specifications",
           specs: [
             ["Size (mm)", "610 x 2440, 625 x 2500, 1220 x 2440, 1250 x 2500; custom sizes available"],
-            ["Brand", "JLD / KALINDA / Linstar"],
+            ["Brand", "Linstar / KALINDA / Linstar"],
             ["Thickness (mm)", "4, 6, 9, 12, 15, 18, 21, 35"],
             ["Thickness tolerance", "+/- 0.5 mm"],
             ["Film color", "Brown, black, red, yellow or blue"],
@@ -126,7 +126,7 @@
         },
         {
           src: "assets/products/pp-plastic-faced-plywood/pp-surface.webp",
-          alt: "JLD branded green PP plastic faced plywood surface and edge"
+          alt: "Linstar branded green PP plastic faced plywood surface and edge"
         },
         {
           src: "assets/products/pp-plastic-faced-plywood/pp-colors3.webp",
@@ -151,7 +151,7 @@
           specTitle: "Technical specifications",
           specs: [
             ["Size (mm)", "610 x 2440, 625 x 2500, 1220 x 2440, 1250 x 2500; custom sizes available"],
-            ["Brand", "JLD / KALINDA / Linstar"],
+            ["Brand", "Linstar / KALINDA / Linstar"],
             ["Thickness (mm)", "12, 15, 18, 21"],
             ["Thickness tolerance", "+/- 0.5 mm"],
             ["PP color", "Green, blue or multicolour"],
@@ -184,7 +184,7 @@
       images: [
         {
           src: "assets/products/slip-resistant-plywood/1.webp",
-          alt: "JLD slip-resistant plywood panels showing anti-slip surfaces and layered cores"
+          alt: "Linstar slip-resistant plywood panels showing anti-slip surfaces and layered cores"
         },
         {
           src: "assets/products/slip-resistant-plywood/2.webp",
@@ -893,7 +893,7 @@
     var email = document.querySelector("[data-product-email]");
     var description = document.querySelector("[data-product-meta-description]");
 
-    document.title = copy.title + " | JLD Wood Panels";
+    document.title = copy.title + " | Linstar Wood Panels";
     if (description) description.setAttribute("content", copy.summary);
     renderGallery(product, copy);
     text(document.querySelector("[data-product-breadcrumb]"), copy.title);

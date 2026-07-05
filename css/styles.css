@@ -4,8 +4,8 @@
   --line: #dfe5ea;
   --paper: #f6f3ef;
   --white: #ffffff;
-  --blue: #0e4f75;
-  --blue-dark: #0a3048;
+  --blue: #e8742c;
+  --blue-dark: #24343f;
   --green: #57785d;
   --gold: #b88138;
   --shadow: 0 24px 70px rgba(14, 39, 57, .16);
@@ -3285,7 +3285,7 @@ a {
 }
 
 .minimal-brand img {
-  width: 116px;
+  width: 90px;
   padding: 5px 8px;
   border-radius: 4px;
   background: rgba(255, 255, 255, .9);
@@ -3826,7 +3826,7 @@ a {
 }
 
 .a-logo img {
-  width: 120px;
+  width: 93px;
 }
 
 .a-search {
@@ -4174,7 +4174,7 @@ a {
 }
 
 .b-header img {
-  width: 118px;
+  width: 92px;
   padding: 5px 8px;
   border-radius: 4px;
   background: rgba(255,255,255,.9);
@@ -4554,7 +4554,7 @@ a {
 }
 
 .c-brand img {
-  width: 112px;
+  width: 87px;
   padding: 5px 8px;
   border-radius: 4px;
   background: #fff;

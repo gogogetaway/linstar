@@ -4,8 +4,8 @@
   --line: #dbe3e5;
   --paper: #f4f1eb;
   --white: #ffffff;
-  --brand-blue: #204a80;
-  --brand-blue-dark: #0e263f;
+  --brand-blue: #e8742c;
+  --brand-blue-dark: #24343f;
   --brand-accent: #d39a25;
   --steel: #4d6271;
   --wood: #bd8a53;
@@ -97,8 +97,8 @@ a {
 }
 
 .v2-brand img {
-  width: 42px;
-  height: 42px;
+  width: 118px;
+  height: 38px;
   object-fit: contain;
 }
 
@@ -107,6 +107,8 @@ a {
   letter-spacing: .08em;
   text-transform: uppercase;
   white-space: nowrap;
+  line-height: 1;
+  transform: translateY(2px);
 }
 
 .v2-nav {
@@ -2449,7 +2451,7 @@ a {
 }
 
 .v2-footer-logo img {
-  width: 58px;
+  width: 180px;
   height: 58px;
   object-fit: contain;
 }
@@ -2943,14 +2945,15 @@ a {
   }
 
   .v2-brand img {
-    width: 38px;
-    height: 38px;
+    width: 87px;
+    height: 28px;
   }
 
   .v2-brand span {
     display: block;
     font-size: 10px;
     letter-spacing: .04em;
+    transform: translateY(1px);
   }
 
   .v2-actions {
@@ -3439,7 +3442,7 @@ html[dir="rtl"] .v2-products-mega .v2-dropdown-submenu {
 .pv2-includes b{ display:block; font-size:10px; letter-spacing:.05em; text-transform:uppercase; color:#7c8a94; font-weight:700; margin-bottom:3px; }
 .pv2-desc{ font-size:13.5px; color:#5a6b78; margin:0 0 16px; flex:1; line-height:1.55; }
 .pv2-foot{ display:flex; gap:10px; align-items:center; }
-.pv2-foot .pv2-range{ font-size:13px; font-weight:600; color:#0e4f75; text-decoration:none; }
+.pv2-foot .pv2-range{ font-size:13px; font-weight:600; color:#e8742c; text-decoration:none; }
 .pv2-foot .pv2-range:hover{ text-decoration:underline; }
 .pv2-foot .pv2-quote{ margin-left:auto; background:var(--pv2-orange); color:#fff; border:0; border-radius:8px; padding:9px 14px; font-size:13px; font-weight:700; cursor:pointer; }
 .pv2-foot .pv2-quote:hover{ filter:brightness(.95); }
@@ -3488,10 +3491,9 @@ html[dir="rtl"] .v2-products-mega .v2-dropdown-submenu {
 .pv3-vcol-3 .pv3-vtrack{ animation-duration:34s; }
 .pv3-vwall:hover .pv3-vtrack{ animation-play-state:paused; }
 .pv3-quote{ box-sizing:border-box; background:#fff; border:1px solid #e6eaed; border-radius:12px; padding:18px 20px; }
-.pv3-quote .pv3-stars{ color:#e8a032; font-size:12px; letter-spacing:2px; margin-bottom:9px; }
+.pv3-quote .pv3-stars{ display:inline-flex; width:max-content; color:#e8742c; background:#fff3ec; border:1px solid #f0c6aa; border-radius:999px; padding:4px 8px; font-size:11px; font-weight:700; letter-spacing:0; margin-bottom:10px; }
 .pv3-quote p{ font-size:13.5px; line-height:1.6; color:#22333d; margin:0 0 15px; }
 .pv3-quote footer{ display:flex; align-items:center; gap:10px; }
-.pv3-quote .pv3-flag{ font-size:22px; line-height:1; }
 .pv3-quote b{ font-size:13px; color:#13232e; display:block; }
 .pv3-quote small{ font-size:12px; color:#7c8a94; }
 @keyframes pv3-vscroll{ to{ transform:translateY(-50%); } }

@@ -1,0 +1,544 @@
+/* index-v2.css — homepage v2 experiment, layered on top of home-v2.css.
+   Prefix: iv2-  (only new sections; header/footer/products/faq reuse home-v2.css) */
+
+/* ---------- Hero: split copy + quick-quote card ---------- */
+.iv2-hero {
+  position: relative;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  padding: 132px 28px 72px;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.iv2-hero-media,
+.iv2-hero-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iv2-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(10, 22, 36, .88) 0%, rgba(10, 22, 36, .62) 46%, rgba(10, 22, 36, .38) 100%);
+}
+
+.iv2-hero-inner {
+  position: relative;
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, .9fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.iv2-hero-copy .v2-eyebrow {
+  color: var(--gold);
+}
+
+.iv2-hero-copy h1 {
+  margin: 14px 0 18px;
+  font-size: clamp(34px, 4.6vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -.01em;
+}
+
+.iv2-hero-copy h1 .iv2-accent {
+  color: var(--gold);
+}
+
+.iv2-hero-text {
+  max-width: 560px;
+  margin: 0 0 22px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, .88);
+}
+
+.iv2-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 0 0 26px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.iv2-hero-points li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iv2-hero-points li::before {
+  content: "✓";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(214, 162, 90, .25);
+  color: var(--gold);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.iv2-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+
+.iv2-hero-badges span {
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .08);
+  backdrop-filter: blur(4px);
+}
+
+/* Quick-quote card */
+.iv2-quick {
+  position: relative;
+  background: var(--white);
+  color: var(--ink);
+  border-radius: 18px;
+  padding: 26px 26px 22px;
+  box-shadow: 0 30px 80px rgba(5, 14, 24, .45);
+}
+
+.iv2-quick::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  border-radius: 18px 0 0 18px;
+  background: linear-gradient(180deg, var(--gold), var(--brand-blue));
+}
+
+.iv2-quick h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.iv2-quick > p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.iv2-quick form {
+  display: grid;
+  gap: 12px;
+}
+
+.iv2-quick label {
+  display: grid;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+
+.iv2-quick input,
+.iv2-quick select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  background: #fbfaf8;
+}
+
+.iv2-quick input:focus,
+.iv2-quick select:focus {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 0;
+  border-color: var(--brand-blue);
+}
+
+.iv2-quick-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.iv2-quick-submit {
+  margin-top: 4px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--brand-blue);
+  color: var(--white);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.iv2-quick-submit:hover {
+  background: var(--brand-blue-dark);
+  transform: translateY(-1px);
+}
+
+.iv2-quick-submit[disabled] {
+  opacity: .7;
+  cursor: wait;
+}
+
+.iv2-quick-alt {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.iv2-quick-alt a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  color: #1d8f4e;
+  text-decoration: none;
+}
+
+.iv2-quick-alt a:hover {
+  text-decoration: underline;
+}
+
+.iv2-quick-alt img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Buyer facts strip ---------- */
+.iv2-facts {
+  background: var(--brand-blue-dark);
+  color: var(--white);
+  padding: 26px 28px;
+}
+
+.iv2-facts-inner {
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.iv2-fact {
+  display: grid;
+  gap: 4px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(214, 162, 90, .55);
+}
+
+.iv2-fact small {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .6);
+}
+
+.iv2-fact strong {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.iv2-fact span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .72);
+}
+
+/* ---------- Section shell ---------- */
+.iv2-section {
+  padding: 84px 28px;
+}
+
+.iv2-section-inner {
+  width: min(1160px, 100%);
+  margin: 0 auto;
+}
+
+.iv2-head {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.iv2-head h2 {
+  margin: 10px 0 12px;
+  font-size: clamp(26px, 3.2vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -.01em;
+}
+
+.iv2-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* Product card spec chips (added inside reused pv2-card) */
+.iv2-specline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+}
+
+.iv2-specline span {
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: #eef2f6;
+  color: var(--steel);
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---------- Two production bases ---------- */
+.iv2-bases {
+  background: var(--paper);
+}
+
+.iv2-bases-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.iv2-base {
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(24, 33, 38, .1);
+  display: flex;
+  flex-direction: column;
+}
+
+.iv2-base img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.iv2-base-body {
+  padding: 22px 24px 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.iv2-base-body small {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+}
+
+.iv2-base-body h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.iv2-base-body p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.iv2-base-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.iv2-base-tags span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--steel);
+}
+
+.iv2-bases-note {
+  margin: 26px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.iv2-bases-note a {
+  font-weight: 800;
+  color: var(--brand-blue);
+}
+
+/* ---------- QC lab proof ---------- */
+.iv2-lab-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.iv2-lab-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(24, 33, 38, .12);
+}
+
+.iv2-lab-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.iv2-lab-card:hover img {
+  transform: scale(1.04);
+}
+
+.iv2-lab-card figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 30px 14px 12px;
+  background: linear-gradient(180deg, transparent, rgba(10, 22, 36, .82));
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ---------- How ordering works ---------- */
+.iv2-steps {
+  background: var(--brand-blue-dark);
+  color: var(--white);
+}
+
+.iv2-steps .iv2-head h2 { color: var(--white); }
+.iv2-steps .iv2-head p { color: rgba(255, 255, 255, .72); }
+
+.iv2-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  counter-reset: iv2step;
+}
+
+.iv2-step {
+  position: relative;
+  padding: 22px 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .12);
+}
+
+.iv2-step::before {
+  counter-increment: iv2step;
+  content: "0" counter(iv2step);
+  display: block;
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.iv2-step h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.iv2-step p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, .75);
+}
+
+.iv2-steps-cta {
+  margin-top: 34px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.iv2-steps-cta .v2-button {
+  border-radius: 10px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .iv2-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .iv2-quick {
+    max-width: 520px;
+  }
+
+  .iv2-facts-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .iv2-lab-grid,
+  .iv2-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .iv2-hero {
+    padding: 108px 18px 56px;
+  }
+
+  .iv2-section {
+    padding: 60px 18px;
+  }
+
+  .iv2-facts {
+    padding: 22px 18px;
+  }
+
+  .iv2-facts-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .iv2-bases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iv2-quick-row {
+    grid-template-columns: 1fr;
+  }
+
+  .iv2-lab-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .iv2-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}

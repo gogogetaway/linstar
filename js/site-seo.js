@@ -41,7 +41,7 @@
 
   meta("robots", "index,follow,max-image-preview:large");
   meta("og:type", "website");
-  meta("og:site_name", "Jialinda Wood Panels");
+  meta("og:site_name", "Yongxiang Wood Panels");
   meta("og:title", title);
   meta("og:description", description);
   meta("og:url", canonical);
@@ -53,7 +53,7 @@
   var schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Xuzhou Jialinda International Trade Co., Ltd.",
+    "name": "Xuzhou Yongxiang Wood Industry Co., Ltd.",
     "url": origin,
     "logo": image,
     "email": "info@jldplywood.com",
@@ -80,10 +80,10 @@
       "name": productTitle ? productTitle.textContent.trim() : title,
       "image": productImage ? new URL(productImage.src, location.href).href : image,
       "description": description,
-      "brand": { "@type": "Brand", "name": "JIALINDA" },
+      "brand": { "@type": "Brand", "name": "YONGXIANG" },
       "manufacturer": {
         "@type": "Organization",
-        "name": "Xuzhou Jialinda International Trade Co., Ltd.",
+        "name": "Xuzhou Yongxiang Wood Industry Co., Ltd.",
         "url": origin
       },
       "url": canonical

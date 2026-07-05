@@ -98,7 +98,7 @@
       formData.get("notes") || ""
     ].join("\n");
     window.location.href = "mailto:info@jldplywood.com?subject=" +
-      encodeURIComponent("Jialinda wood panel inquiry") +
+      encodeURIComponent("Yongxiang wood panel inquiry") +
       "&body=" + encodeURIComponent(body);
   }
 

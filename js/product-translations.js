@@ -21,7 +21,7 @@ window.productTranslations = {
         ],
         [
           "Brand",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "Thickness (mm)",
@@ -111,7 +111,7 @@ window.productTranslations = {
         ],
         [
           "العلامة التجارية",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "السُمك (مم)",
@@ -201,7 +201,7 @@ window.productTranslations = {
         ],
         [
           "Marque",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "Épaisseur (mm)",
@@ -291,7 +291,7 @@ window.productTranslations = {
         ],
         [
           "Марка",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "Толщина (мм)",
@@ -383,7 +383,7 @@ window.productTranslations = {
         ],
         [
           "Brand",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "Thickness (mm)",
@@ -473,7 +473,7 @@ window.productTranslations = {
         ],
         [
           "العلامة التجارية",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "السُمك (مم)",
@@ -563,7 +563,7 @@ window.productTranslations = {
         ],
         [
           "Marque",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "Épaisseur (mm)",
@@ -653,7 +653,7 @@ window.productTranslations = {
         ],
         [
           "Марка",
-          "JLD / KALINDA / Linstar"
+          "Linstar / KALINDA / Linstar"
         ],
         [
           "Толщина (мм)",

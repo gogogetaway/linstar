@@ -307,9 +307,9 @@
 }
 
 .contact-method label:has(input:checked) span {
-  border-color: #174a76;
+  border-color: #e8742c;
   background: #eaf1f6;
-  color: #174a76;
+  color: #e8742c;
   box-shadow: inset 0 0 0 1px rgba(23, 74, 118, .12);
 }
 
@@ -335,7 +335,7 @@
 
 .contact-field input:focus,
 .contact-field textarea:focus {
-  border-color: #174a76;
+  border-color: #e8742c;
 }
 
 .contact-field textarea {
@@ -352,7 +352,7 @@
   border: 0;
   border-radius: 0;
   padding: 0 16px;
-  background: #174a76;
+  background: #e8742c;
   color: #fff;
   font-size: 11px;
   font-weight: 900;
