@@ -41,7 +41,7 @@
 
   meta("robots", "index,follow,max-image-preview:large");
   meta("og:type", "website");
-  meta("og:site_name", "Yongxiang Wood Panels");
+  meta("og:site_name", "Linstar Wood Panels");
   meta("og:title", title);
   meta("og:description", description);
   meta("og:url", canonical);
@@ -56,7 +56,7 @@
     "name": "Xuzhou Yongxiang Wood Industry Co., Ltd.",
     "url": origin,
     "logo": image,
-    "email": "info@jldplywood.com",
+    "email": "info@linstarwood.com",
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "sales",
@@ -80,7 +80,7 @@
       "name": productTitle ? productTitle.textContent.trim() : title,
       "image": productImage ? new URL(productImage.src, location.href).href : image,
       "description": description,
-      "brand": { "@type": "Brand", "name": "YONGXIANG" },
+      "brand": { "@type": "Brand", "name": "Linstar" },
       "manufacturer": {
         "@type": "Organization",
         "name": "Xuzhou Yongxiang Wood Industry Co., Ltd.",

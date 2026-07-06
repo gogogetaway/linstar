@@ -873,7 +873,7 @@ decoration 第一张换跟最后一个换一下。右边的第一张第二张换
 ---
 
 ### 💬 用户 (User)  *[05:10:07]*
-manufacturers.info@jldplywood.comWhatsApp: +86 137 7593 6777 再加一个facebook 用图标把？排列自行处理
+manufacturers.info@linstarwood.comWhatsApp: +86 137 7593 6777 再加一个facebook 用图标把？排列自行处理
 
 ---
 
@@ -3625,7 +3625,7 @@ I will stage `js/site-translations.js` and check the cached diff to confirm all 
    * 品牌名：`JIALINDA` / `JLD`
    * 行业标准认证：`FSC` / `CE` / `EUDR` / `EPA TSCA VI` / `ISPM 15`
    * 规格和型号：`E0 / E1`、`OSB2 / OSB3 / OSB4`
-   * 贸易术语及联系信息：`FOB/CIF`、`info@jldplywood.com`
+   * 贸易术语及联系信息：`FOB/CIF`、`info@linstarwood.com`
 3. **“有时候翻译/点击不翻译”问题已彻底解决**：
    * 修正了所有 11 个 HTML 页面中原本硬编码的导航下拉菜单，统一加上了 `data-i18n` 属性。
    * 修复了 [js/product-search.js](file:///Users/macbook/Desktop/网站_plybood/js/product-search.js) 搜索结果在跳转和渲染时会丢失 `lang` 语言参数而闪回英文的问题。
@@ -3892,7 +3892,7 @@ I will run `check_missing_dictionary_keys.py` again to verify that there are no 
   * 品牌名：`JIALINDA`、`JLD`
   * 行业标准认证：`FSC`、`CE`、`EUDR`、`EPA TSCA VI`、`ISPM 15`
   * 技术术语与单位：`MDF`、`OSB`、`LVL`、`H20`、`1220 x 2440 mm`、`18 mm`、`500-630 kg/m³`
-  * 邮箱与联系方式：`info@jldplywood.com`、WhatsApp 号码等
+  * 邮箱与联系方式：`info@linstarwood.com`、WhatsApp 号码等
 
 ---
 
@@ -4559,7 +4559,7 @@ Everything is now modified and fully staged in git. You can review the staged ch
 ### 1. 网站项目本身（您的外贸网站）
 当前网站的客服与询盘功能已经集成在公共脚本 [js/site-shared.js](file:///Users/macbook/Desktop/网站_plybood/js/site-shared.js) 和询盘面板 [js/rfq-panel.js](file:///Users/macbook/Desktop/网站_plybood/js/rfq-panel.js) 中，包含了以下外贸常用客服通道：
 * **WhatsApp 浮动即时沟通**：绑定了您的 WhatsApp 号码 `8613145209266`。
-* **RFQ 询盘抽屉表单**：支持买家快速提交规格、目的地港口等信息，并直接发送至销售邮箱 `info@jldplywood.com`（通过 Web3Forms 接口收集）。
+* **RFQ 询盘抽屉表单**：支持买家快速提交规格、目的地港口等信息，并直接发送至销售邮箱 `info@linstarwood.com`（通过 Web3Forms 接口收集）。
 * 如果您希望在网站中接入其他的**第三方在线实时客服端**（例如 Tawk.to, LiveChat, Smartsupp 等），我可以帮您将对应的客服端 JavaScript 插件代码嵌入到网站的公共区域（如 `index.html` 或 `js/site-shared.js` 底部），这样买家就能在页面上看到客服聊天浮窗。
 
 ---

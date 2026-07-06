@@ -97,7 +97,7 @@
       "Packing / certificate / application notes:",
       formData.get("notes") || ""
     ].join("\n");
-    window.location.href = "mailto:info@jldplywood.com?subject=" +
+    window.location.href = "mailto:info@linstarwood.com?subject=" +
       encodeURIComponent("Yongxiang wood panel inquiry") +
       "&body=" + encodeURIComponent(body);
   }

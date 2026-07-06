@@ -21,7 +21,7 @@ window.productTranslations = {
         ],
         [
           "Brand",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "Thickness (mm)",
@@ -111,7 +111,7 @@ window.productTranslations = {
         ],
         [
           "العلامة التجارية",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "السُمك (مم)",
@@ -201,7 +201,7 @@ window.productTranslations = {
         ],
         [
           "Marque",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "Épaisseur (mm)",
@@ -291,7 +291,7 @@ window.productTranslations = {
         ],
         [
           "Марка",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "Толщина (мм)",
@@ -383,7 +383,7 @@ window.productTranslations = {
         ],
         [
           "Brand",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "Thickness (mm)",
@@ -473,7 +473,7 @@ window.productTranslations = {
         ],
         [
           "العلامة التجارية",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "السُمك (مم)",
@@ -563,7 +563,7 @@ window.productTranslations = {
         ],
         [
           "Marque",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "Épaisseur (mm)",
@@ -653,7 +653,7 @@ window.productTranslations = {
         ],
         [
           "Марка",
-          "Linstar / KALINDA / Linstar"
+          "Yongxiang"
         ],
         [
           "Толщина (мм)",
