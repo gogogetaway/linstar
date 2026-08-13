@@ -1441,6 +1441,45 @@ a {
   border-top: 1px solid var(--line);
 }
 
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(1080px, calc(100% - 56px));
+  margin: 0 auto 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.about-facts div {
+  min-width: 0;
+  padding: 18px 20px;
+  border-left: 1px solid var(--line);
+}
+
+.about-facts div:first-child {
+  border-left: 0;
+}
+
+.about-facts strong,
+.about-facts span {
+  display: block;
+}
+
+.about-facts strong {
+  color: var(--ink);
+  font-size: clamp(20px, 2.4vw, 30px);
+  line-height: 1;
+}
+
+.about-facts span {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .about-intro,
 .about-quality,
 .about-markets {
@@ -1701,6 +1740,19 @@ a {
   height: 7px;
   border-radius: 50%;
   background: var(--accent);
+}
+
+.about-commitment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.about-commitment-actions .button {
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 6px;
 }
 
 .about-range-grid strong,
@@ -4995,6 +5047,21 @@ html[dir="rtl"] .market-region-detail {
 
   .qc-lab-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .about-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: calc(100% - 32px);
+  }
+
+  .about-facts div:nth-child(3) {
+    border-left: 0;
+  }
+
+  .about-facts div:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
   }
 }
 

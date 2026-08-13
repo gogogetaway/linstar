@@ -1,4 +1,12 @@
 (function () {
+  var catalogUrl = "/downloads/linstar-wood-panels-catalog-2026.pdf";
+  var catalogLinkMarkup = [
+    '<a class="catalog-download-link" data-catalog-download href="' + catalogUrl + '" target="_blank" rel="noopener">',
+    '  <span class="catalog-download-icon" aria-hidden="true">↓</span>',
+    '  <span><strong data-i18n="downloadCatalog">Download Catalog</strong><small data-i18n="catalogMeta">PDF · 17 pages · 10 MB</small></span>',
+    '</a>'
+  ].join("");
+
   var footerMarkup = [
     '<footer class="v2-footer" id="quote">',
     '  <div class="v2-footer-inner">',
@@ -43,6 +51,7 @@
     '          <li><a href="applications.html" data-i18n="navApplications">Applications</a></li>',
     '          <li><a href="about.html#factory" data-i18n="dropFactory">Factory &amp; QC</a></li>',
     '          <li><a href="about.html#certificates" data-i18n="dropCertificates">Certificates</a></li>',
+    '          <li><a href="' + catalogUrl + '" target="_blank" rel="noopener" data-catalog-download data-i18n="downloadCatalog">Download Catalog</a></li>',
     '          <li><a href="contact.html" data-i18n="navContact">Contact sales</a></li>',
     '        </ul>',
     '      </div>',
@@ -85,10 +94,40 @@
     document.body.insertAdjacentHTML("beforeend", footerMarkup);
   }
 
+  var productHeading = document.querySelector(".pv2-prod-head");
+  if (productHeading && !productHeading.querySelector("[data-catalog-download]")) {
+    productHeading.insertAdjacentHTML("beforeend", catalogLinkMarkup);
+  } else {
+    var homeProducts = document.querySelector(".v2-products");
+    if (homeProducts && !document.querySelector(".catalog-resource-strip")) {
+      homeProducts.insertAdjacentHTML("beforebegin", '<section class="catalog-resource-strip"><div><p data-i18n="catalogEyebrow">PRODUCT CATALOG 2026</p><h2 data-i18n="catalogTitle">Product range and specifications in one file.</h2></div>' + catalogLinkMarkup + '</section>');
+    }
+  }
+
+  var productsHero = document.querySelector(".products-hero-copy");
+  if (productsHero && !productsHero.querySelector("[data-catalog-download]")) {
+    productsHero.insertAdjacentHTML("beforeend", '<div class="catalog-inline-action">' + catalogLinkMarkup + '</div>');
+  }
+
+  var aboutPage = document.querySelector(".about-hero");
+  if (aboutPage && !document.querySelector(".about-catalog-band")) {
+    var aboutAnchor = document.querySelector(".about-facts") || document.querySelector(".about-intro");
+    if (aboutAnchor) {
+      aboutAnchor.insertAdjacentHTML("afterend", '<section class="about-catalog-band" aria-label="Product catalog"><div><p class="eyebrow" data-i18n="catalogEyebrow">PRODUCT CATALOG 2026</p><h2 data-i18n="catalogTitle">Product range and specifications in one file.</h2><p data-i18n="catalogDescription">A 17-page buyer catalog covering plywood, furniture panels, LVL, H20 beams, quality control and export inquiry details.</p></div>' + catalogLinkMarkup + '</section>');
+    }
+  }
+
   document.querySelectorAll(".rfq-drawer, .rfq-floating-open, .v2-floating-contact").forEach(function (element) {
     element.remove();
   });
   document.body.insertAdjacentHTML("beforeend", quoteMarkup);
+
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest("[data-catalog-download]");
+    if (!link) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "catalog_download", catalog: "linstar-wood-panels-2026" });
+  });
 
   if (window.translatePage && typeof window.getCurrentLanguage === "function") {
     window.translatePage(window.getCurrentLanguage());

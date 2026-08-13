@@ -3513,3 +3513,96 @@ html[dir="rtl"] .v2-products-mega .v2-dropdown-submenu {
   .pv2-form .pv2-row{ grid-template-columns:1fr; }
   .pv2-checklist{ grid-template-columns:1fr; }
 }
+
+/* Downloadable buyer catalog */
+[data-catalog-download]{ cursor:pointer; }
+.catalog-download-link{
+  display:inline-flex;
+  align-items:center;
+  cursor:pointer;
+  gap:10px;
+  width:max-content;
+  max-width:100%;
+  padding:9px 13px 9px 9px;
+  border:1px solid #cfd8dd;
+  border-radius:6px;
+  background:#fff;
+  color:#13232e;
+  text-decoration:none;
+  transition:border-color .2s,box-shadow .2s,transform .2s;
+}
+.catalog-download-link:hover{
+  border-color:#e8742c;
+  box-shadow:0 8px 22px rgba(19,35,46,.09);
+  transform:translateY(-1px);
+}
+.catalog-download-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 34px;
+  width:34px;
+  height:34px;
+  border-radius:4px;
+  background:#e8742c;
+  color:#fff;
+  font-size:19px;
+  font-weight:800;
+  line-height:1;
+}
+.catalog-download-link > span:last-child{ display:grid; gap:2px; min-width:0; }
+.catalog-download-link strong{ color:#13232e; font-size:13px; line-height:1.2; letter-spacing:0; }
+.catalog-download-link small{ color:#657680; font-size:11px; line-height:1.2; letter-spacing:0; }
+.pv2-prod-head .catalog-download-link,
+.catalog-inline-action{ margin-top:16px; }
+.catalog-resource-strip,
+.about-catalog-band{
+  width:min(1080px,calc(100% - 56px));
+  margin:0 auto;
+  padding:24px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+  border-top:1px solid #dce3e6;
+  border-bottom:1px solid #dce3e6;
+}
+.catalog-resource-strip{ margin-top:24px; margin-bottom:24px; }
+.about-catalog-band{ margin-top:28px; }
+.catalog-resource-strip p,
+.about-catalog-band .eyebrow{
+  margin:0 0 6px;
+  color:#e8742c;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:0;
+  text-transform:uppercase;
+}
+.catalog-resource-strip h2,
+.about-catalog-band h2{
+  margin:0;
+  max-width:680px;
+  color:#13232e;
+  font-size:clamp(21px,2.2vw,30px);
+  line-height:1.16;
+  letter-spacing:0;
+}
+.about-catalog-band > div > p:last-child{
+  max-width:680px;
+  margin:9px 0 0;
+  color:#5a6b78;
+  font-size:13px;
+  line-height:1.55;
+}
+html[dir="rtl"] .catalog-download-link{ padding:9px 9px 9px 13px; }
+@media (max-width:700px){
+  .catalog-resource-strip,
+  .about-catalog-band{
+    width:calc(100% - 32px);
+    padding:21px 0;
+    align-items:flex-start;
+    flex-direction:column;
+    gap:16px;
+  }
+  .catalog-download-link{ width:100%; }
+}
