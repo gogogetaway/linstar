@@ -1,5 +1,5 @@
 (function () {
-  var origin = "https://www.jldplywood.com";
+  var origin = "https://www.linstarwood.com";
   // Preserve the language directory (/ar/, /fr/, /ru/) in the canonical URL.
   var langMatch = location.pathname.match(/^\/(ar|fr|ru)(\/|$)/);
   var langPrefix = langMatch ? "/" + langMatch[1] : "";

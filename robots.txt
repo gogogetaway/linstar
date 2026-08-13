@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jldplywood.com/sitemap.xml
+Sitemap: https://www.linstarwood.com/sitemap.xml
