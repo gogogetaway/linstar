@@ -1,0 +1,32 @@
+[
+  {
+    "company": "FANERAOPT.KZ",
+    "to": "koltkov@mail.ru",
+    "subject": "Поставка ламинированной фанеры для FANERAOPT.KZ",
+    "body_file": "01-faneraopt-kz.txt"
+  },
+  {
+    "company": "БИРГЕ ГРУПП",
+    "to": "info@birgegroup.kg",
+    "subject": "Ламинированная фанера и балки H20 для БИРГЕ ГРУПП",
+    "body_file": "02-birge-group.txt"
+  },
+  {
+    "company": "CAPITAL TRADING COMPANY LLC",
+    "to": "rr07051971@gmail.com",
+    "subject": "Поставка фанеры из Китая для CAPITAL TRADING COMPANY",
+    "body_file": "03-capital-trading-uz.txt"
+  },
+  {
+    "company": "Fanerra",
+    "to": "info@fanerra.ru",
+    "subject": "Ламинированная фанера из тополя 18/21 мм для Fanerra",
+    "body_file": "04-fanerra-ru.txt"
+  },
+  {
+    "company": "СтройЛес",
+    "to": "mosstroyles@mail.ru",
+    "subject": "Китайская ламинированная фанера 18/21 мм для СтройЛес",
+    "body_file": "05-stroyles-ru.txt"
+  }
+]

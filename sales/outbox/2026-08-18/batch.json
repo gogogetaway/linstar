@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Allwood Trading Co. FZE",
+    "to": "supply@allwoodtrading.com",
+    "subject": "China Film-Faced Plywood & LVL Supply for Allwood",
+    "body_file": "01-allwood.txt"
+  },
+  {
+    "company": "Ace Timber Trading Co. LLC",
+    "to": "info@acetimbertrading.com",
+    "subject": "PP Green Plywood & 18 mm Film-Faced Supply",
+    "body_file": "02-ace-timber.txt"
+  },
+  {
+    "company": "Tawreed Trade",
+    "to": "order@tawreed.ae",
+    "subject": "Film-Faced & PP Plastic Plywood Supply for Tawreed",
+    "body_file": "03-tawreed.txt"
+  },
+  {
+    "company": "Emirates Trading Enterprises LLC",
+    "to": "rakesh@etedubai.com",
+    "subject": "Mixed-Container Plywood Supply for Emirates Trading Enterprises",
+    "body_file": "04-emirates-trading.txt"
+  },
+  {
+    "company": "TAB Gulf",
+    "to": "orders@tabgulf.ae",
+    "subject": "Film-Faced Plywood Supply - Core & Film Options",
+    "body_file": "05-tab-gulf.txt"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "company": "Safari Group",
+    "to": "sales@safarigroup.com.au",
+    "subject": "Formply & LVL Supply - Product Documentation Available",
+    "body_file": "01-safari-group.txt"
+  },
+  {
+    "company": "Formply Australia",
+    "to": "info@formplyaustralia.com.au",
+    "subject": "Formply & LVL Manufacturer - Supplier Qualification",
+    "body_file": "02-formply-australia.txt"
+  },
+  {
+    "company": "Nassguard Trading",
+    "to": "hello@nassguard.sa",
+    "subject": "18 mm Film-Faced Plywood Supply for Nassguard",
+    "body_file": "03-nassguard.txt"
+  },
+  {
+    "company": "Yatco Gulf",
+    "to": "sales@yatcogulf.com",
+    "subject": "Bulk Film-Faced Plywood Supply for Saudi Arabia",
+    "body_file": "04-yatco-gulf.txt"
+  },
+  {
+    "company": "Saplings Timber Trading",
+    "to": "info@saplings.co.za",
+    "subject": "Chinese Film-Face Plywood 18/21 mm for Saplings",
+    "body_file": "05-saplings.txt"
+  },
+  {
+    "company": "Marine Boards Kenya",
+    "to": "info@marineboards.co.ke",
+    "subject": "Engineered Wood Panel Supply for Marine Boards Kenya",
+    "body_file": "06-marine-boards-kenya.txt"
+  },
+  {
+    "company": "Kamowood Limited",
+    "to": "bachar@kamowoodltd.com",
+    "subject": "18 mm Marine & Film-Faced Plywood Supply",
+    "body_file": "07-kamowood.txt"
+  },
+  {
+    "company": "Feranliz Wood Limited",
+    "to": "sales@feranlizwood.com",
+    "subject": "H20 Beams & Formwork Plywood Supply for Feranliz",
+    "body_file": "08-feranliz.txt"
+  }
+]

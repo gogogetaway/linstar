@@ -1,0 +1,4 @@
+"Date","Company","Failed email","SMTP code","Reason","Replacement email","Action"
+"2026-09-02","Naturex Company S.A.C.","comercial@naturexcompany.com","550 5.1.1","User does not exist","contacto@naturexcompany.com","Retried; SMTP accepted"
+"2026-09-02","Tozon LLC","tozonshop@gmail.com","550 5.7.26","Sender-domain DNS authentication missing or invalid","","SPF/DKIM/DMARC configured; retried; SMTP accepted"
+"2026-09-02","Tozon LLC","tozonshop@gmail.com","550 5.7.26","Gmail blocked message because the sender domain lacks valid DNS email authentication","","Fix SPF/DKIM/DMARC, test Gmail delivery, then retry"
